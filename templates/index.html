@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stil.css')}}" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>BTSR</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Bilişimin Temelleri Sohbet Robotu (BTSR)</a>
+    </nav>
+    <br><br><br>
+    <main role="main" class="container">
+        <div class="jumbotron">
+            <h3>Bilişimin Temelleri Sohbet Robotu (BTSR)</h3>
+            <p><b>Hakkında: </b>Bu sohbet robotu Kahramanmaraş Fen Bilimleri Enstitüsü Bilişim Sistemleri Alanı öğrencisi <b>Mehmet Keklik</b> tarafından <b>Doç.Dr. Fethullah GÖÇER</b> danışmanlığında yüksek lisans tezi kapsamında hazırlanmıştır.
+                <br>Sohbet robotunun amacı Ortaöğretim Bilgisayar Bilimi Dersine ilişkin öğrenci sorularına yanıt vermek ve öğrenmeyi desteklemektir.
+                <br>Sohbet robotuna soru sorarak konuşmayı başlatabilirsiniz.
+            </p>
+            <hr>
+            <form>
+                <div id="chatbox">
+                </div>
+                <div id="userInput">
+                    <div>
+                        <input id="text" type="text" size="35" name="msg" placeholder="Bana bişeyler yaz...">
+                        <button type="submit" id="send" class="btn btn-dark">Gönder</button>
+                        <div class="yazdirButonu"><a href="javascript:printDiv('userInput');">Konuşmaları Yazdır</a></div>
+                        
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script>
+        $(document).ready(function () {
+            $("form").on("submit", function (event) {
+                var rawText = $("#text").val();
+                var userHtml = '<p class="userText"><span><span><img class="userImg" src="./static/img/user2.jpg">    <b>SİZ</b>: <i>' + rawText + "</i></span></p>";
+                $("#text").val("");
+                $("#chatbox").append(userHtml);
+                document.getElementById("userInput").scrollIntoView({
+                    block: "start",
+                    behavior: "smooth",
+                });
+                $.ajax({
+                    data: {
+                        msg: rawText,
+                    },
+                    type: "POST",
+                    url: "/get",
+                }).done(function (data) {
+                    var botHtml = '<p class="botText"><span><img class="botImg" src="./static/img/bot.jpg">    <b>BTSR</b>: <i>' + data + "</i></span></p>";
+                    $("#chatbox").append($.parseHTML(botHtml));
+                    document.getElementById("userInput").scrollIntoView({
+                        block: "start",
+                        behavior: "smooth",
+                    });
+                });
+                event.preventDefault();
+            });
+        });
+    </script>
+     <script type="text/javascript">
+        function printDiv(userInput) {
+            var printContents = document.getElementById(userInput).innerHTML;
+            var originalContents = document.body.innerHTML;
+            document.body.innerHTML = printContents;
+            window.print();
+            document.body.innerHTML = originalContents;
+        }        
+    </script>
+</body>
+</html>

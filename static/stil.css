@@ -1,0 +1,65 @@
+#chatbox {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    min-height: 70px;
+    margin-top: 60px;
+} 
+
+#userInput {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    margin-top: 60px;
+    display: flex; 
+}
+.yazdirButonu {
+
+    margin:10px;
+    padding:20px;
+    text-align: center;
+
+  }
+
+.userText {
+    color: white;
+    font-family: monospace;
+    font-size: 16px;
+    text-align: right !important;
+    line-height: 30px;
+    margin: 10px;
+}
+
+.userText span {
+    background-color: #EB6440;
+    padding: 8px;
+    border-radius: 3px;
+}
+.botImg {
+    
+    height: 35px;
+    float: left;
+    padding-bottom: 5px;
+    padding-right: 1px;
+}
+.userImg {
+    
+    height: 35px;
+    float: right;
+    padding-bottom: 5px;
+    padding-left: 1px;
+}
+.botText {
+    color: white;
+    font-family: monospace;
+    font-size: 16px;
+    text-align: left;
+    line-height: 30px;
+    margin: 10px;
+}
+
+.botText span {
+    background-color: #497174;
+    padding: 8px;
+    border-radius: 3px;
+}

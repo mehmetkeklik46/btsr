@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stil.css')}}" />
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Sohbet Robotu</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Bilgisayar Bilimi sohbet Robotu (BBSR)</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Anasayfa <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Hakkında</a>
+                </li>
+        </div>
+    </nav>
+    <br><br><br><br>
+    <main role="main" class="container">
+        <div class="jumbotron">
+            <h3>Bilgisayar Bilimi Sohbet Robotu (BBSR)</h3>
+            <p class="lead"><b>Hakkında: </b>Bu sohbet robotu Kahramanmaraş Fen Bilimleri Enstitüsü Bilişim Sistemleri Alanı öğrencisi <b>Mehmet Keklik</b> tarafından <b>Doç.Dr. FETHULLAH GÖÇER</b> danışmanlığında yüksek lisans tezi kapsamında hazırlanmıştır.
+                Sohbet robotunun amacı Ortaöğretim Bilgisayar Bilimi Dersine ilişkin öğrenci sorularına yanıt vermek ve öğrenmeyi desteklemektir.
+            </p>
+            <hr>
+            <p class="lead"><i>Merhaba. Ben seninle sohbet etmek için geliştirilmiş bir sohbet robotuyum.</i></p>
+            <form>
+                <div id="chatbox">
+                </div>
+                <div id="userInput" class="row">
+                    <div class="col-md-10">
+                        <input id="text" type="text" name="msg" placeholder="Bana bişeyler yaz...">
+                        <button type="submit" id="send" class="btn btn-dark">Gönder</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script>
+        $(document).ready(function () {
+            $("form").on("submit", function (event) {
+                var rawText = $("#text").val();
+                var userHtml = '<p class="userText"><span><span><img class="botImg" src="./static/img/user2.jpg">    <b>SİZ</b>: <i>' + rawText + "</i></span></p>";
+                $("#text").val("");
+                $("#chatbox").append(userHtml);
+                document.getElementById("userInput").scrollIntoView({
+                    block: "start",
+                    behavior: "smooth",
+                });
+                $.ajax({
+                    data: {
+                        msg: rawText,
+                    },
+                    type: "POST",
+                    url: "/get",
+                }).done(function (data) {
+                    var botHtml = '<p class="botText"><span><img class="botImg" src="./static/img/bot.jpg">    <b>BBSR</b>: <i>' + data + "</i></span></p>";
+                    $("#chatbox").append($.parseHTML(botHtml));
+                    document.getElementById("userInput").scrollIntoView({
+                        block: "start",
+                        behavior: "smooth",
+                    });
+                });
+                event.preventDefault();
+            });
+        });
+    </script>
+</body>
+
+</html>

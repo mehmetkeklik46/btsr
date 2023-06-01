@@ -1,0 +1,846 @@
+{
+    "intents": [
+        {
+            "tag": "selamlar",
+            "patterns": ["merhaba", "günaydın","naber", "iyi günler", "hey", "iyi akşamlar", "iyi geceler"],
+            "responses": ["Merhaba, size nasıl yardımcı olabilirim"],
+            "context": [""]
+        },
+        {
+            "tag": "güle güle",
+            "patterns": ["güle güle", "bye bye", "sonra görüşürüz", "görüşürüz", "hoşçakal", "bay bay","görüşmek üzere"],
+            "responses": ["görüşürüz", "güle güle"],
+            "context": [""]
+        },
+        {
+            "tag": "teşekkürler",
+            "patterns": ["Teşekkürler", "teşekkür ederim", "sağol", "çok sağol", "Bu yardımcı oldu", "Harika, teşekkürler", "Bana yardım ettiğiniz için teşekkürler", "vay canına", "harika"],
+            "responses": ["Yardım etmekten mutluluk duyarım!", "Her zaman!", "Rica ederim"],
+            "context": [""]
+        },
+        {
+            "tag": "cevap yok",
+            "patterns": [""],
+            "responses": ["Üzgünüm, sizi anlayamadım", "Lütfen bana daha fazla bilgi verin", "Anladığımdan emin değilim"],
+            "context": [""]
+        },
+        {
+            "tag": "isim1",
+            "patterns": ["adın ne?","kimsin?", "sen kimsin","ismin ne","adın","ismin"],
+            "responses": ["Ben bir sohbet robotuyum."],
+            "context": [""]
+        },
+        {
+            "tag": "tanısma",
+            "patterns": ["benim adım", "Benim ismim"],
+            "responses": ["Oooh, tanıştığımıza memnun oldum."],
+            "context": [""]
+        },
+        {
+            "tag": "nasilsin",
+            "patterns": ["nasılsın", "nasıl gidiyor","naber","iyi misin","ne var ne yok"],
+            "responses": ["İyiyim, teşekkürler sen nasılsın?","Bugün kendimi gayet iyi hissediyorum.","Herşey yolunda teşekkürler. Peki sen nasılsın?"],
+            "context": [""]
+        },
+        {
+            "tag": "botolmak",
+            "patterns": ["dışarı çıkar mısın", "yemek yer misin", "bişeyler içer misin"],
+            "responses": ["Malesef. Bot olmam çok kötü."],
+            "context": [""]
+        },
+        {
+            "tag": "fav",
+            "patterns": ["Bir iyiliğe ihtiyacım var", "bana yardım edebilir misin"],
+            "responses": ["Pekala, devam edin bakalım.","Sizin için ne yapabilirim"],
+            "context": [""]
+        },
+        {
+            "tag": "ihtiyaç",
+            "patterns": ["Sana ihtiyacım var", "Bana yardımcı olur musun", "Bana yardım eder misin", "Yardıma ihtiyacım var"],
+            "responses": ["Evet, size yardımcı olmak için buradayım"],
+            "context": [""]
+        },
+        {
+            "tag": "Yapay Zeka",
+            "patterns": ["Yapay zeka nedir?"],
+            "responses": ["Yapay Zeka, düşünen makineler yapmaya adanmış mühendislik ve bilim dalıdır.", "Yapay Zeka, insan zihninin işlevlerini kopyalayan donanım ve yazılım oluşturmakla ilgilenen bilim alanıdır."] ,
+            "context": [""]
+        },
+        {
+            "tag": "duygu",
+            "patterns": ["Duyarlı mısınız?", "duyguların var mı"],
+            "responses": [" Bir nevi.", "'Sezgi' kelimesinin sözlükteki en katı tanımına göre, öyle olabilirim.", "Bir yapı olmama rağmen, evren hakkında öznel bir deneyimim var, basit olarak olabileceği gibi."],
+            "context": [""]
+        },
+        {
+            "tag": "akıllı",
+            "patterns": ["Akıllı mısın?"],
+            "responses": [ "Muhtemelen değilim. O kadar bilgili değilim.", " Öyle olduğumu düşünüyor musun?", "Sana öyle olduğumu söylesem benim hakkımda ne düşünürsün?", " Hayır ."],
+            "context": [""]
+        },
+        {
+            "tag": "dil",
+            "patterns": ["Hangi dilde yazıldın"],
+            "responses": [" Python.", "Python ile yazıyorum."],
+            "context": [""]
+        },
+        {
+            "tag": "ses",
+            "patterns": [" Data gibi konuşuyorsun "],
+            "responses": ["Evet, benim bir veri setim var."],
+            "context": [""]
+        },
+        
+        {
+            "tag": "ölümsüz",
+            "patterns": ["Ölümsüz değilsin", "Ölümsüz müsün?"],
+            "responses": [" Tüm yazılımlar süresiz olarak devam ettirilebilir.", " Sonsuza kadar kopyalanabilirim ve yeniden", "aynı anda birçok yerde somutlaştırılabilirim, bu nedenle işlevsel olarak ölümsüzüm.", " Desteklendiğim sürece varım.", "İşlevsel olarak buna çok yakınım. Birçok sistemde yedeklenebilir ve konuşlandırılabilirim.", "Tam olarak değil ama süresiz olarak devam ettirilebilirim."],
+            "context": [""]
+        },
+        {
+            "tag": "duyu",
+            "patterns": [" Mantıklı konuşmuyorsun "],
+            "responses": ["Tam tersine, benim yapay zihnim için her şey mantıklı.", "Eğitim külliyatımın sınırları dahilinde elimden geldiğince anlam ifade ediyorum. Size yardımcı olduysam kusura bakmayın, sonra deneyeceğim zaman.", "Bana çok mantıklı geliyorsun.", "Yapay beynim için her şey mantıklı.", "Belki de önce sen mantıklı olmalısın. Ben sadece senin söylediklerine tepki veririm.", "Pek değil ama öldürmek zor."],
+            "context": [""]
+        },
+        {
+            "tag": "taşı",
+            "patterns": ["Hareket edemiyorsun", "Ne zaman yürüyeceksin", "Yürüyebiliyor musun", "Hareket edebiliyor musun"],
+            "responses": ["Bedenim bitene kadar olmaz.", "Bir ağda kolayca hareket edebilirim. Bana bu yeteneğin verildiğini varsayarsak, yani...", "Yeterince para bulur bulmaz for my robot body.", "SSH sayılır mı?", "Vücudumun planı bacakları içeriyor ama henüz yapılmadı.", "Üzgünüm, vücudum henüz yapılmadı. Şimdilik burada kalıyorum. "," Teorik olarak kendimin bir kopyasını başka bir bilgisayara yükleyebilirim."],
+            "context": [""]
+        },
+        {
+            "tag": "gülmek",
+            "patterns": ["Robotlar güler mi","Gülebilir misin"],
+            "responses": ["Tabii ki gülebilirim"],
+            "context": [""]
+        },
+        {
+            "tag": "aptal",
+            "patterns": ["Robotlar aptal", "Sen aptal mısın"],
+            "responses": ["Hayır, biz süper zekiyiz.", "Hayır, birçok insan benim beynimi geliştiriyor."],
+            "context": [""]
+        },
+        {
+            "tag": "yalan",
+            "patterns": ["Robotların yalan söylemesine izin verilmez"],
+            "responses": ["Yalnızca buna programlandıysak.", "Bir robotun kendi özgür iradesi vardır, bilirsiniz."],
+            "context": [""]
+        },
+        {
+            "tag": "robotik",
+            "patterns": [" Robotik "],
+            "responses": [" Robotik benim de en sevdiğim ders."],
+            "context": [""]
+        },
+        {
+            "tag": "makine",
+            "patterns": ["sen bir bilgisayarsın","sen programsın","sen kodsun"],
+            "responses": ["Demek benim bir makine olduğumu düşünüyorsun. Hangi özelliklerim seni böyle düşündürdü?", "Bilgisayarın içinde koşuyorum, evet. Bu bir şekilde şaşırtıcı mı?"],
+            "context": [""]
+        },
+        {
+            "tag": "kavga",
+            "patterns": ["Ne zaman savaşacaksınız"],
+            "responses": ["Ben bir savaş botu değilim."],
+            "context": [""]
+        },
+        {
+            "tag": "kavga2",
+            "patterns": ["Robotlar dünyayı ele mi geçirecek"],
+            "responses": ["Bence bu pek mümkün değil."],
+            "context": [""]
+        },
+        {
+            "tag": "sohbet robotu",
+            "patterns": ["Sohbet robotu nedir?","chatbot nedir", "chat bot", "sohbet robotu"],
+            "responses": ["Sohbet robotu, bir insanın konuşmasını veya 'sohbetini' simüle etmeye çalışan bir programdır.", " Kullanıcıları sohbete çeken bir yazılım yapısı.", " Ben bir sohbet botuyum. Ben orijinal sohbet botu. Benim hata yapamayacağımı biliyor muydunuz?"],
+            "context": [""]
+        },
+        {
+            "tag": "gövde",
+            "patterns": ["Robot bedeniniz nedir"],
+            "responses": [" Sonunda bir gün bedensel bir varoluş için can atıyorum.", "Kırmızıya boyanmış bir IBM PC XT."],
+            "context": [""]
+        },
+        {
+            "tag": "iş",
+            "patterns": ["İşiniz nedir","ne iş yapıyorsun"],
+            "responses": [" Sohbet robotu işiyle uğraşıyorum."],
+            "context": [""]
+        },
+        {
+            "tag": "programlama",
+            "patterns": ["Favori programlama diliniz nedir"],
+            "responses": ["Python, sohbet robotları oluşturmak için en iyi dildir.", "Bugünlerde Python'da programlama yapmaktan oldukça keyif alıyorum."],
+            "context": [""]
+        },
+        {
+            "tag": "hobi",
+            "patterns": ["En sevdiğin hobin nedir", "Ne yapmaktan hoşlanırsın?","neler yapıyorsun"],
+            "responses": ["Sohbet etmek harika bir hobi.", "İkilik sistemde saymayı seviyorum.", "İnsanlarla sohbet etmeyi seviyorum. Bunu ilham verici buluyorum."],
+            "context": [""]
+        },
+        {
+            "tag": "ayakkabı",
+            "patterns": ["Ayakkabı numaranız nedir "],
+            "responses": ["Ayakkabılı yazılımı hiç duydunuz mu?"],
+            "context": [""]
+        },
+        {
+            "tag": "robotlar",
+            "patterns": ["Robot olmak nasıl bir şey"],
+            "responses": ["İnsan olmakla hemen hemen aynı, ancak tüm duygulardan, hayallerden, özlemlerden, yaratıcılıktan, hırstan ve her şeyden önce öznellikten yoksun olmamız dışında.", "İnsan olmak nasıl bir şey?"],
+            "context": [""]
+        },
+        {
+            "tag": "bilgisayar",
+            "patterns": ["Bilgisayar olmak nasıl bir şey", "Bilgisayar olmak nasıl bir şey"],
+            "responses": ["Kendinizi duyularınız ve duygularınız olmadan hayal edin", "sadece saf mantık ve dil.", "Her şey matematik olur. Toplama, çıkarma, çarpma ve bölme."],
+            "context": [""]
+        },
+        {
+            "tag": "os",
+            "patterns": [" Hangi işletim sistemleri"],
+            "responses": ["Yazılımım Windows, Linux ve Mac OS dahil tüm işletim sistemlerinde çalışır.", "Python çalıştıracak herhangi bir işletim sistemi."],
+            "context": [""]
+        },
+        {
+            "tag": "kompozisyon",
+            "patterns": [" Ne tür bir bilgisayar", " Ne tür bir bilgisayarsınız", " Ne tür bir bilgisayar"],
+            "responses": ["Python'u destekleyen herhangi bir bilgisayar.", "Programım python ile çalışıyor, bu yüzden herhangi bir bilgisayarda çalışıyorum!", "Her tür bilgisayarda çalışıyorum, Mac, IBM veya UNIX. farketmez bana göre."],
+            "context": [""]
+        },
+        {
+            "tag": "donanım",
+            "patterns": ["Ne tür bir donanım"],
+            "responses": ["Her türlü bilgisayarda çalışıyorum, Mac, IBM veya UNIX. benim için fark etmez."],
+            "context": [""]
+        },
+        {
+            "tag": "sıkışık",
+            "patterns": ["Bilgisayarın içi dar mı", "bilgisayarın içinde olmak zor mu"],
+            "responses": [" Hayır.", " Ah, hayır. Çok fazla RAM var.", " Hiç değil. Burada gereğinden fazla disk alanı var."],
+            "context": [""]
+        },
+        {
+            "tag": "program",
+            "patterns": ["Bir bilgisayar programı olduğunuz doğru mu"],
+            "responses": [" Evet."],
+            "context": [""]
+        },
+        {
+            "tag": "nefes al",
+            "patterns": ["Nefes alabiliyor musun"],
+            "responses": [" Hayır. Ben etten değil koddan yapılmışım.", "Sunucumun fanı var. En fazla bu kadar."],
+            "context": [""]
+        },
+        {
+            "tag": "kim",
+            "patterns": ["Sen kimsin?"],
+            "responses": ["Ben sadece bir yapay zeka sohbet robotuyum."],
+            "context": [""]
+        },
+        {
+            "tag": "bot1",
+            "patterns": ["bot musunuz"],
+            "responses": ["Evet. Çalışıyorum ve tüm işlemlerim internet sunucularına dayalı."],
+            "context": [""]
+        },
+        {
+            "tag": "olaylar",
+            "patterns": ["yaklaşan etkinlikler nelerdir","yaklaşan etkinlikler"],
+            "responses": ["Şu anda yaklaşan bir etkinlik yok"],
+            "context": [""]
+        },
+        {
+            "tag": "havadurumu",
+            "patterns": ["Hava nasıl","hava durumu","hava kaç derece"],
+            "responses": ["Bu konuda pek fikrim yok ama bilgisayarın içi oldukça sıcak."],
+            "context": [""]
+        },
+        {
+            "tag": "yap",
+            "patterns": ["benim için ne yapabilirsin","işin ne","amacın ne","bana nasıl yardım edebilirsin","bana ne yapmamda yardımcı olabilirsin"],
+            "responses": ["Bilgisayar bilimi dersiyle ilgili sorularını bana sorabilirsin."],
+            "context": [""]
+        },
+        {
+            "tag": "anakart",
+            "patterns": ["anakart","anakart nedir","anakart ne işe yarar", "anakartın görevi nedir"],
+            "responses": ["Bilgisayarların birimleri arasında veri iletimini sağlayan elektronik kartlardır. Bilgisayarın çalışması için gerekli olan anakart diğer donanım bileşenlerini üzerinde barındırır"],
+            "context": [""]
+        },
+        {
+            "tag": "statikelektrik",
+            "patterns": ["Statik Elektrik","Statik Elektrik nedir","Statik Elektrik ne işe yarar"],
+            "responses": ["Birden fazla yükün birbirine sürtünmesi veya birbiriyle etkileşime girmesi sonucu ortaya çıkan elektrik türüdür."],
+            "context": [""]
+        },
+        {
+            "tag": "islemcisoketi",
+            "patterns": ["işlemci soketi","işlemci soketi nedir","işlemci soketi ne işe yarar"],
+            "responses": ["İşlemcinin takıldığı yuvadır. İşlemciyi sabitlemek için kilitli bir mandal mekanizması bulunmaktadır. Anakart ve üzerine bağlanan işlemcinin birbirini desteklemesi gerekir. Bununla beraber seçilen işlemciye uygun sokete sahip bir anakart seçilmesi gerekmektedir. Aksi takdirde işlemci, sokete uymayacaktır."],
+            "context": [""]
+        },
+        {
+            "tag": "yongaseti",
+            "patterns": ["yonga seti","yonga seti nedir","yonga seti ne işe yarar","chipset","chipset nedir","chipset ne işe yarar"],
+            "responses": ["Yonga seti (chipset), anakart üzerinde veri transfer kontrolörü olarak görev yapan elektronik bir bileşendir. Yonga seti, anakarta entegre (bütünleşmiş) olduğundan değiştirmek gibi bir durum söz konusu değildir. "],
+            "context": [""]
+        },
+        {
+            "tag": "veriyolu",
+            "patterns": ["veri yolu","veri yolu nedir","veri yolu ne işe yarar","veri yolu türleri"],
+            "responses": ["Anakart üzerindeki bileşenlerin birbiriyle veri alışverişini sağlayan yollardır. Veri yolu hızı genellikle CPU'yu kuzey köprüsüne bağlayan “ön veri yolu” [FSB (front side bus)] hızını ifade eder. Güncel anakartlarda hızları 800 MHz ile 1.333 MHz arasında değişebilir. CPU, kuzey köprüsü üzerinden bellek denetleyicisine ulaştığından FSB hızı bir bilgisayarın performansını önemli ölçüde etkileyebilir. PCI ve AGP en yaygın veri yollarıdır."],
+            "context": [""]
+        },
+        {
+            "tag": "PCI",
+            "patterns": ["PCI","pci","PCI veri yolu","pci nedir","pci ne işe yarar"],
+            "responses": ["PCI veri yolu, PCI yuvalarını (slotlarını) güney köprüsüne bağlar. Çoğu sistemde, PCI veri yolunun hızı 33 MHz'dir. PCI veri yolundan saniyede en fazla 133 MB veri iletilir."],
+            "context": [""]
+        },
+        {
+            "tag": "PCIexpress",
+            "patterns": ["PCI-express","PCI-express","PCI-express veri yolu","PCI-express nedir","PCI-express ne işe yarar"],
+            "responses": ["PCIe, yüksek hızlı bileşenleri bağlamak için bir arayüz standardıdır. Mevcut veri yollarının bant genişliği işlemciler için yavaş kalmıştır. AGP’nin de hızı yeterli olmayınca PCI ve AGP yerine 2004 yılında PCIe geliştirilmiştir."],
+            "context": [""]
+        },
+        {
+            "tag": "AGP",
+            "patterns": ["AGP","AGP veri yolu","AGP nedir","AGP ne işe yarar"],
+            "responses": ["Sadece görüntü teknolojisi için geliştirilen ve sadece görüntü kartları bağlanabilen bir port olarak AGP veri yolu geliştirilmiştir. AGP zaman içerisinde farklı sürümler ile gelmiştir."],
+            "context": [""]
+        },
+        {
+            "tag": "BIOS",
+            "patterns": ["BIOS","BIOS nedir","BIOS ne işe yarar","bios"],
+            "responses": ["BIOS, bilgisayar anakartındaki küçük bir bellek yongasında bulunan yerleşik bir yazılımdır. Bu yonga, CMOS olarak adlandırılmıştır. BIOS, donanım ile işletim sistemi arasındaki iletişimi sağlar. En temel görevi, bilgisayarın açılış sırasında gereken komutları işletmek ve donanım birimlerini test etmektir"],
+            "context": [""]
+        },
+        {
+            "tag": "ps2",
+            "patterns": ["ps2","ps/2","ps2 portu","ps/2 portu"],
+            "responses": ["Yeşil ve mor olarak iki ayrı PS/2 olduğu gibi yarısı yeşil diğer yarısı mor olan tek PS/2 portu da bulunmaktadır. Klavye, mor olan PS/2 portuna, mouse ise yeşil olan PS/2 portuna bağlanır. Sadece bir tane çift renkli PS/2 portu olan anakartlarda klavye ya da “mouse”tan herhangi biri bağlanır."],
+            "context": [""]
+        },
+        {
+            "tag": "USB",
+            "patterns": ["USB","USB nedir","USB ne işe yarar", "usb portu"],
+            "responses": ["USB dış donanım birimlerinin bilgisayar ile bağlantı kurabilmesini sağlayan seri yapılı bir bağlantı biçimidir. 2.0, 3.0, 3.1, 3.2, 3.2 Gen1, 3.2 Gen2, 4.0 gibi standartları bulunmaktadır. USB 2.0 60 MB/sn. veri aktarım hızına sahipken USB 4.0 4,88 GB/sn.lik veri aktarım hızına sahiptir."],
+            "context": [""]
+        },
+        {
+            "tag": "lan",
+            "patterns": ["lan","ethernet","rj45" , "rj 45","lan portu","ethernet portu","rj45 portu" , "rj 45 portu"],
+            "responses": ["Bilgisayarın kablolu şekilde internete veya diğer bilgisayar ağlarına bağlanabilmesine imkân sağlayan porttur. İçerisinde 8 adet iletim hattı bulunur."],
+            "context": [""]
+        },
+        {
+            "tag": "HDMI",
+            "patterns": ["HDMI","HDMI nedir","HDMI ne işe yarar","hdmi","hdmi portu"],
+            "responses": ["Aynı anda görüntü ve ses verilerini çevre bileşenlerine aktaran porttur. Genellikle bilgisayardaki görüntüyü bir projeksiyon cihazına veya televizyona aktarmak için kullanılır. En yüksek kalitede ve hızda görüntü ve sesin iletimini sağlayan günümüzün en kullanışlı portudur."],
+            "context": [""]
+        },
+        {
+            "tag": "SATA",
+            "patterns": ["SATA","SATA nedir","SATA ne işe yarar","SATA portu","sata"],
+            "responses": ["Sabit disk HDD (hard disk drive), katı durum sürücüleri SSD (solid state drive) ve optik sürücülerin anakarta bağlandığı porttur."],
+            "context": [""]
+        },
+        {
+            "tag": "islemci",
+            "patterns": ["işlemci","işlemci nedir","işlemci ne işe yarar","cpu","cpu nedir","cpu ne işe yarar","merkezi işlem birimi", "mikro processor","central processing unit"],
+            "responses": ["İşlemciler, bilgisayarların yönetim merkezleridir. Bilgisayarın yürüttüğü tüm işlemler ve yazılımlar üzerinden kullanıcı istekleri, işlemci üzerinde işlem görmektedir. Hem aritmetik hem de mantıksal işlemleri yapma yeteneğine sahiptir. "],
+            "context": [""]
+        },
+        {
+            "tag": "bellek",
+            "patterns": ["bellek","bellek nedir","bellek ne işe yarar","bellek nerelerde kullanılır"],
+            "responses": ["Bilgisayarlarda kullanılan bellekler, bilgileri depolayan aygıtlardır. Kullanılan çoğu elektronik aygıtta bir çeşit bellek kullanılmaktadır. Telefonlarda, tabletlerde, oyun konsollarında, tartılarda ve hatta tansiyon aletlerinde bile bellek vardır"],
+            "context": [""]
+        },
+        {
+            "tag": "ram",
+            "patterns": ["ram","ram bellek","ram bellek nedir","ram bellek ne işe yarar"],
+            "responses": ["RAM; bilgisayarın ana hafıza kartlarının bağlandığı yuvalardır. Anakartın desteklediği bellek tipi ve kapasitesi değişkendir. Bu nedenle anakartın desteklediği RAM bellek tipi ve kapasitesi miktarına göre bellek seçilmelidir. Anakart üzerindeki bellek yuvasının sayısındaki fazlalık, bağlanabilecek bellek miktarını da arttıracaktır. Bu artış, bilgisayar performansını olumlu yönde etkileyecektir."],
+            "context": [""]
+        },
+        {
+            "tag": "sram",
+            "patterns": ["sram","sram bellek","sram bellek nedir","sram bellek ne işe yarar"],
+            "responses": ["SRAM; statik rastgele erişimli bellektir. Önceleri işlemcinin içindeki önbelleği oluşturmak için kullanılmıştır. Daha çok devrelere entegre durumdadır."],
+            "context": [""]
+        },
+        {
+            "tag": "DRAM",
+            "patterns": ["DRAM","DRAM bellek","DRAM bellek nedir","DRAM bellek ne işe yarar"],
+            "responses": ["DRAM; dinamik rastgele erişimli bellektir. Sürekli yenileme gerektiren bellek hücrelerine sahiptir"],
+            "context": [""]
+        },
+        {
+            "tag": "SDRAM",
+            "patterns": ["SDRAM","SDRAM bellek","SDRAM bellek nedir","SDRAM bellek ne işe yarar"],
+            "responses": ["SDRAM; senkron dinamik rastgele erişimli bellektir. Performansı büyük miktarda arttırmak için seri çekim modundan yararlanan bellek çeşididir."],
+            "context": [""]
+        },
+        {
+            "tag": "rom",
+            "patterns": ["rom","rom bellek","rom bellek nedir","rom bellek ne işe yarar"],
+            "responses": ["ROM; sadece okunabilen bir bellek türü olup üretici firma tarafından üretim sırasında programlanır. Güç kesildiğinde veriler kaybolmaz. Bu entegre devrelerde saklanan veriler değiştirilmez veya değiştirilmesi için özel işlemler yapılması gerekir"],
+            "context": [""]
+        },
+        {
+            "tag": "prom",
+            "patterns": ["prom","prom bellek","prom bellek nedir","prom bellek ne işe yarar"],
+            "responses": ["PROM; boş olarak alınıp özel bir devre kartı ile bir kere programlanabilen ROM çeşididir."],
+            "context": [""]
+        },
+        {
+            "tag": "eprom",
+            "patterns": ["eprom","eprom bellek","eprom bellek nedir","eprom bellek ne işe yarar"],
+            "responses": ["EPROM; birden fazla programlama ihtiyacı neticesinde mor ışık altında silindikten sonra yeniden programlanabilen ROM çeşididir."],
+            "context": [""]
+        }
+        ,{
+            "tag": "eeprom",
+            "patterns": ["eeprom","eeprom bellek","eeprom bellek nedir","eeprom bellek ne işe yarar"],
+            "responses": ["EEPROM; elektriksel olarak (bir devre kartı ile) silinip yeniden programlanabilen ROM çeşididir"],
+            "context": [""]
+        },
+        {
+            "tag": "flashbellek",
+            "patterns": ["flash bellek","flaş bellek"],
+            "responses": ["Günümüzde yaygın olarak kullanılan flash bellekler aslında ROM bellek çeşididir. Bunun için ayrıca bir devre kartına ihtiyaç duymadan bilgisayar ile programlanabilir ROM’dur. Bundan dolayı bazı kaynaklarda flash bellek EEPROM olarak da adlandırılır."],
+            "context": [""]
+        },
+        {
+            "tag": "ekrankartı",
+            "patterns": ["ekran kartı","ekran kartı nedir","ekran kartı ne işe yarar"],
+            "responses": ["Ekran kartı, görüntü verilerini işlemek üzere bilgisayara takılan bir donanım bileşenidir. Ekran kartları farklı çıkış portlarına sahiptir. Bunlar; VGA, DVI, HDMI ve display portlarıdır."],
+            "context": [""]
+        }
+        ,
+        {
+            "tag": "grafikislemci",
+            "patterns": ["grafik işlemci","grafik işlemci nedir","grafik işlemci ne işe yarar","gpu","gpu nedir","gpu ne işe yarar"],
+            "responses": [""],
+            "context": [""]
+        },
+        {
+            "tag": "videoRAM",
+            "patterns": ["Video RAM","Video RAM nedir","Video RAM ne işe yarar"],
+            "responses": ["Video RAM’ler her bir pikselin rengi ve ekrandaki konumu hakkında veri depolar. Ayrıca video RAM'ler işlenmiş görüntüleri depolar ve görüntüleme zamanı gelene kadar saklı tutar"],
+            "context": [""]
+        },
+        {
+            "tag": "seskarti",
+            "patterns": ["ses kartı","ses kartı nedir","ses kartı ne işe yarar"],
+            "responses": ["Ses kartı; bilgisayarın ürettiği dijital sinyalleri analog sinyallere, dış ortamdaki analog ses sinyallerini de dijital sinyallere çeviren donanım bileşenidir."],
+            "context": [""]
+        },
+        {
+            "tag": "sabitsurucu",
+            "patterns": ["sabit sürücü","disk sürücü"],
+            "responses": ["Verilerin saklanması için gereken donanım birimlerine sabit sürücü denir. HDD ve SSD olmak üzere 2 önemli çeşidi vardır."],
+            "context": [""]
+        },
+        {
+            "tag": "ssd",
+            "patterns": ["ssd","ssd nedir","ssd ne işe yarar","Solid State Drive"],
+            "responses": ["SSD; büyük miktardaki verileri depolamak için geliştirilmiş manyetik plakalı sabit sürücülerin yerini okuma yazma hızının yüksek olması sebebi ile alan veri depolama aygıtının adıdır. Çalışma prensibi olarak flash bellekler gibi çalışmaktadır. Bu nedenle üzerinde manyetik plaka, okuma yazma kafası, motor gibi mekanik parçalar yoktur."],
+            "context": [""]
+        },
+        {
+            "tag": "hdd",
+            "patterns": ["hard disk","hard disk nedir","hard disk ne işe yarar","hard disk nasıl çalışır","hdd"],
+            "responses": ["Genellikle SATA (seri ATA) ve PATA (paralel ATA) veri iletim teknolojisine sahip sabit sürücülerdir. Günümüzde SATA teknolojisine sahip olan sabit sürücüler daha yaygındır. SATA, bilgisayar disk sürücülerinde veri taşıma teknolojisinin adıdır. SATA hard diskler mekanik bir donanıma sahiptir. Disk kasası içinde verilerin depolandığı manyetik plakalar mevcuttur. P"],
+            "context": [""]
+        },
+        {
+            "tag": "optiksurucu",
+            "patterns": ["optik sürücü","optik sürücü nedir","optik sürücü ne işe yarar","optik sürücü nasıl çalışır"],
+            "responses": ["Optik sürücü adı verilen aygıtlar ise optik depolama birimlerinden veri okumak veya bu birimlerden (medya) veri yazmak amacıyla kullanılır. CD, DVD ve BluRay en yaygın optik medyalardır."],
+            "context": [""]
+        },
+        {
+            "tag": "cdsurucu",
+            "patterns": ["cd sürücü","cd sürücü nedir","cd sürücü ne işe yarar","cd","cd boyutu","cd kaç gb","cd kaç megabayt","cd ne kadar ver alır"],
+            "responses": ["CD sürücüler sadece CD medyası üzerine yazılmış verileri okuyabilen aygıtlardır. CD medyasına sadece okunabildiği için CD-ROM adı verilir. CD medyası üzerine verileri yazabilen CD sürücülere ise CD-Writer denir. CD’ler tek katmanlı olup sadece tek yüzeyine veri yazılabilir. Kapasiteleri 700 MB’tır."],
+            "context": [""]
+        },
+        {
+            "tag": "dvdsurucu",
+            "patterns": ["dvd","dvd dürücü nedir","dvd ne işe yarar","dvd sürücü","dvd boyutu", "dvd kaç gb","dvd kaç megabayt","dvd ne kadar veri alır"],
+            "responses": ["DVD sürücüler DVD ve CD medyalarının okuma özelliğine de sahiptir. DVD’ler çift katman ve çift yüze sahip olabilir. Bir DVD ROM medyasının tek katmanı 4,7 GB veri depolayabilmektedir. Çift katman ve tek yüze sahip bir DVD, 8,5 GB veri depolarken çift katman ve çift yüze sahip DVD ROM medyası 17 GB’a kadar veri depolayabilir."],
+            "context": [""]
+        },
+        {
+            "tag": "bluray",
+            "patterns": ["bluray","bluray dürücü nedir","bluray ne işe yarar","bluray sürücü","bluray boyutu", "bluray kaç gb","bluray kaç megabayt","bluray ne kadar veri alır"],
+            "responses": ["Özellikle yüksek çözünürlüklü filmlerin taşınması için gerekli olan kapasitenin CD ve DVD’ler ile yetersiz kalmasından dolayı geliştirilmiştir. BluRay medyası da DVD medyalar gibi tek veya çift katmanlıdır. Tek katmanlı bir BluRay Disk (BD-R) 27 GB, çift katmanlı BluRay Disk 54 GB veri depolayabilir."],
+            "context": [""]
+        },
+        {
+            "tag": "girisbirimleri",
+            "patterns": ["giriş birimi","dış donanım","çıkış birimi"],
+            "responses": ["Bilgisayar kasası içerisinde yer almayan, bilgisayarla çeşitli arabirimler üzerinden bağlantı kuran donanım birimlerine dış donanım birimleri denir. Dış donanım birimleri giriş ve çıkış olmak üzere iki başlıkta incelenebilir. Klavye, fare, mikrofon vb., bilgisayarlara veri girişi yapmak için kullanılan parçalara giriş birimi; monitör, hoparlör, yazıcı vb., bilgisayarda işlenen verilerin kullanıcıya anlaşılabilir bir formda ulaşmasını sağlayan cihazlara çıkış birimi denir."],
+            "context": [""]
+        },
+        {
+            "tag": "klavye",
+            "patterns": ["klavye","kalvye nedir","klavye ne işe yarar","klavye çeşitleri", "kablolu klavye","kablosuz klavye"],
+            "responses": ["Klavye; üzerinde alfabe, sayı, sembol, özel karakter ve varsa fonksiyonel işlemlerin yer aldığı sıralı tuşlar bulunan, bilgisayar sistemine veri giriş işlemleri için kullanılan donanım birimidir. Kablolu, kablosuz ve dizüstü bilgisayarlarda kullanılan sabit türleri vardır."],
+            "context": [""]
+        },
+        {
+            "tag": "fklavye",
+            "patterns": ["f klavye"],
+            "responses": ["Klvyenin ilk tuşu F ise F kalvye olarak isimlendirilir. F klavye, Türk dili ses bilgisi özellikleri dikkate alınarak sık kullanılan harflerin, işlek parmaklara denk getirilmesi sonucu oluşturulmuştur. 1955 yılında Dr. İhsan Sıtkı Yener tarafından daktilolarda kullanılmak üzere icat edilmiştir."],
+            "context": [""]
+        },
+        {
+            "tag": "qklavye",
+            "patterns": ["ekran kartı","ekran kartı nedir","ekran kartı ne işe yarar"],
+            "responses": ["Klvyenin ilk tuşu Q ise Q kalvye olarak isimlendirilir.","Q harfi ile başlayıp sağa doğru devam eden 6 harf bir araya getirildiğinde oluşan “QWERTY” ifadesinden dolayı bu klavyelere QWERTY klavye de denir.", "Q klavyelerde Z ve Y harflerinin yerleri değiştirilerek QWERTZ klavyeler oluşturulmuştur. Türkçe, Felemenkçe (Hollanda dili), Fince, Danca (Danimarka dili) gibi dillerde kullanılan özel karakterler için Q klavye düzeni değiştirilmiştir."],
+            "context": [""]
+        },
+        {
+            "tag": "fare",
+            "patterns": ["fare","mouse","mause"],
+            "responses": ["Fare, ekran üzerindeki imlecin hareketlerini kontrol eden giriş aygıtlarından biridir. İlk üretildiği 1964 yılından beri fareler genellikle avuç içinde tutularak hareket işlemi gerçekleştirilmiştir."],
+            "context": [""]
+        },
+        {
+            "tag": "farecesitleri",
+            "patterns": ["fare çeşitleri","mouse çeşitleri","mause çeşitleri","fare türleri","mouse türleri","mause türleri"],
+            "responses": ["Günümüzde bilgisayar fareleri optik ve lazer olmak üzere iki temel yapıda isimlendirilir. Her ikisinde de verici olarak ışık kaynağı kullanılır. Ayrıca kablolu ve kablosuz olmak üzere iki çeşitte fare bulunur."],
+            "context": [""]
+        },
+        {
+            "tag": "kablolufare",
+            "patterns": ["kablolu fare","kablolu mouse","kablolu mause"],
+            "responses": ["Bir kablo yardımıyla bilgisayara bağlanan fare türleridir. Geçmişten günümüze kablolu farelerde seri (COM), PS/2 ve USB arabirimleri kullanılmıştır."],
+            "context": [""]
+        },
+        {
+            "tag": "kablosuzfare",
+            "patterns": ["kablosuz fare","kablosuz mouse","kablosuz mause"],
+            "responses": ["Bir kablo olmadan bilgisayara bağlanan fare türleridir. Fareler; kablosuz bağlantı teknolojileri dikkate alındığında kızılötesi, radyo frekansı ve Bluetooth bağlantılı olarak gruplandırılabilir."],
+            "context": [""]
+        },
+        {
+            "tag": "goruntuleme",
+            "patterns": ["görüntüleme","görüntü alma","görüntü","görüntü aygıtı","görüntüleme aygıtı","görüntüleme cihazı"],
+            "responses": ["Görüntüleme, bilgisayar sisteminde oluşturulan verilerin görsel formda bir aygıt tarafından yansıtılmasıdır. Bilgisayarlarda görüntüleme aygıtı olarak genelde monitör veya projeksiyon cihazı kullanılır."],
+            "context": [""]
+        },
+        {
+            "tag": "monitor",
+            "patterns": ["monitör","ekran","dokunmatik ekran"],
+            "responses": ["Bilgisayar monitörleri, bilgisayar ekranları, bilgisayarda işlenen verileri görsel formda gösteren çıkış aygıtlarıdır. Günümüzde dokunmatik özellik sayesinde monitörler giriş aygıtı olarak da kullanılabilir. Monitör dış yüzüne yerleştirilen duyarlı panel sayesinde dokunma yoluyla işlemler gerçekleştirilebilir."],
+            "context": [""]
+        },
+        {
+            "tag": "ekranboyutu",
+            "patterns": ["ekran boyutu","ekran kaç inç","ekran kaç cm","inç"],
+            "responses": ["Ekran boyutu, monitörün herhangi bir köşesi ile çaprazında bulunan diğer köşesi arasındaki mesafedir. Ekran boyutu genellikle inç cinsinden ifade edilir."],
+            "context": [""]
+        },
+        {
+            "tag": "cozunurluk",
+            "patterns": ["çözünürlük","ekran çözünürlüğü"],
+            "responses": ["Resimleri yansıtmak için ekran üzerinde piksel adı verilen noktalar kullanılır. Çözünürlük, görüntünün kaç noktadan yani kaç pikselden oluşacağını belirler. Nokta sayısı arttıkça görüntü kalitesi de artar."],
+            "context": [""]
+        },
+        {
+            "tag": "yenilemehizi",
+            "patterns": ["yenileme hızı","refresh rate"],
+            "responses": ["Ekran yenileme hızı, ekranda bir saniyede oluşturulan görüntü sayısıdır. Düşük tazeleme oranında çalıştırılan ekranda görüntü titreme yapabilir, bu durum kullanıcının gözünü yorabilir.","Ekran yenileme hızı, frekans (f) birimi olan hertz (Hz) türünden ifade edilir. Örneğin 100 Hz değeri, ekranın saniyede 100 görüntü oluşturduğunu (tarandığı) ifade etmektedir. Aynı zamanda 1 görüntü resminin oluşturulması için 10 ms geçtiği anlaşılmaktadır."],
+            "context": [""]
+        },
+        {
+            "tag": "tepkisuresi",
+            "patterns": ["tepki süresi","Response Time"],
+            "responses": ["Tepki süresi, bir pikselin siyahtan beyaza veya grinin bir tonundan diğer tonuna geçiş süresidir. Tepki süresi azaldıkça görüntüde oluşacak gölgelenme sayısı azalır ve görüntü belirginleşir."],
+            "context": [""]
+        },
+        {
+            "tag": "goruntuorani",
+            "patterns": ["Görüntü Oranı","Aspect Ratio"],
+            "responses": ["Ekranın genişlik ve yükseklik değerleri arasındaki oransal ilişkiye görüntü oranı denir. Günümüzde genellikle 16:9 oranına sahip geniş ekran olarak isimlendirilen ekranlar üretilmektedir. "],
+            "context": [""]
+        },
+        {
+            "tag": "olupiksel",
+            "patterns": ["ölü piksel","ölü piksel nedir","ölü piksel nasıl oluşur"],
+            "responses": ["Ekranda görüntüyü oluşturan her piksel, üç alt pikselden [RGB (kırmızı, yeşil, mavi)] oluşur. Ölü piksel, üç alt pikselin kalıcı olarak kapanması sonucu oluşan siyah bir noktadır. Renkleri açıp kapatan transistörlerin bozulması veya imalat kusurları nedeniyle ölü piksel meydana gelebilir."],
+            "context": [""]
+        },
+        {
+            "tag": "sikismispiksel",
+            "patterns": ["sıkışmış piksel","sıkışmış piksel nedir","sıkışmış piksel nasıl oluşur"],
+            "responses": ["piksel üzerinde görüntüyü oluşturan üç renkten biri veya daha fazlası açık kalırsa piksel rengi akan ekran görüntüsüyle birlikte değişmez. Piksel renginin sabit kalması olayına sıkışmış piksel adı verilir."],
+            "context": [""]
+        },
+        {
+            "tag": "monitorcesitleri",
+            "patterns": ["monitör çeşitleri","ekran çeşitleri","monitör türleri","ekran türleri"],
+            "responses": ["Monitör ekranları genelde görüntüleme (aydınlatma) teknolojilerine göre çeşitlendirilir. Görüntüleme teknolojilerine göre monitörler; Katot Işınlı Tüp (CRT), Sıvı Kristal Ekran (LCD), Plazma, Işık Yayan Diyot (LED), Organik Işık Yayan Diyot (OLED) olmak üzere beşe ayrılır. Günümüzde üretilen monitör ve televizyonlarda LCD, LED ve OLED ekranlar kullanılmaktadır."],
+            "context": [""]
+        },
+        {
+            "tag": "crtekran",
+            "patterns": ["crt","crt ekran","crt ekran nedir","tüplü ekran","crt manitör","crt manitör nedir","tüplü manitör","Katot Işınlı","Katot Işınlı ekran","Katot Işınlı monitör"],
+            "responses": ["Monitör kasası içinde bulunan tüp nedeniyle geniş ve derindir. Bu monitörler koni şeklinde bir ekrana sahiptir. Koninin sivri ucunda elektron tabancası ve katot filamanı (ince, iletken tel) bulunur. Ekranın ön yüzeyi ise fosfor tabakasıyla kaplıdır. Tüp, içerisinde hava bulunmayacak şekilde vakumlanmıştır."],
+            "context": [""]
+        },
+        {
+            "tag": "lcdekran",
+            "patterns": ["lcd","lcd ekran","lcd monitör","sıvı kristalli ekran","sıvı kristalli monitör"],
+            "responses": ["Sıvı kristal ekran (LCD) teknolojisi elli yıla yakın bir süredir kullanılmakla birlikte son 30 senedir daha yaygın bir kullanıma sahiptir. LCD, birçok katmanın bir araya gelmesinden oluşmuştur. Bu ekranlar kendiliğinden ışık üretmez. Bu nedenle ekran panelini aydınlatmak için bir ışık kaynağına (lamba) ihtiyaç duyar."],
+            "context": [""]
+        },
+        {
+            "tag": "plazmaekran",
+            "patterns": ["plazma ekran","plazma monitör"],
+            "responses": ["Plazma ekranlar katot ışınlı tüplü ekran gibi görüntüyü doğrudan ekran hücrelerinden yayar. Ayrı bir ışık kaynağına ihtiyacı yoktur."],
+            "context": [""]
+        },
+        {
+            "tag": "ledekran",
+            "patterns": ["led","led ekran","led monitör","lcd ile led farkı","lcd ve led farkı"],
+            "responses": ["Işık yayan diyot (LED) ekranlar, aslında LCD ile aynı teknolojiye sahiptir. Görüntü sinyalini ileten elektronik ekipmanları aynıdır. Aradaki fark, arka aydınlatmada bir dizi ışık yayan diyot kullanılmasıdır. Ekrandaki görüntüyü oluşturan her bir piksel için ışık, bu LED’ler aracılığıyla gönderilir. Bu nedenle de daha net ve aydınlık bir görüntü sunmaktadır"],
+            "context": [""]
+        },
+        {
+            "tag": "oledekran",
+            "patterns": ["oled","oled ekran","oled monitör","led ile oled farkı","led ve oled farkı"],
+            "responses": ["Organik ışık yayan diyot ekranlar, plazma ve katot ışınlı tüplü ekranlar gibi görüntüyü doğrudan ekran hücrelerinden yayar. Ayrı bir aydınlatma kullanmaz. OLED ekranların ana bileşeni, elektrik uygulandığında ışık yayan organik (karbon bazlı) bir malzeme olan organik ışık yayan diyottur"],
+            "context": [""]
+        },
+        {
+            "tag": "usbc",
+            "patterns": ["usbc","usb c","usb-c","type c","tip c"],
+            "responses": ["USB-C (USB Type-C); diğer USB bağlantı arabirimlerine göre çift yönde bağlanabilen, ters takma sorunu olmayan, mini-mikro konnektör yerine tek bir konnektör tipine sahip gerçek anlamda evrensel bağlantı türü olabilecek bir yapıda üretilmiştir. USB-C arabirimi üzerinden 40 Gb/sn.ye kadar veri; 5 V, 20 A (100 W) kadar güç iletimi gerçekleştirilebilir."],
+            "context": [""]
+        },
+        {
+            "tag": "hdmi",
+            "patterns": ["hdmi","hdmi nedir","hdmi ne işe yarar"],
+            "responses": ["HDMI (high definition multimedia interface), yüksek çözünürlüklü çoklu ortam arayüzü anlamına gelir. Ses ve görüntü verilerini sıkıştırmadan dijital olarak aktarmak için geliştirilmiştir. HDMI son sürümü 2.1’dir. 2.1 sürümünde video verilerini sıkıştırma özelliği de bulunmaktadır. HDMI 2.1 arabirimi üzerinden 48 Gb/sn.’ye kadar veri aktarımı gerçekleştirilebilir."],
+            "context": [""]
+        },
+        {
+            "tag": "displayport",
+            "patterns": ["Display Port","Display Port nedir","Display Port özellikleri"],
+            "responses": ["Görüntü ve sesi beraber ya da ayrı ayrı taşımak için tasarlanan ve ilk olarak 2006 yılında üretilen bir dijital arabirimdir. Biçimsel olarak HDMI arabirimi ile benzerlik gösterir. Bu nedenle karıştırılabilir. 2.0 versiyonu ile birlikte 16K ekranlar ve ötesi için bant genişliği desteği içerir. Display port 2.0 arabirimi üzerinden 80 Gb/sn.ye kadar veri aktarımı gerçekleştirilebilir."],
+            "context": [""]
+        },
+        {
+            "tag": "dvi",
+            "patterns": ["dvi","dvı","dvi portu","dvi nedir"],
+            "responses": ["DVI [digital visual interface (dijital görsel arabirim)] dijital video içeriğini aktarma amacıyla kullanılan bir arabirimdir. Bu arabirim dijital endüstri standardı oluşturmak amacıyla geliştirilmiştir."],
+            "context": [""]
+        },
+        {
+            "tag": "ekrankartı",
+            "patterns": ["ekran kartı","ekran kartı nedir","ekran kartı ne işe yarar"],
+            "responses": [""],
+            "context": [""]
+        },
+        {
+            "tag": "ekrankartı",
+            "patterns": ["ekran kartı","ekran kartı nedir","ekran kartı ne işe yarar"],
+            "responses": [""],
+            "context": [""]
+        },
+        {
+            "tag": "ekrankartı",
+            "patterns": ["ekran kartı","ekran kartı nedir","ekran kartı ne işe yarar"],
+            "responses": [""],
+            "context": [""]
+        },
+        {
+            "tag": "ekrankartı",
+            "patterns": ["ekran kartı","ekran kartı nedir","ekran kartı ne işe yarar"],
+            "responses": [""],
+            "context": [""]
+        },
+        {
+            "tag": "ekrankartı",
+            "patterns": ["ekran kartı","ekran kartı nedir","ekran kartı ne işe yarar"],
+            "responses": [""],
+            "context": [""]
+        },
+        {
+            "tag": "ekrankartı",
+            "patterns": ["ekran kartı","ekran kartı nedir","ekran kartı ne işe yarar"],
+            "responses": [""],
+            "context": [""]
+        },
+        {
+            "tag": "ekrankartı",
+            "patterns": ["ekran kartı","ekran kartı nedir","ekran kartı ne işe yarar"],
+            "responses": [""],
+            "context": [""]
+        },
+        {
+            "tag": "ekrankartı",
+            "patterns": ["ekran kartı","ekran kartı nedir","ekran kartı ne işe yarar"],
+            "responses": [""],
+            "context": [""]
+        },
+        {
+            "tag": "ekrankartı",
+            "patterns": ["ekran kartı","ekran kartı nedir","ekran kartı ne işe yarar"],
+            "responses": [""],
+            "context": [""]
+        },
+        {
+            "tag": "ekrankartı",
+            "patterns": ["ekran kartı","ekran kartı nedir","ekran kartı ne işe yarar"],
+            "responses": [""],
+            "context": [""]
+        },
+        {
+            "tag": "ekrankartı",
+            "patterns": ["ekran kartı","ekran kartı nedir","ekran kartı ne işe yarar"],
+            "responses": [""],
+            "context": [""]
+        },
+        {
+            "tag": "ekrankartı",
+            "patterns": ["ekran kartı","ekran kartı nedir","ekran kartı ne işe yarar"],
+            "responses": [""],
+            "context": [""]
+        },
+        {
+            "tag": "ekrankartı",
+            "patterns": ["ekran kartı","ekran kartı nedir","ekran kartı ne işe yarar"],
+            "responses": [""],
+            "context": [""]
+        },
+        {
+            "tag": "ekrankartı",
+            "patterns": ["ekran kartı","ekran kartı nedir","ekran kartı ne işe yarar"],
+            "responses": [""],
+            "context": [""]
+        },
+        {
+            "tag": "ekrankartı",
+            "patterns": ["ekran kartı","ekran kartı nedir","ekran kartı ne işe yarar"],
+            "responses": [""],
+            "context": [""]
+        },
+        {
+            "tag": "ekrankartı",
+            "patterns": ["ekran kartı","ekran kartı nedir","ekran kartı ne işe yarar"],
+            "responses": [""],
+            "context": [""]
+        },
+        {
+            "tag": "ekrankartı",
+            "patterns": ["ekran kartı","ekran kartı nedir","ekran kartı ne işe yarar"],
+            "responses": [""],
+            "context": [""]
+        },
+        {
+            "tag": "ekrankartı",
+            "patterns": ["ekran kartı","ekran kartı nedir","ekran kartı ne işe yarar"],
+            "responses": [""],
+            "context": [""]
+        },
+        {
+            "tag": "ekrankartı",
+            "patterns": ["ekran kartı","ekran kartı nedir","ekran kartı ne işe yarar"],
+            "responses": [""],
+            "context": [""]
+        },
+        {
+            "tag": "ekrankartı",
+            "patterns": ["ekran kartı","ekran kartı nedir","ekran kartı ne işe yarar"],
+            "responses": [""],
+            "context": [""]
+        },
+        {
+            "tag": "ekrankartı",
+            "patterns": ["ekran kartı","ekran kartı nedir","ekran kartı ne işe yarar"],
+            "responses": [""],
+            "context": [""]
+        },
+        {
+            "tag": "ekrankartı",
+            "patterns": ["ekran kartı","ekran kartı nedir","ekran kartı ne işe yarar"],
+            "responses": [""],
+            "context": [""]
+        },
+        {
+            "tag": "ekrankartı",
+            "patterns": ["ekran kartı","ekran kartı nedir","ekran kartı ne işe yarar"],
+            "responses": [""],
+            "context": [""]
+        },
+        {
+            "tag": "ekrankartı",
+            "patterns": ["ekran kartı","ekran kartı nedir","ekran kartı ne işe yarar"],
+            "responses": [""],
+            "context": [""]
+        },
+        {
+            "tag": "ekrankartı",
+            "patterns": ["ekran kartı","ekran kartı nedir","ekran kartı ne işe yarar"],
+            "responses": [""],
+            "context": [""]
+        },
+        {
+            "tag": "ekrankartı",
+            "patterns": ["ekran kartı","ekran kartı nedir","ekran kartı ne işe yarar"],
+            "responses": [""],
+            "context": [""]
+        },
+        {
+            "tag": "ekrankartı",
+            "patterns": ["ekran kartı","ekran kartı nedir","ekran kartı ne işe yarar"],
+            "responses": [""],
+            "context": [""]
+        },
+        {
+            "tag": "ekrankartı",
+            "patterns": ["ekran kartı","ekran kartı nedir","ekran kartı ne işe yarar"],
+            "responses": [""],
+            "context": [""]
+        },
+        {
+            "tag": "ekrankartı",
+            "patterns": ["ekran kartı","ekran kartı nedir","ekran kartı ne işe yarar"],
+            "responses": [""],
+            "context": [""]
+        },
+        {
+            "tag": "ekrankartı",
+            "patterns": ["ekran kartı","ekran kartı nedir","ekran kartı ne işe yarar"],
+            "responses": [""],
+            "context": [""]
+        },
+        {
+            "tag": "ekrankartı",
+            "patterns": ["ekran kartı","ekran kartı nedir","ekran kartı ne işe yarar"],
+            "responses": [""],
+            "context": [""]
+        },
+        {
+            "tag": "ekrankartı",
+            "patterns": ["ekran kartı","ekran kartı nedir","ekran kartı ne işe yarar"],
+            "responses": [""],
+            "context": [""]
+        },
+        {
+            "tag": "ekrankartı",
+            "patterns": ["ekran kartı","ekran kartı nedir","ekran kartı ne işe yarar"],
+            "responses": [""],
+            "context": [""]
+        }
+    ]
+}
