@@ -24,7 +24,7 @@
 .userText {
     color: white;
     font-family: monospace;
-    font-size: 16px;
+    font-size: 18px;
     text-align: right !important;
     line-height: 30px;
     margin: 10px;
@@ -52,7 +52,7 @@
 .botText {
     color: white;
     font-family: monospace;
-    font-size: 16px;
+    font-size: 18px;
     text-align: left;
     line-height: 30px;
     margin: 10px;
@@ -62,4 +62,11 @@
     background-color: #497174;
     padding: 8px;
     border-radius: 3px;
+}
+.link{
+    color: white;
+}
+.link:hover {
+    color: rgb(182, 182, 182);
+    text-decoration: none; 
 }

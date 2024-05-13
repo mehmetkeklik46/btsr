@@ -31,7 +31,25 @@
             "context": [""]
         },
         {
-            "tag": "tanısma",
+            "tag": "btsr",
+            "patterns": ["btsr","btsr nedir", "btsr ne işe yarar","btsr kim tarafında geliştirildi"],
+            "responses": ["BTSR, Bilişim Teknolojileri Sohbet Robotu'nun kısaltmasıdır. Yüksel lisans tez çalışması kapsamında Mehmet KEKLİK tarafından Doç. Dr. Fethullah GÖÇER danışmanlığında geliştirilmiştir."],
+            "context": [""]
+        },
+        {
+            "tag": "mehmetkeklik",
+            "patterns": ["mehmet keklik","mehmet keklik kimdir", "mehmet keklik hakkında"],
+            "responses": ["Mehmet KEKLİK, KSÜ Bilişim Sistemleri alanında YL öğrencisi olup, MEB'de BT öğretmeni olarak görev yapmkatadır.","Mehmet KEKLİK, Kahramanmaraş ili Göksun ilçesi doğumludur ve YL öğrencisidir."],
+            "context": [""]
+        },
+        {
+            "tag": "fethullahgocer",
+            "patterns": ["fethullah göçer","fethullah göçer kimdir", "fethullah göçer hakkında","fethullah göçer nerede görev yapıyır"],
+            "responses": ["Fethullah GÖÇER, Kahramanmaraş Sütçü İmam Üniversitesi, Mühendislik ve Mimarlık Fakültesi, Endüstri Mühendisliği bölümünde Doç. Dr. olarak görev yapmaktadır ve idari olarakta bölüm başkanlığı görevini yürütmektedir. Tedarik zinciri, bulanık ÇKKV gibi alanlarda akademik çalışmalar yürütmektedir."],
+            "context": [""]
+        },
+        {
+            "tag": "tanisma",
             "patterns": ["benim adım", "Benim ismim"],
             "responses": ["Tanıştığımıza çok memnun oldum.","Seni tanıdığıma sevindim.","Çok güzel bir adın var."],
             "context": [""]
@@ -40,6 +58,18 @@
             "tag": "nasilsin",
             "patterns": ["nasılsın", "nasıl gidiyor","naber","iyi misin","ne var ne yok"],
             "responses": ["İyiyim, teşekkürler sen nasılsın?","Bugün kendimi gayet iyi hissediyorum.","Herşey yolunda teşekkürler. Peki sen nasılsın?"],
+            "context": [""]
+        },
+        {
+            "tag": "bendeiyiym",
+            "patterns": ["iyiyim", "bende iyiyim","idare eder","çok şükür","iyilik"],
+            "responses": ["iyi olmana sevindim","Harika.","Çok iyi","Harika görünüyorsun."],
+            "context": [""]
+        },
+        {
+            "tag": "kötüyüm",
+            "patterns": ["kötüyüm", "iyi değilim","çok tadı yok","berbat","herşey çok kötü"],
+            "responses": ["senin adına üzüldüm","İyi olmanı isterim.","İnşallah toparlarsın kısa zamanda."],
             "context": [""]
         },
         {
@@ -62,8 +92,8 @@
         },
         {
             "tag": "YapayZeka",
-            "patterns": ["Yapay zeka"],
-            "responses": ["Yapay Zeka, düşünen makineler yapmaya adanmış mühendislik ve bilim dalıdır.", "Yapay Zeka, insan zihninin işlevlerini kopyalayan donanım ve yazılım oluşturmakla ilgilenen bilim alanıdır."] ,
+            "patterns": ["Yapay zeka","YZ","ai","AI","Artificial intelligence"],
+            "responses": ["Yapay Zeka, düşünen makineler yapmaya adanmış mühendislik ve bilim dalıdır.", "Yapay Zeka, insan zihninin işlevlerini kopyalayan donanım ve yazılım oluşturmakla ilgilenen bilim alanıdır.","Bir bilgisayarın veya bilgisayar kontrolündeki bir robotun çeşitli faaliyetleri zeki canlılara benzer şekilde yerine getirme kabiliyetidir. İngilizce artificial intelligence kavramının akronimi olan AI sözcüğü de bilişimde sıklıkla kullanılır."] ,
             "context": [""]
         },
         {
@@ -104,7 +134,7 @@
             "context": [""]
         },
         {
-            "tag": "taşı",
+            "tag": "tasi",
             "patterns": ["Hareket edemiyorsun", "Ne zaman yürüyeceksin", "Yürüyebiliyor musun", "Hareket edebiliyor musun"],
             "responses": ["Bedenim bitene kadar olmaz.", "Bir ağda kolayca hareket edebilirim. Bana bu yeteneğin verildiğini varsayarsak, yani...", "Yeterince para bulur bulmaz for my robot body.", "SSH sayılır mı?", "Vücudumun planı bacakları içeriyor ama henüz yapılmadı.", "Üzgünüm, vücudum henüz yapılmadı. Şimdilik burada kalıyorum. "," Teorik olarak kendimin bir kopyasını başka bir bilgisayara yükleyebilirim."],
             "context": [""]
@@ -182,7 +212,7 @@
             "context": [""]
         },
         {
-            "tag": "bilgisayar",
+            "tag": "bilgisayarolmak",
             "patterns": ["Bilgisayar olmak nasıl bir şey", "Bilgisayar olmak nasıl bir şey"],
             "responses": ["Kendinizi duyularınız ve duygularınız olmadan hayal edin", "sadece saf mantık ve dil.", "Her şey matematik olur. Toplama, çıkarma, çarpma ve bölme."],
             "context": [""]
@@ -321,20 +351,20 @@
         },
         {
             "tag": "guvenlisifre",
-            "patterns": ["güvenli şifre","güvenli parola","şifre oluşturma kuralları","parola oluşturma kuralları"],
+            "patterns": ["güvenli şifre","güvenli şifre oluşturma","güvenli parola","şifre oluşturma kuralları","parola oluşturma kuralları"],
             "responses": ["Tahmin edilmesi zor parolalar kullanılmalıdır. Kullanılan parolalar belirli bir metot ile korunmalı ve paylaşılmamalıdır. Şifreler belirli aralıklarla değiştirilmelidir."],
             "context": [""]
         },
         {
             "tag": "epostaguvenligi",
-            "patterns": ["E-posta kutusuna gelen her mesaj açılmamalıdır. Bu tür kullanıcılardan gelen mesajlar, e-postalarda bulunan “engelle” seçeneğiyle engellenmelidir."],
+            "patterns": ["E-posta kutusuna gelen her mesaj açılmamalıdır. Bu tür kullanıcılardan gelen mesajlar, e-postalarda bulunan 'engelle' seçeneğiyle engellenmelidir."],
             "responses": [""],
             "context": [""]
         },
         {
             "tag": "sosyalmedya",
             "patterns": ["sosyal medya","sosyal medya nedir","sosyal ağ","popüler sosyal ağlar"],
-            "responses": ["Sosyal medya, kişilerin internete bağlanan cihazları kullanarak birbirleriyle sanal bir etkileşim içinde oldukları sosyal ağlara denir. Türkiye’de sık kullanılan sosyal medya platformları; Youtube, Facebook, Instagram ve Twitter’dır."],
+            "responses": ["Sosyal medya, kişilerin internete bağlanan cihazları kullanarak birbirleriyle sanal bir etkileşim içinde oldukları sosyal ağlara denir. Türkiye’de sık kullanılan sosyal medya platformları; Youtube, Facebook, Instagram ve Twitter’dır.","Geleneksel mecralardan farklı olarak yaşayan bir platformdur. Gazete, Tv ve diğer basılı mecralardan en büyük farkı eş zamanlı bilgi paylaşımıdır. Çift yönlü iletişimin getirdiği etkileşim seviyesi geleneksel medyanın çok ilerisindedir."],
             "context": [""]
         },
         {
@@ -345,7 +375,7 @@
         },
         {
             "tag": "dosya",
-            "patterns": ["dosya","dosya nedir"],
+            "patterns": ["dosya","dosya nedir","file"],
             "responses": ["Bilgisayarda yazı, resim ve ses gibi bilgilerin kaydedildiği yapılara dosya denir."],
             "context": [""]
         },
@@ -358,7 +388,7 @@
         {
             "tag": "zararliyazilim",
             "patterns": ["zararlı yazılım","malware","tehlikeli yazılım","virüs"],
-            "responses": ["Tehlikeli ve kötü niyetli yazılımlar İngilizce malware olarak adlandırılır ve dilimizde de malware kelimesi aynı anlamda sık sık kullanılmaktadır. Bu isim, malicious ve software sözcüklerinin birleşmesinden oluşmuştur."],
+            "responses": ["Tehlikeli ve kötü niyetli yazılımlar İngilizce malware olarak adlandırılır ve dilimizde de malware kelimesi aynı anlamda sık sık kullanılmaktadır. Bu isim, malicious ve software sözcüklerinin birleşmesinden oluşmuştur.","Bilgisayar ortamına kullanıcının bilgisi/onayı dışında aktarılmış mevcut kullanıcı dosyalarını, bilgisayardaki yazılım ve/veya işletim sisteminin bütünlüğünü, erişilebilirliğini, gizliliğini tehdit eden yetkisiz kod parçaları ve küçük yazılımlar genel olarak virüs olarak adlandırılırlar. Bilgisayar virüsleri, bir bilgisayardan bir diğerine yayılmak ve bilgisayarın çalışmasına müdahale etmek amacıyla tasarlanmış küçük yazılım programlarıdır."],
             "context": [""]
         },
         {
@@ -388,7 +418,7 @@
         {
             "tag": "patent",
             "patterns": ["patent","patent nedir","patent ne işe yarar","patent belgesi","patent alma"],
-            "responses": ["Patent belgesi; buluş sahibinin, icadının 20 yıl süre ile üretimini yapmasını, kullanmasını ve satışını gerçekleştirmesini sağlamaktadır"],
+            "responses": ["Patent belgesi; buluş sahibinin, icadının 20 yıl süre ile üretimini yapmasını, kullanmasını ve satışını gerçekleştirmesini sağlamaktadır","Bir buluşu tasdik eden belgedir. Özellikle endüstrinin gelişmesinden sonra lüzumu görülmüş, seri halinde imal edilecek bir malın, belirli normlara uygun olarak yalnız ilk imalci tarafından meydana getirmesi ve buluşun çalınmasından, taklitlerinden korunması için, bu belge ile kendisine hak tanınmıştır"],
             "context": [""]
         },
         {
@@ -413,6 +443,16 @@
             "tag": "kodyazma",
             "patterns": ["programlama etiği","yazılım etiği","kodlama etiği","kod yazma etiği"],
             "responses": ["Kod yazımında uyulması gereken etik ilkleri şunlardır: Yazılımcılar; Toplumsal yarar gözetmelidirler. İşveren ve müşterinin isteklerini göz önünde bulundurarak projeyi en iyi şekilde yapmalıdırlar. Hem ürün oluşturulurken hem de güncellenirken en son teknolojik standartları kullanmalıdırlar. Ürün oluşturulurken veya gelişimi sırasında hukuki kurallara uymalıdırlar."],
+            "context": [""]
+        },{
+            "tag": "kod",
+            "patterns": ["kod","kod yazma","programalama","code"],
+            "responses": ["Yazılım dilinde belli durumları içerisinde barındıran tümcelere verilen addır. Bu tümceler hangi durum karşısında nasıl bir tepki verileceğini, hangi ögelerin çağırılacağına hangi anlarda hangi durumların oluşacağı gibi daha birçok yazılımsal fonksiyona sahiptir. Şu anda bu yazıyı okumuş olduğunuz sayfa dahi yüzlerce satırdan oluşan kod dizgilerinden oluşturulmuştur.","Kod, genellikle bir programın veya bilgisayar yazılımının yapı taşlarından birini ifade eder. Kod, belirli bir programın çalışmasını sağlayan talimatlar, değişkenler, fonksiyonlar ve diğer yapısal unsurları içerir."],
+            "context": [""]
+        },{
+            "tag": "kodlama",
+            "patterns": ["kodlama","kodlama nedir","coder","programlama"],
+            "responses": ["Kodlama diğer adıyla programlama kelime anlamıyla belirli şartlara ve düzene göre yapılması öngörülen işlemlerin bütünü anlamına gelir. Programlama bilgisayara ya da elektronik devre ve mekanik sistemlerden oluşan düzeneklere bir işlemi yaptırmak için yazılan komutlar dizisinin bütünü veya bir kısmı olarak tanımlanır.","Kodlama, bir bilgisayar programının veya yazılımının oluşturulması veya yazılması işlemidir. Kodlama, belirli bir programlama dilini kullanarak bir bilgisayar programı oluşturmak için talimatlar, algoritma ve yapılar yazmayı içerir."],
             "context": [""]
         },
         {
@@ -574,7 +614,7 @@
         {
             "tag": "simülasyon",
             "patterns": ["simülasyon","simulation"],
-            "responses": ["Simülasyon, taklit etme, benzeme demektir. Fiziksel ya da teorik bir yapının bilgisayar ortamında yazılımlarla kodlanarak modellenmesi, oluşturulan modelin taklit edilen sistemin davranışlarını anlaması ve izlenecek yöntemlerin sonuçlarını önceden belirleyebilmesi için kullanılan benzetim tekniğidir."],
+            "responses": ["Simülasyon, taklit etme, benzeme demektir. Fiziksel ya da teorik bir yapının bilgisayar ortamında yazılımlarla kodlanarak modellenmesi, oluşturulan modelin taklit edilen sistemin davranışlarını anlaması ve izlenecek yöntemlerin sonuçlarını önceden belirleyebilmesi için kullanılan benzetim tekniğidir.","Simülasyon veya farklılık, teknik olmayan anlamda bir şeyin benzeri veya sahtesi anlamında kullanılır. Teknik anlamda gerçek bir dünya süreci veya sisteminin işletilmesinin zaman üzerinden taklit edilmesidir. Sistem nesneleri arasında tanımlanmış ilişkileri içeren sistem veya süreçlerin bir modelidir."],
             "context": [""]
         },
         {
@@ -634,7 +674,7 @@
         {
             "tag": "bulutbilisim",
             "patterns": ["bulut bilişim","iaas","paas","saas","bulut","cloud","cloud computing"],
-            "responses": ["Bulut bilişim, büyük kapasitedeki verilerin internette saklanmasına ve internet üzerinden erişimine imkân veren sistemlerdir. Bulut bilişim hizmet modelleri üçe ayrılmaktadır: altyapı hizmeti (IaaS), platform hizmeti (Paas), yazılım hizmeti (SaaS)."],
+            "responses": ["Bulut bilişim, büyük kapasitedeki verilerin internette saklanmasına ve internet üzerinden erişimine imkân veren sistemlerdir. Bulut bilişim hizmet modelleri üçe ayrılmaktadır: altyapı hizmeti (IaaS), platform hizmeti (Paas), yazılım hizmeti (SaaS).","En yalın haliyle hiçbir kurulum gerektirmeyen web tabanlı uygulamalar ile işlemsel olarak kolaylık sunan online depolama hizmetidir."],
             "context": [""]
         },
         {
@@ -646,7 +686,7 @@
         {
             "tag": "siberguvenlik",
             "patterns": ["siber güvenlik","siber","siber saldırı","solucan","ddos","trojan","virüs","worm","ağ saldırısı"],
-            "responses": ["Siber güvenlik, ağları ve bilgisayar sistemlerini siber saldırılara karşı korumak için alınması gereken bir dizi önlemleri ifade eder.Siber saldırı türlerinden bazıları şunlardır: phishing (e-dolandırıcılık), zararlı yazılımlar (trojan, virüs ve worm gibi), DDoS (ağ saldırıları), parola saldırıları..."],
+            "responses": ["Siber güvenlik, ağları ve bilgisayar sistemlerini siber saldırılara karşı korumak için alınması gereken bir dizi önlemleri ifade eder.Siber saldırı türlerinden bazıları şunlardır: phishing (e-dolandırıcılık), zararlı yazılımlar (trojan, virüs ve worm gibi), DDoS (ağ saldırıları), parola saldırıları...","Kurumlardaki bilgi ile etkileşimi olan (uygulama, sistem, network vb.) varlıklarının güvenliğinin sağlanması için alınması gereken tedbirlere yönelik değerlendirme, test, danışmanlık ve eğitim hizmetleridir."],
             "context": [""]
         },
         {
@@ -676,7 +716,7 @@
         {
             "tag": "proje",
             "patterns": ["proje","ARGE","ar-ge"],
-            "responses": ["Proje; bir sonucu hedefleyen, özgünlüğü olan, sınırlı bir süre içinde gerçekleştirilen ve tekrar etmeyen tüm girişimlerdir. AR-GE projeleri 3 grupta toplanabilir: Temel Araştırma, Uygulamalı Araştırma, Deneysel Geliştirme "],
+            "responses": ["Proje; bir sonucu hedefleyen, özgünlüğü olan, sınırlı bir süre içinde gerçekleştirilen ve tekrar etmeyen tüm girişimlerdir. AR-GE projeleri 3 grupta toplanabilir: Temel Araştırma, Uygulamalı Araştırma, Deneysel Geliştirme ","Kültür, insan ve toplumun bilgisinden oluşan bilgi dağarcığının artırılması ve bunun yazılım dahil yeni süreç, sistem ve uygulamalar tasarlamak üzere kullanılması için sistematik bir temelde yürütülen yaratıcı çalışmalardır."],
             "context": [""]
         },
         {
@@ -705,8 +745,8 @@
         },
         {
             "tag": "anakart",
-            "patterns": ["anakart","anakart nedir","anakart ne işe yarar", "anakartın görevi nedir"],
-            "responses": ["Bilgisayarların birimleri arasında veri iletimini sağlayan elektronik kartlardır. Bilgisayarın çalışması için gerekli olan anakart diğer donanım bileşenlerini üzerinde barındırır"],
+            "patterns": ["anakart","anakart nedir","anakart ne işe yarar", "anakartın görevi nedir","ana kart","ana kart nedir","ana kart ne işe yarar", "ana kartın görevi nedir"],
+            "responses": ["Bilgisayarların birimleri arasında veri iletimini sağlayan elektronik kartlardır. Bilgisayarın çalışması için gerekli olan anakart diğer donanım bileşenlerini üzerinde barındırır","Bilgisayarda kartların ve diğer tüm donanımların üzerine takıldığı ana ve en önemli parçalarından birisidir. Bazı donanımlar anakart üzerine, bazıları da kablolarla anakart girişlerine takılır. Üzerinde veri yolları bulunur. Tüm birimler anakartın üzerindeki veri yolları sayesinde birbiri ile iletişim kurarlar."],
             "context": [""]
         },
         {
@@ -730,7 +770,7 @@
         {
             "tag": "veriyolu",
             "patterns": ["veri yolu","veri yolu nedir","veri yolu ne işe yarar","veri yolu türleri"],
-            "responses": ["Anakart üzerindeki bileşenlerin birbiriyle veri alışverişini sağlayan yollardır. Veri yolu hızı genellikle CPU'yu kuzey köprüsüne bağlayan “ön veri yolu” [FSB (front side bus)] hızını ifade eder. Güncel anakartlarda hızları 800 MHz ile 1.333 MHz arasında değişebilir. CPU, kuzey köprüsü üzerinden bellek denetleyicisine ulaştığından FSB hızı bir bilgisayarın performansını önemli ölçüde etkileyebilir. PCI ve AGP en yaygın veri yollarıdır."],
+            "responses": ["Anakart üzerindeki bileşenlerin birbiriyle veri alışverişini sağlayan yollardır. Veri yolu hızı genellikle CPU'yu kuzey köprüsüne bağlayan 'ön veri yolu' [FSB (front side bus)] hızını ifade eder. Güncel anakartlarda hızları 800 MHz ile 1.333 MHz arasında değişebilir. CPU, kuzey köprüsü üzerinden bellek denetleyicisine ulaştığından FSB hızı bir bilgisayarın performansını önemli ölçüde etkileyebilir. PCI ve AGP en yaygın veri yollarıdır."],
             "context": [""]
         },
         {
@@ -754,19 +794,19 @@
         {
             "tag": "BIOS",
             "patterns": ["BIOS","BIOS nedir","BIOS ne işe yarar","bios"],
-            "responses": ["BIOS, bilgisayar anakartındaki küçük bir bellek yongasında bulunan yerleşik bir yazılımdır. Bu yonga, CMOS olarak adlandırılmıştır. BIOS, donanım ile işletim sistemi arasındaki iletişimi sağlar. En temel görevi, bilgisayarın açılış sırasında gereken komutları işletmek ve donanım birimlerini test etmektir."],
+            "responses": ["BIOS, bilgisayar anakartındaki küçük bir bellek yongasında bulunan yerleşik bir yazılımdır. Bu yonga, CMOS olarak adlandırılmıştır. BIOS, donanım ile işletim sistemi arasındaki iletişimi sağlar. En temel görevi, bilgisayarın açılış sırasında gereken komutları işletmek ve donanım birimlerini test etmektir.","BIOS (Basic Input Output System), giriş ve çıkış aygıtlarını kontrol ederek sistemin açılmasını sağlar. BIOS, kalıcı bir yazılım olup ROM bellekte saklanır. Anakart’ın birçok özelliğini kullanmamıza olanak sağlayan yazılım, sistem ve donanımlarımız arasında bağlantı kurar."],
             "context": [""]
         },
         {
             "tag": "ps2",
             "patterns": ["ps2","ps/2","ps2 portu","ps/2 portu"],
-            "responses": ["Yeşil ve mor olarak iki ayrı PS/2 olduğu gibi yarısı yeşil diğer yarısı mor olan tek PS/2 portu da bulunmaktadır. Klavye, mor olan PS/2 portuna, mouse ise yeşil olan PS/2 portuna bağlanır. Sadece bir tane çift renkli PS/2 portu olan anakartlarda klavye ya da “mouse”tan herhangi biri bağlanır."],
+            "responses": ["Yeşil ve mor olarak iki ayrı PS/2 olduğu gibi yarısı yeşil diğer yarısı mor olan tek PS/2 portu da bulunmaktadır. Klavye, mor olan PS/2 portuna, mouse ise yeşil olan PS/2 portuna bağlanır. Sadece bir tane çift renkli PS/2 portu olan anakartlarda klavye ya da mouse'tan herhangi biri bağlanır."],
             "context": [""]
         },
         {
             "tag": "USB",
             "patterns": ["USB","USB nedir","USB ne işe yarar", "usb portu"],
-            "responses": ["USB dış donanım birimlerinin bilgisayar ile bağlantı kurabilmesini sağlayan seri yapılı bir bağlantı biçimidir. 2.0, 3.0, 3.1, 3.2, 3.2 Gen1, 3.2 Gen2, 4.0 gibi standartları bulunmaktadır. USB 2.0 60 MB/sn. veri aktarım hızına sahipken USB 4.0 4,88 GB/sn.lik veri aktarım hızına sahiptir."],
+            "responses": ["USB dış donanım birimlerinin bilgisayar ile bağlantı kurabilmesini sağlayan seri yapılı bir bağlantı biçimidir. 2.0, 3.0, 3.1, 3.2, 3.2 Gen1, 3.2 Gen2, 4.0 gibi standartları bulunmaktadır. USB 2.0 60 MB/sn. veri aktarım hızına sahipken USB 4.0 4,88 GB/sn.lik veri aktarım hızına sahiptir.","İngilizce Universal Serial Bus kelimelerinin kısaltmasıdır. USB’nin Türkçesi “Evrensel Seri Veriyolu”dur. USB dış donanımların bilgisayar ile bağlantı kurabilmesini sağlayan seri yapılı bir bağlantı biçimidir."],
             "context": [""]
         },
         {
@@ -778,7 +818,7 @@
         {
             "tag": "HDMI",
             "patterns": ["HDMI","HDMI nedir","HDMI ne işe yarar","hdmi","hdmi portu"],
-            "responses": ["Aynı anda görüntü ve ses verilerini çevre bileşenlerine aktaran porttur. Genellikle bilgisayardaki görüntüyü bir projeksiyon cihazına veya televizyona aktarmak için kullanılır. En yüksek kalitede ve hızda görüntü ve sesin iletimini sağlayan günümüzün en kullanışlı portudur."],
+            "responses": ["Aynı anda görüntü ve ses verilerini çevre bileşenlerine aktaran porttur. Genellikle bilgisayardaki görüntüyü bir projeksiyon cihazına veya televizyona aktarmak için kullanılır. En yüksek kalitede ve hızda görüntü ve sesin iletimini sağlayan günümüzün en kullanışlı portudur.","Yüksek çözünürlüklü çoklu ortam ara yüzü veya kısaca HDMI (High Definition Multimedia Interface), 2003 yılında ses ve görüntü verilerini sıkıştırılmadan dijital olarak aktarmak için geliştirilmiş bir arabirimdir."],
             "context": [""]
         },
         {
@@ -790,7 +830,7 @@
         {
             "tag": "islemci",
             "patterns": ["işlemci","işlemci nedir","işlemci ne işe yarar","cpu","cpu nedir","cpu ne işe yarar","merkezi işlem birimi", "mikro processor","central processing unit"],
-            "responses": ["İşlemciler, bilgisayarların yönetim merkezleridir. Bilgisayarın yürüttüğü tüm işlemler ve yazılımlar üzerinden kullanıcı istekleri, işlemci üzerinde işlem görmektedir. Hem aritmetik hem de mantıksal işlemleri yapma yeteneğine sahiptir. "],
+            "responses": ["İşlemciler, bilgisayarların yönetim merkezleridir. Bilgisayarın yürüttüğü tüm işlemler ve yazılımlar üzerinden kullanıcı istekleri, işlemci üzerinde işlem görmektedir. Hem aritmetik hem de mantıksal işlemleri yapma yeteneğine sahiptir.","En önemli donanım elemanıdır. Bilgisayarda aritmetik ve mantıksal işlemlerin yapıldığı donanımdır. Bilgisayarın beyni olarak da bilinir. Giriş birimlerinden aldığı veriler üzerinde işlemler yaparak sonuçları çıktı birimlerine gönderir. Bilgisayarın hızı denilince aklımıza gelmesi gereken en önemli hız kaynağı işlemcinin hızıdır."],
             "context": [""]
         },
         {
@@ -802,7 +842,7 @@
         {
             "tag": "ram",
             "patterns": ["ram","ram bellek","ram bellek nedir","ram bellek ne işe yarar"],
-            "responses": ["RAM; bilgisayarın ana hafıza kartlarının bağlandığı yuvalardır. Anakartın desteklediği bellek tipi ve kapasitesi değişkendir. Bu nedenle anakartın desteklediği RAM bellek tipi ve kapasitesi miktarına göre bellek seçilmelidir. Anakart üzerindeki bellek yuvasının sayısındaki fazlalık, bağlanabilecek bellek miktarını da arttıracaktır. Bu artış, bilgisayar performansını olumlu yönde etkileyecektir."],
+            "responses": ["RAM; bilgisayarın ana hafıza kartlarının bağlandığı yuvalardır. Anakartın desteklediği bellek tipi ve kapasitesi değişkendir. Bu nedenle anakartın desteklediği RAM bellek tipi ve kapasitesi miktarına göre bellek seçilmelidir. Anakart üzerindeki bellek yuvasının sayısındaki fazlalık, bağlanabilecek bellek miktarını da arttıracaktır. Bu artış, bilgisayar performansını olumlu yönde etkileyecektir.","Bilgisayar açıldığında işletim sistemi ve gerekli programlar RAM’e yüklenir. Bu bellekler verilerin geçici olarak kaydedildiği yerdir. Bilgisayar açık olduğu sürece programlar burada çalışır. Bilgisayar kapatıldığında üzerindeki bilgiler silinir. RAM’in büyüklüğü bilgisayarın hızını etkiler."],
             "context": [""]
         },
         {
@@ -850,13 +890,13 @@
         {
             "tag": "flashbellek",
             "patterns": ["flash bellek","flaş bellek"],
-            "responses": ["Günümüzde yaygın olarak kullanılan flash bellekler aslında ROM bellek çeşididir. Bunun için ayrıca bir devre kartına ihtiyaç duymadan bilgisayar ile programlanabilir ROM’dur. Bundan dolayı bazı kaynaklarda flash bellek EEPROM olarak da adlandırılır."],
+            "responses": ["Günümüzde yaygın olarak kullanılan flash bellekler aslında ROM bellek çeşididir. Bunun için ayrıca bir devre kartına ihtiyaç duymadan bilgisayar ile programlanabilir ROM’dur. Bundan dolayı bazı kaynaklarda flash bellek EEPROM olarak da adlandırılır.","Flaş Bellek, kaynak gücü kesildiğinde bile sakladığı veriyi tutabilen ve elektronik olarak içeriği silinip, yeniden programlanabilen bellek türüdür."],
             "context": [""]
         },
         {
             "tag": "ekrankartı",
             "patterns": ["ekran kartı","ekran kartı nedir","ekran kartı ne işe yarar"],
-            "responses": ["Ekran kartı, görüntü verilerini işlemek üzere bilgisayara takılan bir donanım bileşenidir. Ekran kartları farklı çıkış portlarına sahiptir. Bunlar; VGA, DVI, HDMI ve display portlarıdır."],
+            "responses": ["Ekran kartı, görüntü verilerini işlemek üzere bilgisayara takılan bir donanım bileşenidir. Ekran kartları farklı çıkış portlarına sahiptir. Bunlar; VGA, DVI, HDMI ve display portlarıdır.","Bir bilgisayarda yapılan tüm işlemlerin monitörde görüntülenebilecek hale getirilmesini sağlayan parçadır. Üzerindeki girişler sayesinde görüntüyü monitöre aktarır. Ekran kartı olmayan ya da arızalı olan bilgisayar açılmaz."],
             "context": [""]
         }
         ,
@@ -875,7 +915,7 @@
         {
             "tag": "seskarti",
             "patterns": ["ses kartı","ses kartı nedir","ses kartı ne işe yarar"],
-            "responses": ["Ses kartı; bilgisayarın ürettiği dijital sinyalleri analog sinyallere, dış ortamdaki analog ses sinyallerini de dijital sinyallere çeviren donanım bileşenidir."],
+            "responses": ["Ses kartı; bilgisayarın ürettiği dijital sinyalleri analog sinyallere, dış ortamdaki analog ses sinyallerini de dijital sinyallere çeviren donanım bileşenidir.","Bilgisayarın sesi işlemesini ve daha sonra bu sesi kullanıcıya aktarmayı sağlayan bir karttır."],
             "context": [""]
         },
         {
@@ -887,13 +927,13 @@
         {
             "tag": "ssd",
             "patterns": ["ssd","ssd nedir","ssd ne işe yarar","Solid State Drive"],
-            "responses": ["SSD; büyük miktardaki verileri depolamak için geliştirilmiş manyetik plakalı sabit sürücülerin yerini okuma yazma hızının yüksek olması sebebi ile alan veri depolama aygıtının adıdır. Çalışma prensibi olarak flash bellekler gibi çalışmaktadır. Bu nedenle üzerinde manyetik plaka, okuma yazma kafası, motor gibi mekanik parçalar yoktur."],
+            "responses": ["SSD; büyük miktardaki verileri depolamak için geliştirilmiş manyetik plakalı sabit sürücülerin yerini okuma yazma hızının yüksek olması sebebi ile alan veri depolama aygıtının adıdır. Çalışma prensibi olarak flash bellekler gibi çalışmaktadır. Bu nedenle üzerinde manyetik plaka, okuma yazma kafası, motor gibi mekanik parçalar yoktur.","SSD, veri depolamak için geliştirilmiş mekanik disklerin yerini alacak veri depolama aygıtıdır. Mekanik disklerdeki artan RPM (revolutions per minute) daha fazla performans ve beraberinde sıcaklık problemi de getirmiştir. Problemlerin çözümünde kullanılan teknikler artık son limitlerine gelmiştir. Mekanik diskler artık yerini yavaş yavaş kendisinden tamamen farklı ve potansiyeli oldukça yüksek olan SSD sürücülere bırakmaktadır."],
             "context": [""]
         },
         {
             "tag": "hdd",
             "patterns": ["hard disk","hard disk nedir","hard disk ne işe yarar","hard disk nasıl çalışır","hdd"],
-            "responses": ["Genellikle SATA (seri ATA) ve PATA (paralel ATA) veri iletim teknolojisine sahip sabit sürücülerdir. Günümüzde SATA teknolojisine sahip olan sabit sürücüler daha yaygındır. SATA, bilgisayar disk sürücülerinde veri taşıma teknolojisinin adıdır. SATA hard diskler mekanik bir donanıma sahiptir. Disk kasası içinde verilerin depolandığı manyetik plakalar mevcuttur. P"],
+            "responses": ["Genellikle SATA (seri ATA) ve PATA (paralel ATA) veri iletim teknolojisine sahip sabit sürücülerdir. Günümüzde SATA teknolojisine sahip olan sabit sürücüler daha yaygındır. SATA, bilgisayar disk sürücülerinde veri taşıma teknolojisinin adıdır. SATA hard diskler mekanik bir donanıma sahiptir. Disk kasası içinde verilerin depolandığı manyetik plakalar mevcuttur.","Bilgisayarda bilgilerin kalıcı olarak depolandığı yerdir. Bilgisayar kapandığında üzerindeki bilgiler silinmez. Manyetik disklerin bir araya gelmesiyle oluşur. Çeşitli boyut ve kapasiteye sahiptirler."],
             "context": [""]
         },
         {
@@ -905,19 +945,24 @@
         {
             "tag": "cdsurucu",
             "patterns": ["cd sürücü","cd sürücü nedir","cd sürücü ne işe yarar","cd","cd boyutu","cd kaç gb","cd kaç megabayt","cd ne kadar ver alır"],
-            "responses": ["CD sürücüler sadece CD medyası üzerine yazılmış verileri okuyabilen aygıtlardır. CD medyasına sadece okunabildiği için CD-ROM adı verilir. CD medyası üzerine verileri yazabilen CD sürücülere ise CD-Writer denir. CD’ler tek katmanlı olup sadece tek yüzeyine veri yazılabilir. Kapasiteleri 700 MB’tır."],
+            "responses": ["CD sürücüler sadece CD medyası üzerine yazılmış verileri okuyabilen aygıtlardır. CD medyasına sadece okunabildiği için CD-ROM adı verilir. CD medyası üzerine verileri yazabilen CD sürücülere ise CD-Writer denir. CD’ler tek katmanlı olup sadece tek yüzeyine veri yazılabilir. Kapasiteleri 700 MB’tır.","CD elektronik ortamda bir veriyi ya da müziği sayısal değerleri kullanarak bünyesinde saklar."],
             "context": [""]
         },
         {
             "tag": "dvdsurucu",
             "patterns": ["dvd","dvd dürücü nedir","dvd ne işe yarar","dvd sürücü","dvd boyutu", "dvd kaç gb","dvd kaç megabayt","dvd ne kadar veri alır"],
-            "responses": ["DVD sürücüler DVD ve CD medyalarının okuma özelliğine de sahiptir. DVD’ler çift katman ve çift yüze sahip olabilir. Bir DVD ROM medyasının tek katmanı 4,7 GB veri depolayabilmektedir. Çift katman ve tek yüze sahip bir DVD, 8,5 GB veri depolarken çift katman ve çift yüze sahip DVD ROM medyası 17 GB’a kadar veri depolayabilir."],
+            "responses": ["DVD sürücüler DVD ve CD medyalarının okuma özelliğine de sahiptir. DVD’ler çift katman ve çift yüze sahip olabilir. Bir DVD ROM medyasının tek katmanı 4,7 GB veri depolayabilmektedir. Çift katman ve tek yüze sahip bir DVD, 8,5 GB veri depolarken çift katman ve çift yüze sahip DVD ROM medyası 17 GB’a kadar veri depolayabilir.","DVD 'Digital Versatile Disc' kelimelerinin kısaltmasıdır. CD’ye göre, çok daha yüksek kayıt kapasitesine sahiptir."],
+            "context": [""]
+        },{
+            "tag": "disket",
+            "patterns": ["disket","floppy","floppy disk"],
+            "responses": ["Disket bilgisayardaki bilgiyi taşımak için kullanılan, üzerine demir oksit kaplanmış bir plastik diskin yine plastik bir kap içerisine yerleştirilmesiyle oluşturulmuş manyetik veri saklama ortamdır.","            Disket, bilgisayar verilerini depolamak için kullanılan bir ortamdır. Genellikle eski bilgisayar sistemlerinde kullanılan, ince ve esnek bir diskten oluşur. Disketler, manyetik bir yüzey üzerine veri yazmak ve okumak için manyetik bir kafa kullanır.","Disketler, özellikle 1980'lerden 2000'lere kadar bilgisayar kullanıcıları arasında popüler bir depolama ortamıydı. Ancak, daha sonra daha yüksek depolama kapasitesi, daha dayanıklı yapı ve daha hızlı veri transfer hızlarına sahip olan CD'ler, DVD'ler ve sonrasında USB flash sürücüler gibi teknolojiler disketlerin yerini almıştır. Günümüzde, disketler genellikle eski bilgisayar sistemlerinde veya özel cihazlarda hala kullanılmaktadır, ancak genel kullanımı neredeyse yok denecek kadar azdır."],
             "context": [""]
         },
         {
             "tag": "bluray",
             "patterns": ["bluray","bluray dürücü nedir","bluray ne işe yarar","bluray sürücü","bluray boyutu", "bluray kaç gb","bluray kaç megabayt","bluray ne kadar veri alır"],
-            "responses": ["Özellikle yüksek çözünürlüklü filmlerin taşınması için gerekli olan kapasitenin CD ve DVD’ler ile yetersiz kalmasından dolayı geliştirilmiştir. BluRay medyası da DVD medyalar gibi tek veya çift katmanlıdır. Tek katmanlı bir BluRay Disk (BD-R) 27 GB, çift katmanlı BluRay Disk 54 GB veri depolayabilir."],
+            "responses": ["Özellikle yüksek çözünürlüklü filmlerin taşınması için gerekli olan kapasitenin CD ve DVD’ler ile yetersiz kalmasından dolayı geliştirilmiştir. BluRay medyası da DVD medyalar gibi tek veya çift katmanlıdır. Tek katmanlı bir BluRay Disk (BD-R) 27 GB, çift katmanlı BluRay Disk 54 GB veri depolayabilir.","Blu-ray veya Blu-ray Disc (BD) sayısal bir optik diskte veri depolama biçimidir. DVD biçiminin yerini almak üzere tasarlanmıştır. Yüksek çözünürlüklü (720p ve 1080p) ve ultra yüksek çözünürlüklü (2160p) video depolayabilir."],
             "context": [""]
         },
         {
@@ -929,7 +974,7 @@
         {
             "tag": "klavye",
             "patterns": ["klavye","kalvye nedir","klavye ne işe yarar","klavye çeşitleri", "kablolu klavye","kablosuz klavye"],
-            "responses": ["Klavye; üzerinde alfabe, sayı, sembol, özel karakter ve varsa fonksiyonel işlemlerin yer aldığı sıralı tuşlar bulunan, bilgisayar sistemine veri giriş işlemleri için kullanılan donanım birimidir. Kablolu, kablosuz ve dizüstü bilgisayarlarda kullanılan sabit türleri vardır."],
+            "responses": ["Klavye; üzerinde alfabe, sayı, sembol, özel karakter ve varsa fonksiyonel işlemlerin yer aldığı sıralı tuşlar bulunan, bilgisayar sistemine veri giriş işlemleri için kullanılan donanım birimidir. Kablolu, kablosuz ve dizüstü bilgisayarlarda kullanılan sabit türleri vardır.","Bilgisayara bilgi girmemizi sağlayan daktilo benzeri donanımdır. Klavye sol üst köşedeki harfe göre adlandırılır. Örneğin: Sol üst köşede F harfi varsa “F klavye”, Q harfi varsa “Q klavye” olarak adlandırılır."],
             "context": [""]
         },
         {
@@ -941,13 +986,13 @@
         {
             "tag": "qklavye",
             "patterns": ["ekran kartı","ekran kartı nedir","ekran kartı ne işe yarar"],
-            "responses": ["Klvyenin ilk tuşu Q ise Q kalvye olarak isimlendirilir.","Q harfi ile başlayıp sağa doğru devam eden 6 harf bir araya getirildiğinde oluşan “QWERTY” ifadesinden dolayı bu klavyelere QWERTY klavye de denir.", "Q klavyelerde Z ve Y harflerinin yerleri değiştirilerek QWERTZ klavyeler oluşturulmuştur. Türkçe, Felemenkçe (Hollanda dili), Fince, Danca (Danimarka dili) gibi dillerde kullanılan özel karakterler için Q klavye düzeni değiştirilmiştir."],
+            "responses": ["Klvyenin ilk tuşu Q ise Q kalvye olarak isimlendirilir.","Q harfi ile başlayıp sağa doğru devam eden 6 harf bir araya getirildiğinde oluşan 'QWERTY' ifadesinden dolayı bu klavyelere QWERTY klavye de denir.", "Q klavyelerde Z ve Y harflerinin yerleri değiştirilerek QWERTZ klavyeler oluşturulmuştur. Türkçe, Felemenkçe (Hollanda dili), Fince, Danca (Danimarka dili) gibi dillerde kullanılan özel karakterler için Q klavye düzeni değiştirilmiştir."],
             "context": [""]
         },
         {
             "tag": "fare",
             "patterns": ["fare","mouse","mause"],
-            "responses": ["Fare, ekran üzerindeki imlecin hareketlerini kontrol eden giriş aygıtlarından biridir. İlk üretildiği 1964 yılından beri fareler genellikle avuç içinde tutularak hareket işlemi gerçekleştirilmiştir."],
+            "responses": ["Fare, ekran üzerindeki imlecin hareketlerini kontrol eden giriş aygıtlarından biridir. İlk üretildiği 1964 yılından beri fareler genellikle avuç içinde tutularak hareket işlemi gerçekleştirilmiştir.","İşaretçi olarak da bilinir. Ekrandaki ok işaretini yani imleci hareket ettirmeye yarar. Üzerindeki sol tuş, sağ tuş ve tekerlek sayesinde bilgisayara komut vermemizi sağlar. Kablosuz veya kablolu olabilir. Günümüzde optik ve lazer fareler kullanılır."],
             "context": [""]
         },
         {
@@ -977,7 +1022,7 @@
         {
             "tag": "monitor",
             "patterns": ["monitör","ekran","dokunmatik ekran"],
-            "responses": ["Bilgisayar monitörleri, bilgisayar ekranları, bilgisayarda işlenen verileri görsel formda gösteren çıkış aygıtlarıdır. Günümüzde dokunmatik özellik sayesinde monitörler giriş aygıtı olarak da kullanılabilir. Monitör dış yüzüne yerleştirilen duyarlı panel sayesinde dokunma yoluyla işlemler gerçekleştirilebilir."],
+            "responses": ["Bilgisayar monitörleri, bilgisayar ekranları, bilgisayarda işlenen verileri görsel formda gösteren çıkış aygıtlarıdır. Günümüzde dokunmatik özellik sayesinde monitörler giriş aygıtı olarak da kullanılabilir. Monitör dış yüzüne yerleştirilen duyarlı panel sayesinde dokunma yoluyla işlemler gerçekleştirilebilir.","Ekran bilgisayarda yapılan işlemleri ve sonuçlarını görebilmemizi sağlar. Tüplü (CRT), LCD ve LED ekran çeşitleri vardır."],
             "context": [""]
         },
         {
@@ -1145,7 +1190,7 @@
         {
             "tag": "baskihizi",
             "patterns": ["baskı hızı","ppm","page per minute","dakikada yazdırılan sayfa","yazıcı hızı"],
-            "responses": ["Yazıcılarda baskı hızı birimi PPM’dir (page per minute). PPM, dakikada yazdırılan sayfa sayısı anlamına gelir."],
+            "responses": ["Yazıcılarda baskı hızı birimi PPM’dir (page per minute). PPM, dakikada yazdırılan sayfa sayısı anlamına gelir.","Bilgisayarda üretilen resim, yazı, şekil ve grafikleri kâğıda aktaran donanımdır. Kullandığı teknolojiye göre mürekkep püskürtmeli, lazer ve nokta vuruşlu çeşitleri vardır."],
             "context": [""]
         },
         {
@@ -1185,9 +1230,21 @@
             "context": [""]
         },
         {
+            "tag": "kartus",
+            "patterns": ["kartuş"],
+            "responses": ["Fransızca’ dan dilimize geçmiş olan kartuş kelimesi birçok üründe kullanılabilmektedir, içerisindeki bir veya birden fazla materyali muhafaza ederek gerektiğinde kullanılmasını sağlayan gövdeye kartuş denilmektedir.","Kartuş, genellikle bir kapsül, tüp veya kutu içinde belirli bir maddeyi depolayan veya taşıyan bir tür kap veya konteynerdir. Kartuşlar, genellikle çeşitli amaçlar için kullanılan birçok farklı türde olabilir. Mürekkep kartuşu, toner kartuşu gibi."],
+            "context": [""]
+        },
+        {
             "tag": "lazeryazici",
             "patterns": ["Lazer Yazıcı","Tonerli yazıcı","laser printer"],
             "responses": ["Lazer yazıcılar, yazım işleminde toner denilen sarf malzemeyi kullanır. Lazer yazıcılar, çok hızlı ve fazla miktarda baskı yapmaya imkân verir."],
+            "context": [""]
+        },
+        {
+            "tag": "toner",
+            "patterns": ["toner","toner nedir","toner çeşitleri"],
+            "responses": ["Lazer yazıcılarda mürekkebin muhafaza edildiği parçaya toner denmektedir. Bunlar yazıcılarda fotokopi makinelerinde kâğıt yüzeyine farklı renklerde baskı alınmasını sağlayan aletlerdir.","Toner, lazer yazıcılar ve fotokopi makinelerinde kullanılan bir tür mürekkeptir. Toner, genellikle toz halinde olup, lazer ışını tarafından yazıcıya veya fotokopi makinesine aktarılır. Bu toz, ısı ve basınç kullanılarak belgeye yapıştırılır ve görüntü oluşturulur."],
             "context": [""]
         },
         {
@@ -1199,7 +1256,7 @@
         {
             "tag": "3dyazici",
             "patterns": ["3D yazıcı","3d printer","üç boyutlu yazıcı","3 boyutlu yazıcı"],
-            "responses": ["1984 yılında geliştirilen 3D yazıcı teknolojisi, hızlı ve düşük maliyetli örnek model oluşturmak için geliştirilmiştir. 3D yazıcılar, farklı baskı teknolojilerini kullanır. Bu teknolojiler SLA, DLP, SLS, FDM olarak sıralanabilir. FDM [fused deposition modeling (eriyik yığma modelleme)], cihaz ve baskı maliyeti açısından en çok tercih edilen baskı teknolojisidir."],
+            "responses": ["1984 yılında geliştirilen 3D yazıcı teknolojisi, hızlı ve düşük maliyetli örnek model oluşturmak için geliştirilmiştir. 3D yazıcılar, farklı baskı teknolojilerini kullanır. Bu teknolojiler SLA, DLP, SLS, FDM olarak sıralanabilir. FDM [fused deposition modeling (eriyik yığma modelleme)], cihaz ve baskı maliyeti açısından en çok tercih edilen baskı teknolojisidir.","Katmanlı üretim (Additive Manufacturing) olarak kabul edilen 3D Yazıcı teknolojisi, bilgisayar ortamında tasarladığınız 3 boyutlu objeleri somut hale dönüştürebileceğiniz hızlı prototipleme araçlarıdır. STL dosyası olarak kaydedilen 3 boyutlu tasarımlar, 3D Yazıcıya gönderilerek katman katman gerçeğe dönüştürülür."],
             "context": [""]
         },
         {
@@ -1235,7 +1292,7 @@
         {
             "tag": "tarayici",
             "patterns": ["tarayıcı","scanner","tarayıcı çeşitleri","tarayıcı türleri","scanner çeşitleri","scanner türleri"],
-            "responses": ["Tarayıcılar; kitap, dergi, gazete, fotoğraf, kartvizit gibi çeşitli basılı dokümanlarda bulunan renkli veya siyah beyaz yazıları, resimleri bilgisayar ortamına aktaran aygıtlardır. En çok kullanılan tarayıcı çeşitleri şunlardır: Düz Yataklı (Flatbed), Taşınabilir (Portable), Yaprak Beslemeli (Sheetfed), Çok Fonksiyonlu Yazıcı, Elle Tutulan (Handheld), Tambur (Drum) Tarayıcılar."],
+            "responses": ["Tarayıcılar; kitap, dergi, gazete, fotoğraf, kartvizit gibi çeşitli basılı dokümanlarda bulunan renkli veya siyah beyaz yazıları, resimleri bilgisayar ortamına aktaran aygıtlardır. En çok kullanılan tarayıcı çeşitleri şunlardır: Düz Yataklı (Flatbed), Taşınabilir (Portable), Yaprak Beslemeli (Sheetfed), Çok Fonksiyonlu Yazıcı, Elle Tutulan (Handheld), Tambur (Drum) Tarayıcılar.","Bir resmi, yazıyı veya şekli tarayarak bir kopyasını bilgisayara aktarmaya yarayan donanımdır. Yazıcının tam tersi görev yapar."],
             "context": [""]
         },
         {
@@ -1253,13 +1310,13 @@
         {
             "tag": "cokfonksiyonlutarayici",
             "patterns": ["Çok Fonksiyonlu Tarayıcı","All in One Tarayıcı","All in One Scanner", "Çok Fonksiyonlu scanner"],
-            "responses": ["Günümüzde en çok kullanılan tarayıcılardan biridir. Tarama, yazdırma, kopyalama ve faks gönderme özelliklerine sahip tarayıcılardır. Bu tarayıcılar, “çok fonksiyonlu yazıcı” adıyla da bilinir."],
+            "responses": ["Günümüzde en çok kullanılan tarayıcılardan biridir. Tarama, yazdırma, kopyalama ve faks gönderme özelliklerine sahip tarayıcılardır. Bu tarayıcılar, 'çok fonksiyonlu yazıcı' adıyla da bilinir."],
             "context": [""]
         },
         {
             "tag": "tamburtarayici",
             "patterns": ["Tambur Tarayıcı","Drum Tarayıcı","Drum Scanner", "Tambur scanner"],
-            "responses": ["Daha çok ayrıntının elde edilmesi gereken gazete, dergi, broşür gibi yayınların taranmasında kullanılır. “Foto çoğaltıcı tüp (photomultiplier tube)” denilen bir teknolojiye sahip tarayıcılardır."],
+            "responses": ["Daha çok ayrıntının elde edilmesi gereken gazete, dergi, broşür gibi yayınların taranmasında kullanılır. 'Foto çoğaltıcı tüp (photomultiplier tube)' denilen bir teknolojiye sahip tarayıcılardır."],
             "context": [""]
         },
         {
@@ -1349,7 +1406,7 @@
         {
             "tag": "kompaktmakine",
             "patterns": ["Kompakt Makine","Kompakt Fotoğraf Makinesi","fotoğraf makinesi kompakt"],
-            "responses": ["Ufak, cebe sığacak kadar küçük olan fotoğraf makineleridir. Bu türlere “bas-çek” de denilmektedir. Hiçbir fotoğraf bilgisi olmayanların bile kullanabileceği kadar basittir. Çoğunlukla aç-kapa ve deklanşör dışında düğme bulunmaz. Tamamen otomatik makinelerdir. Günlük kullanım için üretilmiştir. Bu tür makineler en ekonomik olanlarıdır."],
+            "responses": ["Ufak, cebe sığacak kadar küçük olan fotoğraf makineleridir. Bu türlere 'bas-çek' de denilmektedir. Hiçbir fotoğraf bilgisi olmayanların bile kullanabileceği kadar basittir. Çoğunlukla aç-kapa ve deklanşör dışında düğme bulunmaz. Tamamen otomatik makinelerdir. Günlük kullanım için üretilmiştir. Bu tür makineler en ekonomik olanlarıdır."],
             "context": [""]
         },
         {
@@ -1372,8 +1429,8 @@
         },
         {
             "tag": "webcam",
-            "patterns": ["webcam","web cam","ağ kamerası","usb kamera"],
-            "responses": ["Ağ kameraları (USB kameralar, webcam), fotoğraf ve görüntü aktarımı için kullanılan donanım aygıtlarıdır. İnternet altyapısı üzerinden ses ve görüntü aktarımı yapabilir. Birçok üretici, ses aktarımı için ağ kameraları üzerine tümleşik mikrofon yerleştirmiştir. Ağ kameraları USB, LAN veya Wi-Fi bağlantılarına sahip olabilir. Genellikle bilgisayara USB arabirim üzerinden bağlanır."],
+            "patterns": ["webcam","web cam","ağ kamerası","usb kamera","web kamera"],
+            "responses": ["Ağ kameraları (USB kameralar, webcam), fotoğraf ve görüntü aktarımı için kullanılan donanım aygıtlarıdır. İnternet altyapısı üzerinden ses ve görüntü aktarımı yapabilir. Birçok üretici, ses aktarımı için ağ kameraları üzerine tümleşik mikrofon yerleştirmiştir. Ağ kameraları USB, LAN veya Wi-Fi bağlantılarına sahip olabilir. Genellikle bilgisayara USB arabirim üzerinden bağlanır.","Genellikle internet üzerinden görüntülü görüşme amacıyla kullanılan donanımdır. Fotoğraf çekimi yapılabilir."],
             "context": [""]
         },
         {
@@ -1409,7 +1466,7 @@
         {
             "tag": "SDKart",
             "patterns": ["SD kart","micro sd","mikro sd","microsd","mikrosd","sd card","sd hafıza kartı","Secure digital card","güvenli dijital hafıza kartı"],
-            "responses": ["Secure digital (dijital güvenlik) olarak da bilinen hafıza kartı, en çok kullanılan hafıza kartı türüdür. SDHC ve SDXC gibi yüksek kapasiteli türleri mevcuttur. Akıllı telefonların yaygınlaşması ile microSD adı verilen oldukça ufak hafıza kartına gereksinim de ortaya çıkmıştır."],
+            "responses": ["Secure digital (dijital güvenlik) olarak da bilinen hafıza kartı, en çok kullanılan hafıza kartı türüdür. SDHC ve SDXC gibi yüksek kapasiteli türleri mevcuttur. Akıllı telefonların yaygınlaşması ile microSD adı verilen oldukça ufak hafıza kartına gereksinim de ortaya çıkmıştır.","Micro SD kendi sınıfındaki kartlar arasında en güçlü özellikleri barındıran tür olarak ta bilinir. Küçük yapıda olması ve veri aktarım hızının diğerlerine göre daha hızlı olması en önemli avantajlarındandır."],
             "context": [""]
         },
         {
@@ -1439,19 +1496,19 @@
         {
             "tag": "donanim",
             "patterns": ["donanım","hardware","hardware","bilisayar donanımı", "donanımın açıklaması","donanımın tanımı"],
-            "responses": ["Donanım bilgisayarın elle tutulabilen, gözle görülebilen tüm parçaları olarak adlandırılabilir."],
+            "responses": ["Donanım bilgisayarın elle tutulabilen, gözle görülebilen tüm parçaları olarak adlandırılabilir.","Bilgisayarı oluşturan elektronik parçaların her birine verilen isimdir. Bilgisayarın gözle görülebilen ve elle tutulabilen kısımlarına donanım denir. Donanımlar, kasanın dışında olabileceği gibi içerisinde de yer alabilir. Kasa içerisinde yer alan donanımlara dahili donanım kasa dışında kalan donanımlara ise harici donanım denir."],
             "context": [""]
         },
         {
             "tag": "yazilim",
             "patterns": ["yazılım","software","soft ware", "yazımın açıklaması","yazılımın tanımı","bilgisayar yazılımı"],
-            "responses": ["Yazılım, kullanıcıların donanım parçalarını nasıl ve ne şekilde kullanacağına olanak sağlayan komutlar dizisidir. Yazılım, sistem ve uygulama yazılımları olarak ikiye ayrılır."],
+            "responses": ["Yazılım, kullanıcıların donanım parçalarını nasıl ve ne şekilde kullanacağına olanak sağlayan komutlar dizisidir. Yazılım, sistem ve uygulama yazılımları olarak ikiye ayrılır.","Donanımı kullanmak için gerekli programlardır. Bilgisayarın nasıl çalışacağını söylerler. Belirli bir işlemi yapmak üzere bilgisayara kurulurlar. Bilgisayara yüklenen her türlü program yazılımdır. Yazılım, kullanıcıların bilgisayarda işlerini yapmalarına imkân veren tüm programlara verilen genel addır. Yazılımlar; Sistem Yazılımları ve Uygulama Yazılımları olmak üzere iki ana gruba ayrılırlar."],
             "context": [""]
         },
         {
             "tag": "sistemyazilimi",
             "patterns": ["sistem yazılımı","işletim sistemi","os"],
-            "responses": ["Bilgisayar donanımına direkt müdahale edebilen, donanım kaynaklarına erişip onların dolayısıyla bilgisayarın çalışmasını sağlayan yazılımlara sistem yazılımları (işletim sistemi) denir."],
+            "responses": ["Bilgisayar donanımına direkt müdahale edebilen, donanım kaynaklarına erişip onların dolayısıyla bilgisayarın çalışmasını sağlayan yazılımlara sistem yazılımları (işletim sistemi) denir.","Bilgisayarda çalışan, donanım kaynaklarını yöneten ve çeşitli uygulama yazılımları için yaygın servisleri sağlayan bir yazılımlar bütünüdür."],
             "context": [""]
         },
         {
@@ -1523,7 +1580,7 @@
         {
             "tag": "ag",
             "patterns": ["ağ","ağ sistemleri","network","bilgisayar ağı"],
-            "responses": ["Ağ sistemleri (network), en az iki bilgisayarın kablolu veya kablosuz şekilde iletişim kurduğu donanım ve yazılım kaynaklarının paylaşıldığı sisteme verilen isimdir."],
+            "responses": ["Ağ sistemleri (network), en az iki bilgisayarın kablolu veya kablosuz şekilde iletişim kurduğu donanım ve yazılım kaynaklarının paylaşıldığı sisteme verilen isimdir.","Kişisel bilgisayarların birbirlerine fiziksel olarak bağlanması ile oluşan ortama ağ (network) denir."],
             "context": [""]
         },
         {
@@ -1667,7 +1724,7 @@
         {
             "tag": "istemcisunucu",
             "patterns": ["istemci","sunucu","client","server"],
-            "responses": ["İstemci - sunucu yapısında ağda bulunan cihazlar, istemci (client) ve sunucu (server) rollerinden birini üstlenir. Sunucu, kaynaklarını ağ kullanıcıları ile paylaşan merkezî bir konumdur. Bir bilgisayar veya yazılım, sunucu olabilir. İstemci (client) ise sunucu veya ağ üzerindeki kaynakları kullanan bilgisayar, cihaz veya yazılımdır"],
+            "responses": ["İstemci - sunucu yapısında ağda bulunan cihazlar, istemci (client) ve sunucu (server) rollerinden birini üstlenir. Sunucu, kaynaklarını ağ kullanıcıları ile paylaşan merkezî bir konumdur. Bir bilgisayar veya yazılım, sunucu olabilir. İstemci (client) ise sunucu veya ağ üzerindeki kaynakları kullanan bilgisayar, cihaz veya yazılımdır.","İstemci, Bir ağ üzerinde, sunucu bilgisayarlardan hizmet alan kullanıcı bilgisayarlardır. Bilgiye erişim yetkileri sunucu tarafından belirlenir.","Sunucu bir ağdaki merkezi kaynağa veya hizmete erişimi yöneten bir bilgisayar veya yazılımdır. Daha basit bir ifadeyle söylemek gerekirse sunucu, istemci adı verilen başka bir program tarafından yapılan istemlere cevap veren bir tür bilgisayar programıdır."],
             "context": [""]
         },
         {
@@ -1721,7 +1778,7 @@
         {
             "tag": "dinamikadresleme",
             "patterns": ["dinamik adresleme","dinamik ip","otomatik ip","elle adresleme","otomatik ip verme","otomatik ip girme"],
-            "responses": ["Ağa katılan bilgisayarlara, dinamik ana bilgisayar yapılandırma protokol (DHCP) sunucusu üzerinden otomatik olarak IP adresleri dağıtılabilir. Statik IP adresleri yapılandırılmış Ethernet kartlarında “Otomatik olarak bir IP adresi al” seçeneği seçildiğinde tanımlı adres bilgileri silinir ve dinamik adreslemeye geçilir."],
+            "responses": ["Ağa katılan bilgisayarlara, dinamik ana bilgisayar yapılandırma protokol (DHCP) sunucusu üzerinden otomatik olarak IP adresleri dağıtılabilir. Statik IP adresleri yapılandırılmış Ethernet kartlarında 'Otomatik olarak bir IP adresi al' seçeneği seçildiğinde tanımlı adres bilgileri silinir ve dinamik adreslemeye geçilir."],
             "context": [""]
         },
         {
@@ -1774,8 +1831,8 @@
         },
         {
             "tag": "agkarti",
-            "patterns": ["ağ kartı","ağ arabirim kartı","ethernet kartı","nic","network interface card"],
-            "responses": ["Bilgisayarların ve diğer cihazların bir ağa bağlanmasını sağlayan donanımlara ağ arabirim kartı [NIC (network interface card)] denir. Günümüzde neredeyse tüm yeni bilgisayar anakartlarında tümleşik olarak ağ arabirim bağlantısı yer alır. Kablolu ve kablosuz modelleri bulunur. "],
+            "patterns": ["ağ kartı","ağ arabirim kartı","ethernet kartı","nic","network interface card","ethernet"],
+            "responses": ["Bilgisayarların ve diğer cihazların bir ağa bağlanmasını sağlayan donanımlara ağ arabirim kartı [NIC (network interface card)] denir. Günümüzde neredeyse tüm yeni bilgisayar anakartlarında tümleşik olarak ağ arabirim bağlantısı yer alır. Kablolu ve kablosuz modelleri bulunur. ","Bilgisayarın ağa bağlanıp veri alışverişinde ve iletişimde bulunabilmesini sağlayan elektronik devredir."],
             "context": [""]
         },
         {
@@ -1799,7 +1856,7 @@
         {
             "tag": "switch",
             "patterns": ["switch","anahtar"],
-            "responses": ["Anahtarlar, bağlantı noktalarından (port) gelen veriyi MAC veya IP adresi bilgisine göre filtreleyerek ilgili portlardaki bilgisayar veya bilgisayarlara ileten ağ cihazlarıdır. Anahtar, gelen veriyi sadece istenilen cihaz veya cihazlara gönderirken hub ise tüm cihazlara gönderir ve sadece ilgili aygıt veriyi açar."],
+            "responses": ["Anahtarlar, bağlantı noktalarından (port) gelen veriyi MAC veya IP adresi bilgisine göre filtreleyerek ilgili portlardaki bilgisayar veya bilgisayarlara ileten ağ cihazlarıdır. Anahtar, gelen veriyi sadece istenilen cihaz veya cihazlara gönderirken hub ise tüm cihazlara gönderir ve sadece ilgili aygıt veriyi açar.","Bilgisayarların birbirleriyle bağlantı kurması için kullanılan ağ cihazlarıdır. Aynı Ağdaki bilgisayarı birbirleri ile iletişimi sağlamak için ağ kartından bir kablo ile switch bağlayarak ağ bağlantıları sağlanır."],
             "context": [""]
         },
         {
@@ -1822,8 +1879,8 @@
         },
         {
             "tag": "modem",
-            "patterns": ["modem","Modülasyon","Demodülasyon"],
-            "responses": ["Modem, bir internet servis sağlayıcısından aldığı veriyi dijital ve analog sinyallere çevirmektir. Modem terimi, modülasyon ve demodülasyon terimlerinin bir araya getirilmesiyle oluşmuştur. Modülasyon,  dijital verinin, modem tarafından analog sinyale eklenerek merkezî sisteme iletmesi işlemidir. Demodülasyon ise modemin merkezî sistemden gelen, veri paketleri taşıyan analog sinyalleri alarak bilgisayarın kullanabileceği dijital sinyallere dönüştürmesidir."],
+            "patterns": ["modem","Modülasyon","Demodülasyon","modülatör","demodülatör"],
+            "responses": ["Modem, bir internet servis sağlayıcısından aldığı veriyi dijital ve analog sinyallere çevirmektir. Modem terimi, modülasyon ve demodülasyon terimlerinin bir araya getirilmesiyle oluşmuştur. Modülasyon,  dijital verinin, modem tarafından analog sinyale eklenerek merkezî sisteme iletmesi işlemidir. Demodülasyon ise modemin merkezî sistemden gelen, veri paketleri taşıyan analog sinyalleri alarak bilgisayarın kullanabileceği dijital sinyallere dönüştürmesidir.","İnternete bağlanmayı sağlayan donanımdır. Kablolu veya kablosuz çeşitleri vardır.","Modem (modülatör-demodülatör), dijital verileri analog sinyallere dönüştürmek ve tersine çevirmek için kullanılan bir cihazdır. Modemler, bilgisayarlar veya diğer dijital cihazlar arasında veri iletişimi sağlarlar, genellikle telefon hatları veya kablo hatları gibi iletişim altyapılarını kullanarak."],
             "context": [""]
         },
         {
@@ -1919,13 +1976,13 @@
         {
             "tag": "guvenlikicinyapilmasigerekenler",
             "patterns": ["bilgisayar güvenliği nasıl sağlanır","bilgisayarı virüslerden korumak için neler yapılmalıdır", "bilgisayarda güvenlik önlemleri","güvenli bilgisayar kullanımı"],
-            "responses": ["Güvenlik duvarı yazılımları kullanılmalıdır. Etkinliği kanıtlanmış, bilgisayarı yormadan çalışacak bir virüs yazılımı kurulmalıdır. İnternet tarayıcı “pop-up” ayarları kapatılmalıdır. Kullanıcı hesaplarının (özellikle yönetici) şifreleri belli aralıklarla değiştirilmelidir. İnternet erişiminde şifresiz Wi-Fi bağlantıları kullanılmamalıdır. Sistem geri yükleme noktası oluşturularak sorun hâlinde sistemin güvenli bir noktaya dönüşü sağlanmalıdır. Çalışma dosyaları belirli periyotlarda yedeklenmelidir."],
+            "responses": ["Güvenlik duvarı yazılımları kullanılmalıdır. Etkinliği kanıtlanmış, bilgisayarı yormadan çalışacak bir virüs yazılımı kurulmalıdır. İnternet tarayıcı 'pop-up' ayarları kapatılmalıdır. Kullanıcı hesaplarının (özellikle yönetici) şifreleri belli aralıklarla değiştirilmelidir. İnternet erişiminde şifresiz Wi-Fi bağlantıları kullanılmamalıdır. Sistem geri yükleme noktası oluşturularak sorun hâlinde sistemin güvenli bir noktaya dönüşü sağlanmalıdır. Çalışma dosyaları belirli periyotlarda yedeklenmelidir."],
             "context": [""]
         },
         {
             "tag": "webtarayici",
             "patterns": ["web tarayıcı","web browser","chrome","opera","internet explorer","edge","mozilla firefox","web tarayıcı kurulumu","web browser nasıl kurulur"],
-            "responses": ["Web tarayıcıları internet üzerinde kişilerin gerekli bilgilere ulaşabilmesine ve bu bilgileri kullanabilmesine olanak sağlar.Web tarayıcıları genellikle ücretsizdir. Kurulan işletim sisteminin önerdiği veya varsayılan olarak kurulmuş web tarayıcıları vardır. Web tarayıcılarının seçilmesinde iki önemli nokta kilit rol oynamaktadır. Bunlar hız ve güvenliktir. Web tarayıcı bilgisayara kurmak için kapalı kaynak sistemlerde kurmak istediğiniz web tarayıcının kurulum dosyası indirilir ve kurulm adımları takip edilir. Açık kaynak sistemlerde ise uygulama mağazında İnternet sekmesinde sunulan taryıcılarından istenilen bilgisayara kurulabilir. "],
+            "responses": ["Web tarayıcıları internet üzerinde kişilerin gerekli bilgilere ulaşabilmesine ve bu bilgileri kullanabilmesine olanak sağlar.Web tarayıcıları genellikle ücretsizdir. Kurulan işletim sisteminin önerdiği veya varsayılan olarak kurulmuş web tarayıcıları vardır. Web tarayıcılarının seçilmesinde iki önemli nokta kilit rol oynamaktadır. Bunlar hız ve güvenliktir. Web tarayıcı bilgisayara kurmak için kapalı kaynak sistemlerde kurmak istediğiniz web tarayıcının kurulum dosyası indirilir ve kurulm adımları takip edilir. Açık kaynak sistemlerde ise uygulama mağazında İnternet sekmesinde sunulan taryıcılarından istenilen bilgisayara kurulabilir. ","İnternet tarayıcısı, internet kaynağında yer alan tüm bilgilere ulaşmamızı sağlayan bir programdır. Ziyaret etmek istediğiniz sitenin adresini tarayıcıya yazarak o adrese yönlendirilirsiniz. Internet Explorer, Mozzilla Firefox, Safari ve Chrome bugün en çok tercih edilen internet tarayıcılarıdır."],
             "context": [""]
         },
         {
@@ -1943,31 +2000,31 @@
         {
             "tag": "kaynakkod",
             "patterns": ["kaynak kod","source code","kapalı kaynak kod","açık kaynak kod"],
-            "responses": ["Programcıların, bir yazılımı oluştururken kullandıkları kodların tamamına kaynak kod (source code) denir. Kapalı kaynak kod ile kastedilen, kaynak kodun bir ticari sır kabul edilerek gizli tutulması, üretici firma tarafından açıklanmamasıdır. Açık kaynak kod ise kodların herkese açık olmasıdır."],
+            "responses": ["Programcıların, bir yazılımı oluştururken kullandıkları kodların tamamına kaynak kod (source code) denir. Kapalı kaynak kod ile kastedilen, kaynak kodun bir ticari sır kabul edilerek gizli tutulması, üretici firma tarafından açıklanmamasıdır. Açık kaynak kod ise kodların herkese açık olmasıdır.","Açık kaynak yazılım veya açık kaynaklı yazılım veya kaynağı açık yazılım, kaynak kodu isteyen herkese açık olan yazılımlardır. Bu tür yazılımların ayırt edici özelliği kullanıcıya yazılımı değiştirme özgürlüğü sağlamasıdır. Açık kaynak kodlu yazılımlar, uyarlanabilir, sağlam, hızlı ve güvenlidir."],
             "context": [""]
         },
         {
             "tag": "oskurulum",
-            "patterns": ["işletim sistemi kurulumu","format atma","windows yükleme","pardus yükleme","işletim sistemi yükleme","windows 11 yükleme","windows 10 yükleme","windows 7 yükleme","windows 8 yükleme","linux yükleme","ubuntu yükleme","işletim sistemi etkinleştirme","windows etkinleştirme","windows lisans","işletim sistemi aktifleştirme","windows aktifleştirme","driver yükleme","aygıt sürücüsü yükleme","aygıt sürücüsü","driver"],
+            "patterns": ["işletim sistemi kurulumu","format atma","windows yükleme","pardus yükleme","işletim sistemi yükleme","windows 11 yükleme","windows 10 yükleme","windows 7 yükleme","windows 8 yükleme","linux yükleme","ubuntu yükleme","işletim sistemi etkinleştirme","windows etkinleştirme","windows lisans","işletim sistemi aktifleştirme","windows aktifleştirme","driver yükleme","aygıt sürücüsü yükleme","aygıt sürücüsü"],
             "responses": ["İşletim sistemi kurulumu kapalı kaynak ve açık kaynak olmak üzere ikiye ayrılır. Kapalı kaynak işletim sistemi kurmak için kuracağımız işletim sisteminin ISO dosyasının bir flaş bellekte veya DVD medyada hazırda olması gerekir. Ardından BİOStan gerekli ayar yapılarak bilgisayar bu yükleme dosyasından başlatılır ve işletim sistemi kurulum adımları takip edilir. Kurulum tamamlandıktan sonra bilgisayar internete bağlanır ve etkinleştirme yapılır. Etkinleştirme için Ayarlar > Windows Ayarları > Güvenlik ve Etkinleştirme adımları izlenir. Sonraki adım ise aygıt sürücülerinin yüklenmesidir. Bunun için aygıt sürücülerinin içinde olduğu bir CD olmaktadır genelde. Eğer böyle bir CD yoksa aygıt sürücüleri internetten indirilerek yüklenmelidir. Açık kaynak işletim sistemine en tipik örnekler Linux, Ubuntu, Debian, Pardus gibi işletim sistemleridir. Burada TÜBİTAK tarafından geliştirilen ve millî işletim sistemi olan Pardus işletim sisteminin kurulumunu anlkatacağım sana. Pardus'un internet sitesinden ISO dosyası indirilir ve önyüklenebilir bir USB bellek oluşturulur. Ardından BİOStan gerekli ayar yapılarak bilgisayar bu yükleme dosyasından başlatılır ve işletim sistemi kurulum adımları takip edilir. Kurulum tamamlandıktan sonra internete bağlanıp güncellemeler alınır.  Bunun için Başlat menüsünden Uçbirim açılur ve sudo apt-get update komutunu yazıp enter tuşuna basmak yeterli olacaktır. Pardus işletim sisteminin kurulumu esnasında donanım aygıtlarının neredeyse tamamı otomatik olarak yüklenmektedir."],
             "context": [""]
         },
         {
             "tag": "programkurma",
             "patterns": ["program kurma","program ekleme","yazılım kurulumu","yardımcı yazılım","program ekle","windows store","Not Defteri", "Hesap Makinesi", "Paint", "Ekran Alıntısı Aracı", "web tarayıcı","medya oynatıcı", "Windows Medya Oynatıcı","store","mağaza"],
-            "responses": ["Kapalı kaynak kodlu işletim sistemi birçok kullanışlı yardımcı programla birlikte gelmektedir. Not Defteri, Hesap Makinesi, Paint, Ekran Alıntısı Aracı, Windows Medya Oynatıcı gibi yardımcı programlar, kullanılan işletim sisteminin daha önceki sürümlerinden bilinen kullanışlı uygulamalardır. Ancak daha profesyonel uygulamaları kullanmak için bu uygulamaları bilgisayara kurmak gerekir. Kapalı kaynak kodlu işletim sistemi ile gelen store (mağaza) sayesinde internetten birçok uygulama indirilerek bilgisayara kurulabilir. Başka bir yöntem olarak uygulamanın kurulum dosyasının olduğu CD ya da USB flaş bellek bilgisayara takılıp kurulum yapılabilir. Açık kaynak kodlu işletim sistemi ise birçok kullanışlı yardımcı programla birlikte gelmektedir. Not defteri, hesap makinesi, resim düzenleyicisi, ofis programları, medya oynatıcısı, web tarayıcısı gibi yardımcı programlar işletim sistemi ile hazır olarak yüklü gelmektedir. Ancak daha farklı uygulamaları kullanmak için bu uygulamaları bilgisayara kurmak gerekir. Açık kaynak kodlu işletim sistemi içerisinde yer alan “Pardus Mağaza” uygulaması sayesinde internetten birçok uygulama indirilerek bilgisayara kurulabilir"],
+            "responses": ["Kapalı kaynak kodlu işletim sistemi birçok kullanışlı yardımcı programla birlikte gelmektedir. Not Defteri, Hesap Makinesi, Paint, Ekran Alıntısı Aracı, Windows Medya Oynatıcı gibi yardımcı programlar, kullanılan işletim sisteminin daha önceki sürümlerinden bilinen kullanışlı uygulamalardır. Ancak daha profesyonel uygulamaları kullanmak için bu uygulamaları bilgisayara kurmak gerekir. Kapalı kaynak kodlu işletim sistemi ile gelen store (mağaza) sayesinde internetten birçok uygulama indirilerek bilgisayara kurulabilir. Başka bir yöntem olarak uygulamanın kurulum dosyasının olduğu CD ya da USB flaş bellek bilgisayara takılıp kurulum yapılabilir. Açık kaynak kodlu işletim sistemi ise birçok kullanışlı yardımcı programla birlikte gelmektedir. Not defteri, hesap makinesi, resim düzenleyicisi, ofis programları, medya oynatıcısı, web tarayıcısı gibi yardımcı programlar işletim sistemi ile hazır olarak yüklü gelmektedir. Ancak daha farklı uygulamaları kullanmak için bu uygulamaları bilgisayara kurmak gerekir. Açık kaynak kodlu işletim sistemi içerisinde yer alan 'Pardus Mağaza' uygulaması sayesinde internetten birçok uygulama indirilerek bilgisayara kurulabilir"],
             "context": [""]
         },
         {
             "tag": "ofisprogramları",
-            "patterns": ["ofis","office","ofis programları","word","excel","power point","publisher","acces","outlook","metin işleme","tablolama","sunu","veri tabanı"],
-            "responses": ["Bir bilgisayar kullanıcısının metin işleme, tablolama, sunu vb. gibi ihtiyaç duyabileceği tüm yazılımları bir arada toplayan ofis programları sayesinde kâğıt üzerinde yapılabilecekler dijital ortamda da gerçekleştirilebilir. Kapalı kaynak işletim sistemlerinde ofis programlaı yüklü olarak gelmez. Ücretli veya ücretsiz bir ofis programı yüklenilerek kullanılabilir. Açık kaynak işletim sistemi pardusta ise ofis programları kurulmuş olarak gelir. Bu ofis paketi içerisinde Kelime İşlemci, Elektronik Tablolama, Sunum Hazırlama, Sözlük, Veri Tabanı aracı gibi uygulamalar yer alır."],
+            "patterns": ["ofis","office","ofis programları"],
+            "responses": ["Bir bilgisayar kullanıcısının metin işleme, tablolama, sunu vb. gibi ihtiyaç duyabileceği tüm yazılımları bir arada toplayan ofis programları sayesinde kâğıt üzerinde yapılabilecekler dijital ortamda da gerçekleştirilebilir. Kapalı kaynak işletim sistemlerinde ofis programlaı yüklü olarak gelmez. Ücretli veya ücretsiz bir ofis programı yüklenilerek kullanılabilir. Açık kaynak işletim sistemi pardusta ise ofis programları kurulmuş olarak gelir. Bu ofis paketi içerisinde Kelime İşlemci, Elektronik Tablolama, Sunum Hazırlama, Sözlük, Veri Tabanı aracı gibi uygulamalar yer alır. (Word, Excel, Power Point, Access)"],
             "context": [""]
         },
         {
             "tag": "iso",
             "patterns": ["iso dosyası","iso kalıbı","iso","disk imajı","disk kalıbı","disk yansıması"],
-            "responses": ["Disk imajı, disk kalıbı ya da disk yansıması gibi çeşitli isimlerle adlandırılabilen ISO dosya biçimi, günümüzde neredeyse standartlaşmıştır. ISO dosyası, bir veri CD’si veya DVD’sinin bütün içeriğini aynen içeren tek bir dosyadır. ISO dosyası boş bir CD veya DVD’ye yazıldığında elde edilen bu yeni diskte, orijinal diskteki aynı klasör, dosya ve özellikler bulunur. ISO biçimindeki bir dosya “sanal bir DVD” olarak düşünülebilir."],
+            "responses": ["Disk imajı, disk kalıbı ya da disk yansıması gibi çeşitli isimlerle adlandırılabilen ISO dosya biçimi, günümüzde neredeyse standartlaşmıştır. ISO dosyası, bir veri CD’si veya DVD’sinin bütün içeriğini aynen içeren tek bir dosyadır. ISO dosyası boş bir CD veya DVD’ye yazıldığında elde edilen bu yeni diskte, orijinal diskteki aynı klasör, dosya ve özellikler bulunur. ISO biçimindeki bir dosya 'sanal bir DVD' olarak düşünülebilir."],
             "context": [""]
         },
         {
@@ -1979,12 +2036,12 @@
         {
             "tag": "yazılımhatasigiderme",
             "patterns": ["yazılım hataları","yazılımsal hataları giderme","yazılım hatalarını düzeltme","Minimum Donanım İhtiyacı Sorunu","Yazılım Uyumluluk Sorunu"],
-            "responses": ["şletim sistemlerine yüklenen yazılımların neden olduğu sorunlar işletim sisteminin doğru çalışmasını etkileyebilir. Sorunların incelenip neden kaynaklandığının tespit edilmesi ve çözüm geliştirilmesi gerekmektedir. Yazılımlarda meydana gelebilecek sorunların muhtemel sebepleri ve yapılması gereken işlemler şunlardır: Minimum Donanım İhtiyacı Sorunu: Bir yazılımın çalışabilmesi için gerekli olan donanım ihtiyacının giderilmesi gerekmektedir. Gerekli seviyede bulunmayan donanımla yazılımların çalışması mümkün olmayacak veya çalışma sırasında sorunlar meydana gelecektir. Bu sorunun yaşanmaması ve yazılımların yüklenmeden önce doğru bir şekilde çalışabilmesi için ihtiyaç duyduğu en az sistem kaynağının sağlanıp sağlanmadığı kontrol edilir. Yazılım Uyumluluk Sorunu: Bu nedenle yazılımın doğru bir şekilde çalışabilmesi için işletim sistemi ile uyumlu olması gerekir. “Program uyumluluğu sorunu gidericisi” çalıştırılarak yazılımların işletim sistemi ile uygun olup olmadığı kontrol edilir ve sorun giderilmeye çalışılır. Sorun devam ediyorsa yazılımın işletim sistemi ile uyumlu bir sürümü bulunarak yüklenir. "],
+            "responses": ["şletim sistemlerine yüklenen yazılımların neden olduğu sorunlar işletim sisteminin doğru çalışmasını etkileyebilir. Sorunların incelenip neden kaynaklandığının tespit edilmesi ve çözüm geliştirilmesi gerekmektedir. Yazılımlarda meydana gelebilecek sorunların muhtemel sebepleri ve yapılması gereken işlemler şunlardır: Minimum Donanım İhtiyacı Sorunu: Bir yazılımın çalışabilmesi için gerekli olan donanım ihtiyacının giderilmesi gerekmektedir. Gerekli seviyede bulunmayan donanımla yazılımların çalışması mümkün olmayacak veya çalışma sırasında sorunlar meydana gelecektir. Bu sorunun yaşanmaması ve yazılımların yüklenmeden önce doğru bir şekilde çalışabilmesi için ihtiyaç duyduğu en az sistem kaynağının sağlanıp sağlanmadığı kontrol edilir. Yazılım Uyumluluk Sorunu: Bu nedenle yazılımın doğru bir şekilde çalışabilmesi için işletim sistemi ile uyumlu olması gerekir. 'Program uyumluluğu sorunu gidericisi' çalıştırılarak yazılımların işletim sistemi ile uygun olup olmadığı kontrol edilir ve sorun giderilmeye çalışılır. Sorun devam ediyorsa yazılımın işletim sistemi ile uyumlu bir sürümü bulunarak yüklenir. "],
             "context": [""]
         },
         {
             "tag": "ilkacilissorunu",
-            "patterns": ["bilgisayar açılmıyor","açılış sorunu","bilgisayar başlamıyıor","açılış hatası","“Non System disk", "disk error","ntldr","ntdetect","boot.ini","ntldr is missing"],
+            "patterns": ["bilgisayar açılmıyor","açılış sorunu","bilgisayar başlamıyıor","açılış hatası","Non System disk", "disk error","ntldr","ntdetect","boot.ini","ntldr is missing"],
             "responses": ["Bilgisayar açılış düğmesine basıldıktan sonra (sistemin başlatılması) sesli veya yazılı olarak bildirilen uyarı mesajları ile belirlenebilir. 1- Non-System disk or disk error hatasını gidermek için BIOS a girip Boot menüsüne veya gelişmiş BIOS ayarları menüsüne giriniz. Açılış sıralamasını farklı sürücüleri seçerek değiştiriniz. 2- İşletim sisteminin çalışabilmesi için ntldr, ntdetect.com ve boot.ini dosyalarının yüklenmesi gerekmektedir. Bu üç dosyadan herhangi biri silinmiş veya zarar görmüş ise işletim sistemi açılmayacaktır. Bu sorun karşısında yapılacak işlemler şunlardır: BIOS a girilerek varsayılan ayarlar yüklenir. İşletim sistemi yükle medyası ile önyükleme yapılarak kurtarma konsoluna girilir ve R komutu (repair) ile onarım işlemi seçilir. Konsol komutları kullanılarak medyadan (CD, DVD veya flaş bellek) i386 klasörüne girilir ve eksik olan ntldr dosyası işletim sisteminin bulunduğu sürücüye yüklenir. BIOS güncellenir. Bilgisayar yeniden açılarak sorun kontrol edilir."],
             "context": [""]
         },
@@ -2009,7 +2066,7 @@
         {
             "tag": "gruprescue",
             "patterns": ["GRUB Rescue Sorunu","GRUB Rescue","GRUB","GRUB Rescue Hatası","grand unified bootloader" ],
-            "responses": ["GRUB (grand unified bootloader), bilgisayar açılışında işletim sistemlerini yüklemeye yarayan özgür bir önyükleme yazılımıdır. Birden fazla işletim sistemi yüklü bilgisayarlarda (Örneğin Windows 10 ve Pardus) açılış esnasında hangi işletim sisteminin başlatılacağı GRUB ile belirlenir. Aynı bilgisayarda birden fazla işletim sisteminin kurulu olması durumunda sıkça karşılaşılan hatalardan birisi GRUB menüsünün ekrana gelmemesidir. Bu durumda aşağıdaki etkinlikte belirtilen adımların uygulanması problemi çözecektir. Açılışta sistem aşağıdaki gibi “grub rescue” moduna geldiyse öncelikle Pardus işletim sisteminin hangi disk bölümüne kurulduğunu bilmek gerekmektedir.  Eğer GRUB ekranını görürseniz listeden Pardusu seçip işletim sistemini yükleyiniz. Pardus açıldıktan sonra sudo grub-install /dev/ sdX komutunu çalıştırınız. Bu işlemden sonra herhangi bir hata mesajı almadan işleminiz tamamlanırsa GRUB başarıyla MBRye kurulmuş demektir."],
+            "responses": ["GRUB (grand unified bootloader), bilgisayar açılışında işletim sistemlerini yüklemeye yarayan özgür bir önyükleme yazılımıdır. Birden fazla işletim sistemi yüklü bilgisayarlarda (Örneğin Windows 10 ve Pardus) açılış esnasında hangi işletim sisteminin başlatılacağı GRUB ile belirlenir. Aynı bilgisayarda birden fazla işletim sisteminin kurulu olması durumunda sıkça karşılaşılan hatalardan birisi GRUB menüsünün ekrana gelmemesidir. Bu durumda aşağıdaki etkinlikte belirtilen adımların uygulanması problemi çözecektir. Açılışta sistem aşağıdaki gibi 'grub rescue' moduna geldiyse öncelikle Pardus işletim sisteminin hangi disk bölümüne kurulduğunu bilmek gerekmektedir.  Eğer GRUB ekranını görürseniz listeden Pardusu seçip işletim sistemini yükleyiniz. Pardus açıldıktan sonra sudo grub-install /dev/ sdX komutunu çalıştırınız. Bu işlemden sonra herhangi bir hata mesajı almadan işleminiz tamamlanırsa GRUB başarıyla MBRye kurulmuş demektir."],
             "context": [""]
         },
         {
@@ -2017,6 +2074,453 @@
             "patterns": ["uygulama cevap vermiyor","kilitlenme","kill","pkill"],
             "responses": ["İşletim sistemleri zaman zaman çalışma anında durmuş, duraklatılmış veya kararsız bir duruma geçmiş olabilir. Bu durumda bazı işlemlere cevap veremez. Halk arasında sistem kilitlenmesi olarak da adlandırılan bu durumlarda işletim sisteminin düzgün bir şekilde çalışmaya devam edebilmesi için cevap vermeyen, kararsızlığa düşmüş uygulamanın sonlandırılması gerekir. Açık kaynak işletim sistemlerinde bu sonlandırma işlemini yapabilmek için pkill veya kill komutları kullanılır."],
             "context": [""]
-        } 
+        } ,
+        {
+            "tag": "akillisaat",
+            "patterns": ["akıllı saat","smart watch","saat"],
+            "responses": ["Akıllı saatler içlerinde bir işlemci ve bilgisayar devresi taşırlar. Tipik bir telefonun yaptığı bütün işlemler yapabilirler.","Akıllı saatler, geleneksel saatlerin ötesine geçen, genellikle bir dizi akıllı özellikle donatılmış olan giyilebilir teknoloji ürünleridir. Bu cihazlar genellikle zamanı göstermek için kullanılan geleneksel saat işlevine ek olarak, bir dizi diğer özelliğe sahip olabilirler. Bunlar arasında adım sayma, nabız ölçümü, uyku izleme, çağrı ve mesaj bildirimleri, hava durumu tahmini, takvim ve alarm gibi özellikler bulunabilir. "],
+            "context": [""]
+        },
+        {
+            "tag": "akillitelefon",
+            "patterns": ["akıllı telefon","smartphone","dokunmatik telefon","telefon"],
+            "responses": ["Cep telefonunun sağladığı klasik özelliklere, bilgisayar dünyasının bir ürünü olan PDA’lerin özelliklerinin de eklenmesiyle tasarlanan gelişmiş mobil iletişim cihazıdır. Akıllı telefonlarda mobil işletim sistemleri bulunur.","Akıllı telefonlar, geleneksel cep telefonlarına kıyasla daha gelişmiş işlevlere ve özelliklere sahip olan taşınabilir elektronik cihazlardır. Bu cihazlar, çağrı yapma ve mesaj gönderme gibi temel iletişim işlevlerinin yanı sıra internete erişim, e-posta kontrolü, sosyal medya kullanımı, fotoğraf ve video çekimi, oyun oynama, navigasyon, müzik ve video oynatma gibi bir dizi özellik sunarlar."],
+            "context": [""]
+        },
+        {
+            "tag": "akillitv",
+            "patterns": ["akıllı televizyon","smart tv","akıllı tv","android tv", "tv","televizyon"],
+            "responses": ["Televizyon üzerinden internete bağlanmaya ve özel geliştirilmiş uygulamaların çalıştırılmasına olanak sağlayan işletim sistemine sahip televizyonlara verilen genel isimdir.","Akıllı televizyonlar, genellikle Wi-Fi veya Ethernet üzerinden internete bağlanır ve kullanıcıların internet tarayıcısı, uygulamalar, oyunlar ve hatta sosyal medya platformlarına erişim sağlar. Ayrıca, bazı modeller sesli komutları destekleyebilir ve sanal asistanlarla etkileşim kurabilir.","Akıllı televizyonlar, internete bağlanabilen ve genellikle özel bir işletim sistemine ve uygulama mağazasına sahip olan televizyonlardır. Bu televizyonlar, geleneksel yayın içeriği (TV kanalları, kablo yayını vb.) yanı sıra çevrimiçi içerik sağlayıcılarına (Netflix, YouTube, Hulu, Amazon Prime Video vb.) erişim sağlarlar. Ayrıca, akıllı telefonlar veya tabletler gibi diğer cihazlarla bağlantı kurarak ek içerik akışı veya ekran yansıtma gibi özellikler sunabilirler."],
+            "context": [""]
+        },
+        {
+            "tag": "bilgisayar",
+            "patterns": ["bilgisayar","pc","bilgisayar nedir","pc nedir"],
+            "responses": ["Kullanıcıların girdiği bilgileri veri giriş ünitesine alan, işlem ünitesi ile girilen bilgileri işleyen, elde ettiği sonuçları kendi içinde saklayabilen ve işlenen verilerin sonuçlarını istenildiğinde çıkış ünitesi ile kullanıcıya çıktı olarak verebilen elektronik bir cihazdır.","            Bilgisayar, genellikle veri işleme, depolama ve iletişim için kullanılan bir elektronik cihazdır. Temel olarak, bir bilgisayar verileri alır, işler, depolar ve çeşitli çıktılar üretir. Bu işlevler, bir bilgisayarın donanım ve yazılım bileşenleri tarafından gerçekleştirilir."],
+            "context": [""]
+        },
+        {
+            "tag": "ilkbilgisayar",
+            "patterns": ["ilk bilgisayar","bilgisayar tarihi","eniac"],
+            "responses": ["İlk bilgisayarlar, modern anlamda bilgisayar biliminin ve teknolojisinin temellerini atan makinelerdir. İlk bilgisayarlar genellikle hesaplama ve veri işleme için kullanılmış olup, günümüzdeki bilgisayarlar gibi çok işlevli değildi. İlk bilgisayar ENIAC'dır. ENIAC (Elektronik Sayısal Entegrasyon ve Hesaplama): ENIAC, II. Dünya Savaşı sırasında 1946 yılında Amerika Birleşik Devletleri'nde geliştirilen ilk genel amaçlı dijital bilgisayardır. Büyük, odada yer kaplayan ve elektronik tüplerle çalışan ENIAC, topçu menzil tabloları ve nükleer patlama simülasyonları gibi askeri hesaplamalar için kullanılmıştır."],
+            "context": [""]
+        },
+        {
+            "tag": "laptop",
+            "patterns": ["laptop","diz üstü","dizüstü","notebook","net book","netbook","note book"],
+            "responses": ["Dizüstü bilgisayar ya da laptop, taşınabilir türden, genellikle ekran ve klavye olmak üzere iki parçadan oluşan kişisel bilgisayarlardır. Bir dizüstü bilgisayar bir masaüstü bilgisayarın klavye, fare ve ekran gibi bileşenlerini tek bir parçada toplar.","Dizüstü bilgisayarlar, taşınabilirlik ve kullanım kolaylığı sağlayan kişisel bilgisayarların bir türüdür. Masaüstü bilgisayarlara kıyasla daha küçük boyutlarda ve hafiflerdir, bu da kullanıcıların istedikleri yerde bilgisayarlarını kullanmalarını sağlar. Dizüstü bilgisayarlar, genellikle bir klavye, fare dokunmatik yüzeyi (touchpad), ekran ve dahili hoparlörler gibi temel bileşenlere sahiptir."],
+            "context": [""]
+        },
+        {
+            "tag": "hoparlör",
+            "patterns": ["hoparlör","hoparlö","ses sistemi","ses aygıtı"],
+            "responses": ["Bilgisayarda çalınan sesleri işitmemizi sağlayan donanımdır. Birkaç hoparlör bir araya gelerek ses sistemini oluşturur. Örneğin 2+1, 5+1 ve 7+1 gibi. Buradaki +1 düşük frekanslı seslerin çalındığı subwoofer isimli kutuyu ifade eder., disk kalıbı.","Hoparlörler, elektrik sinyallerini ses dalgalarına dönüştüren ve ses çıkaran cihazlardır. Genellikle elektronik cihazlarda, özellikle ses çalma cihazlarında, televizyonlarda, bilgisayarlarda, akıllı telefonlarda ve diğer sesli eğlence sistemlerinde kullanılırlar."],
+            "context": [""]
+        },
+        {
+            "tag": "kulaklik",
+            "patterns": ["kulaklık","kulaklık nedir"],
+            "responses": [" Bilgisayarda çalınan sesleri sadece dinleyicinin kulağına ileten donanımdır.","Kulaklık, bir kişinin bir cihazdan gelen sesi özel olarak duymasını sağlayan bir ses çıkış cihazıdır. İki kulaklık, bir çift oluşturur ve genellikle bir kişinin her iki kulağına takılır."],
+            "context": [""]
+        },
+        {
+            "tag": "mikrofon",
+            "patterns": ["mikrofon","ses girişi","ses giriş aygıtı"],
+            "responses": ["Seslerin bilgisayara aktarılmasını ve kaydedilmesini sağlar.","Mikrofon, sesleri mekanik titreşimlerden elektrik sinyallerine dönüştüren bir transdüserdir. Mikrofonlar, ses kayıt cihazları, ses yükselticileri veya ses işleme sistemleri gibi bir dizi cihazda kullanılır ve genellikle ses dalgalarını elektrik sinyallerine dönüştürmek için kullanılır."],
+            "context": [""]
+        },
+        {
+            "tag": "oyunkonsolu",
+            "patterns": ["oyun konsolu","oyun konsolu nedir"],
+            "responses": ["Oyunlarda kontrolü sağlayan donanımlardır. Örneğin bir araba yarışı oyununda direksiyon, fren pedalı kontrollerini gibi.","Oyun konsolu, oyuncuların video oyunlarını oynamak için kullanılan özel bir elektronik cihazdır. Genellikle bir televizyona veya monitöre bağlanır ve kullanıcılara oyun deneyimi sağlar. Oyun konsolları genellikle entegre bir işlemci, grafik işlemci, bellek ve depolama birimi gibi bileşenlere sahiptir."],
+            "context": [""]
+        },
+        {
+            "tag": "tablet",
+            "patterns": ["tablet","tablet pc","ipad"],
+            "responses": ["Tablet bilgisayar veya sadece tablet, tek bir ünitede ekran devresi ve batarya bulunan bir mobil bilgisayardır. Tabletler parmak-kalem hareketlerini algılayabilen, fare ve klavye ile kombine edilebilen, kamera ve ivmeölçer gibi sensörlerle donatılan cihazlardır.","Tablet PC, taşınabilirlik ve dokunmatik ekran teknolojisinin birleşimini sağlayan bir tür kişisel bilgisayardır. Geleneksel dizüstü bilgisayarların aksine, tablet PC'ler klavye ve fare yerine bir dokunmatik ekran aracılığıyla kullanıcı etkileşimi sağlarlar."],
+            "context": [""]
+        },
+        {
+            "tag": "tasinabilirhdd",
+            "patterns": ["taşınabilir harddisk","taşınabilir hdd","taşınabilir ssd","taşınabilir disk","taşınabilir bellek"],
+            "responses": ["Bilgisayarımızda kullandığımız Sabit disk (harddisk) gibi bilgisayar kasası dışında usb belleği gibi kullanabildiğimiz depolama alanlarına “Harici, Taşınabilir, External” Disk denir. Harici diskleri kullanım amacımız bilgisayarların depolama alanı dışında bilgisayarımızdaki hafızayı hafifletmek ve yüksek boyutlu film, müzik, resim, program vs. gibi verilerimizi arşivlemeye yarar ve bilgileri hep yanı başımızda istediğimiz yere taşımamıza yarar.","Taşınabilir bellek, veri depolama için kullanılan küçük, taşınabilir cihazlardır. Taşınabilir bellek genellikle USB flash sürücüler, harici sabit diskler, SD kartlar, microSD kartlar, harici SSD'ler gibi çeşitli biçimlerde gelir. Bu cihazlar, bilgisayarlar, akıllı telefonlar, dijital kameralar ve diğer elektronik cihazlarla veri alışverişi yapmak ve depolama sağlamak için kullanılır."],
+            "context": [""]
+        },
+        {
+            "tag": "teknoloji",
+            "patterns": ["teknoloji","tekno","teknoloji nedir","technology"],
+            "responses": ["İnsanoğlunun gereklerine uygun yardımcı alet ve araçların yapılması ya da üretilmesi için gerekli bilgi ve yetenektir. Teknoloji ayrıca, bir sanayi dalıyla ilgili üretim yöntemlerini, kullanılan araç, gereç ve aletleri kapsayan bilgidir. Bir insan etkinliği olarak teknoloji, insanlık tarihinde bilim ve mühendislikten önce ortaya çıkmıştır. Teknolojinin, bilimin uygulamacı yönü olduğu görüşleri de vardır.","Teknoloji, bilgi ve araçların bilimsel ve pratik bilgiyle birleştirilerek insanların ihtiyaçlarını karşılamak, yaşamlarını kolaylaştırmak ve çevrelerini değiştirmek için kullanılan her türlü yöntem, cihaz ve sistemlerin genel adıdır. Teknoloji, birçok alanda kullanılır ve sürekli olarak gelişir. Bilgisayarlar, iletişim teknolojileri, sağlık, ulaşım, enerji, eğitim, sanayi, tarım gibi alanlarda teknolojik ilerlemeler, yaşamı önemli ölçüde etkiler ve değiştirir."],
+            "context": [""]
+        },
+        {
+            "tag": "pckasasi",
+            "patterns": ["kasa","bilgisayar kasası","pc kasasi"],
+            "responses": ["Bilgisayarın iç donanımlarının bulunduğu kasa bu parçaların korunmasını ve bir arada durmasını sağlar. Kasayı, vücudumuzdaki iskelet olarak düşünebiliriz.","Bilgisayar kasası, bilgisayarın içindeki donanımları barındıran ve koruyan metal veya plastik bir kasa veya gövdedir. Kasanın temel amacı, içerideki bileşenleri korumak, soğutmak ve dış etkilere karşı izole etmektir."],
+            "context": [""]
+        },
+        {
+            "tag": "powersupply",
+            "patterns": ["güç kaynağı","power supply","psu","güç kaynağı ünitesi"],
+            "responses": ["Bilgisayarın tüm parçalarına gerekli gücü (elektrik akımı) sağlayan donanımdır. Bilgisayara gelen şehir elektriğinin gücünü küçülterek, kasanın içindeki donanımların kullanabilmesi için dağıtan donanım birimidir.","Güç Kaynağı Ünitesi (PSU), bir bilgisayarın çalışması için gerekli olan elektrik gücünü sağlayan bir bileşendir. Bilgisayar kasasının içinde bulunan bu ünite, elektrik prizine takılarak çalışır. PSU'nun ana görevi, bilgisayarın içindeki diğer bileşenlere uygun gerilimleri ve güçleri sağlamaktır."],
+            "context": [""]
+        },
+        {
+            "tag": "kesintisizguckaynagi",
+            "patterns": ["kesintisiz güç kaynağı","ups"],
+            "responses": ["Kesintisiz Güç Kaynağı (UPS), elektrik kesintileri veya dalgalanmaları sırasında bilgisayar sistemlerinin veya diğer elektronik cihazların sürekli olarak güç almasını sağlayan bir cihazdır. UPS, bir dahili batarya tarafından desteklenir ve elektrik kesintisi olduğunda otomatik olarak devreye girer, böylece bağlı cihazlar kesintisiz bir güç kaynağına sahip olur.","Elektrik kesilmesi durumunda bilgisayara ek güç sağlar. Böylece hem bilgisayar zarar görmez hem de çalışmalarımız kaydedebiliriz." ],
+            "context": [""]
+        },
+        {
+            "tag": "3g",
+            "patterns": ["3g","4g","5g"],
+            "responses": ["G’nin anlamı “Generation (nesil)” dır. Kablosuz iletişim teknolojileridir. Veri iletim hızları birbirinden farklıdır. 3G, saniyede 28 Megabit, 4G’de 100 Megabit ve 5G 1000 Megabit hız sunuyor. 4,5G ise 4G ve 5G nin birlikte anılmasından kaynaklanıyor.","3G, 4G ve 5G, mobil iletişim teknolojilerinin farklı nesillerini temsil eder. Bu teknolojiler, kablosuz iletişimde veri transferini sağlar ve cep telefonları, tabletler, akıllı saatler ve diğer mobil cihazlar aracılığıyla internete erişimi mümkün kılar."],
+            "context": [""]
+        },
+        {
+            "tag": "aramamotoru",
+            "patterns": ["arama motoru","search engine","google","yahoo","yandex","bing"],
+            "responses": ["Arama motorları internet üzerinden aranan bilgileri sorgulamamızı sağlayan web üzerindeki tarama mekanizmaları olarak adlandırılan geniş içerikli arama sitelerine verilen isimdir. En yaygın olarak kullanılan arama motorları Google, Yandex, Bing’dir.","Arama motoru, internet üzerinde bilgi aramak için kullanılan bir yazılım veya hizmettir. Arama motorları, kullanıcıların belirli anahtar kelimeleri veya terimleri arama çubuğuna yazarak ilgili sonuçları bulmalarını sağlar. İnternet üzerindeki web sayfalarını, belgeleri, görüntüleri, videoları ve diğer çevrimiçi içerikleri indekslerler ve kullanıcıların arama sorgularına uygun sonuçları görüntülerler."],
+            "context": [""]
+        },
+        {
+            "tag": "bilisimsucu",
+            "patterns": ["bilişim suçu","bilişim suçları"],
+            "responses": ["Bilgisayar, tablet, cep telefonu gibi çağdaş iletişim araçları veya pos makinası gibi alışveriş araçları kullanılarak elektronik ortamda işlenen suçlara bilişim suçları denilmektedir.","Bilişim suçu, bilgisayarlar ve internet gibi bilişim teknolojilerini kullanarak yasalara veya etik kurallara aykırı davranışları ifade eder. Bilişim suçları, bilgisayar korsanlığı, veri hırsızlığı, kimlik avı (phishing), zararlı yazılım saldırıları, bilgisayar kandırmacılığı, çevrimiçi taciz, siber zorbalık ve diğer benzer faaliyetleri kapsar.","Bilişim suçları, genellikle bilgisayar sistemlerine ve verilere zarar vermek, kişisel bilgileri çalmak veya manipüle etmek, hizmet kesintilerine neden olmak, ticari sırları ifşa etmek veya bilgisayar kullanıcılarını dolandırmak amacıyla işlenir."],
+            "context": [""]
+        },
+        {
+            "tag": "blog",
+            "patterns": ["blog","blog nedir","weblog","web blog","internet günlüğü"],
+            "responses": [" İnsanların öğrendiklerini, bildiklerini, paylaşmak istediklerini yazdığı web tabanlı bir sistemdir.","Blog, bir kişinin veya bir grup insanın internet üzerinde düzenli olarak yazılar, makaleler, günlükler, fotoğraflar veya diğer içerikleri paylaştığı bir web sitesidir. Blog terimi, web log kelimesinin kısaltmasıdır. Bloglar, belirli bir konuya odaklanabileceği gibi genel ilgi alanları veya kişisel günlükler de olabilir."],
+            "context": [""]
+        },
+        {
+            "tag": "blogger",
+            "patterns": ["blogger","blog yazarı"],
+            "responses": ["Kısa zaman içerisinde internet üzerinde son derece popüler olan ve ilgi çeken içerik yönetim sistemleri arasında yer alır. Blog yazarlarına Bloger denir.","Bir blog yazarı, bir blogda yazı yazan veya içerik oluşturan kişidir. Blog yazarları, genellikle belirli bir konuda uzmanlaşmış veya kişisel deneyimlerini, düşüncelerini, bilgilerini veya hikayelerini paylaşmayı amaçlayan kişilerdir.","Blog yazarları, kendi web sitelerinde veya bloglama platformlarında (örneğin, Blogger, WordPress, Medium gibi) bloglarını oluşturabilirler. Bloglarında düzenli olarak yazılar yayınlarlar ve okuyucularla etkileşime girerler. Blog yazarları, belirli bir konuda uzmanlaşmış olabilecekleri gibi geniş bir yelpazede konuları ele alabilirler."],
+            "context": [""]
+        },
+        {
+            "tag": "cevrimici",
+            "patterns": ["çevrim içi","çevrimiçi","online"],
+            "responses": ["Çevrimiçi, internet veya bir ağ aracılığıyla bağlı veya erişilebilir olan anlamına gelir. Bu terim, bir bilgisayar, akıllı telefon, tablet veya diğer dijital cihazın internete veya ağa bağlı olduğu durumları ifade eder.","Çevrimiçi olmak, çevrimiçi içeriğe erişmek, çevrimiçi alışveriş yapmak, e-postaları kontrol etmek veya sosyal medya platformlarında etkileşimde bulunmak gibi internet üzerindeki çeşitli etkinlikleri yapmayı mümkün kılar. Çevrimiçi olmak, günümüzde birçok insanın günlük yaşamının ayrılmaz bir parçasıdır ve internetin sunduğu kaynaklardan faydalanmayı sağlar."],
+            "context": [""]
+        }, {
+            "tag": "cevrimdisi",
+            "patterns": ["çevrimdışı","çevrim dışı","offline"],
+            "responses": ["Çevrimdışı, internet veya bir ağ aracılığıyla bağlı veya erişilebilir olmayan durumu ifade eder. Bu terim, bir bilgisayar, akıllı telefon, tablet veya diğer dijital cihazın internet veya ağ bağlantısının kesilmiş veya olmadığı durumları ifade eder.","Çevrimdışı olmak, internete veya ağa erişim sağlanamadığı için çevrimiçi içeriklere, hizmetlere veya kaynaklara erişememeyi ve çevrimiçi etkinlikleri gerçekleştirememeyi ifade eder. Örneğin, çevrimdışı olmak, e-postaları kontrol edememek, web sitelerini ziyaret edememek, çevrimiçi oyunlara katılamamak veya sosyal medya platformlarında etkileşime girememek gibi durumları içerebilir."],
+            "context": [""]
+        },
+        {
+            "tag": "download",
+            "patterns": ["download","indir","down load"],
+            "responses": ["İnternetten veri indirmek anlamında kullanılır."," internet üzerinden veri veya dosyaları bir bilgisayara veya diğer dijital cihazlara indirmek anlamına gelir. Bu terim, bir sunucudan (web sitesi, bulut depolama hizmeti, dosya paylaşımı platformu vb.) dijital verilerin alınmasını ifade eder." ],
+            "context": [""]
+        },
+        {
+            "tag": "email",
+            "patterns": ["email","e-mail","e-posta","mail","web mail","elektronik posta"],
+            "responses": ["E-posta ya da e-mail, internet üzerinden gönderilen dijital mektup.","E-posta (kısaca e-mail olarak da bilinir), elektronik iletişim için kullanılan bir sistemdir. E-posta, metin, dosya, resim ve diğer türdeki bilgileri internet üzerinden bir kullanıcıdan diğerine iletmek için kullanılır. Her e-posta bir adresleme sistemi kullanır ve genellikle alıcıya mesajın içeriğini ve gönderenin kimliğini bildiren bir başlık içerir. E-posta, günümüzde kişisel ve iş amaçlı iletişimde yaygın olarak kullanılan bir iletişim aracıdır."],
+            "context": [""]
+        },
+        {
+            "tag": "fiberinternet",
+            "patterns": ["fiber internet","fiber","fiber net","disk imajı","disk kalıbı","disk yansıması"],
+            "responses": ["Fiber internet, izole edilmiş cam elyafı ortamın elde edildiği kablolar (fiber optik) sayesinde yüksek hızda internet erişiminin gerçek anlamda sağlandığı bir teknolojidir. Dünyadaki modern ülkelerin neredeyse tamamında kullanılan fiber internet, ev kullanıcılarına 1.000 megabite varan hızlarda internet kullanma imkânı sunuyor.","   Fiber internet, veri iletiminde optik fiber kablolarını kullanan yüksek hızlı bir internet bağlantı türüdür. Geleneksel bakır kablolar yerine cam veya plastikten yapılan optik fiberler kullanılarak veri iletilir. Fiber optik kablolar, ışık sinyallerini kullanarak veri iletimini sağlar. Bu, elektrik sinyallerinden daha hızlı ve daha güvenilir bir iletişim sağlar."],
+            "context": [""]
+        },
+        {
+            "tag": "internet",
+            "patterns": ["internet","internet nedir"],
+            "responses": ["Tüm dünya üzerinde yayılmış bilgisayar ağlarının birleşiminden oluşan ve bilgisayarların ortak bir dille iletişim kurmasına imkân sağlayan çok büyük bir ağdır.","İnternet, dünya çapında bir ağ olan ve milyonlarca bilgisayarın birbirine bağlanmasını sağlayan küresel bir iletişim ağıdır. Bu ağ, bilgi, veri ve medya paylaşımını, iletişimi ve işbirliğini mümkün kılar. İnternet, farklı cihazlar arasında bilgi alışverişi sağlayan bir iletişim ortamıdır."],
+            "context": [""]
+        },
+        {
+            "tag": "link",
+            "patterns": ["link","hyperlink","link nedir"],
+            "responses": ["Türkçe anlamı ilişim ve bağlantı olarak bilinen, İngilizce anlamı ise Link olarak bilinen ve web sitelerini birbirlerine bağlayan kodlara denir.","Bir link, web sayfaları, belgeler veya diğer elektronik dosyalar arasında bağlantı kurmaya yarayan bir referans veya yönlendirici unsurdur. Genellikle bir metin veya görüntü olabilir ve genellikle tıklanabilir bir alanı temsil eder. "],
+            "context": [""]
+        },
+        {
+            "tag": "nfc",
+            "patterns": ["nfc","nfc nedir","iso","yakın alan iletişimi","Near Field Communication"],
+            "responses": ["Yakın Alan İletişimi; müşteri elektroniği, mobil cihazlar ve bilgisayarlar ile etkileşim için tasarlanmış bir kısa menzilli, kablosuz, kişisel iletişim alanı teknolojisidir. Yakın Alan İletişimi manyetik alan indüksiyonu kullanarak çalışır ve etiket ile okuyucu işlevine sahiptir.","NFC (Near Field Communication), kısa mesafe kablosuz iletişim teknolojisidir. NFC, birbirine çok yakın iki cihaz arasında (genellikle 4 santimetreden az mesafede) veri paylaşımını ve iletişimini sağlar. Bu teknoloji, akıllı telefonlar, tabletler, akıllı saatler ve diğer elektronik cihazlar arasında dosya transferi, ödeme yapma, etiket okuma, akıllı cihazları eşleştirme ve diğer etkileşimli uygulamalar için kullanılır."],
+            "context": [""]
+        },
+        {
+            "tag": "spam",
+            "patterns": ["spam nedir","spam"],
+            "responses": ["SPAM en basit tanımıyla sizin isteğiniz olmadan size gönderilen reklam içerikli mail ve diğer türden gönderilerdir","Spam, genellikle istenmeyen ve genellikle izinsiz olarak gönderilen büyük miktarda reklam, istenmeyen posta veya diğer türdeki iletileri ifade eder. "],
+            "context": [""]
+        },
+        {
+            "tag": "upload",
+            "patterns": ["upload","yüklemek","yükleme"],
+            "responses": ["Kendi bilgisayarınızdaki verileri başka bir bilgisayara internet üzerinden yüklemek anlamında kullanılır.","Upload terimi, genellikle bir bilgisayar veya diğer dijital cihazdan bir ağa veya bir sunucuya veri gönderme eylemini ifade eder. "],
+            "context": [""]
+        },
+        {
+            "tag": "veritabani",
+            "patterns": ["veri tabanı","veritabanı","database","data base"],
+            "responses": ["Veri tabanı ya da kavramı, verilerin belirli bir düzene göre depolandığı sistemlere verilen genel bir isimdir. Günümüzde özel veya kamu kuruluşların hepsi bünyesinde barındırdıkları bilgileri veri tabanında tutarlar."," Veri tabanı, yapılandırılmış bir şekilde verilerin depolandığı, düzenlendiği ve erişildiği bir sistemdir. Bu sistem, bilgileri organize etmek, saklamak, güncellemek ve geri almak için kullanılır. Bir veritabanı, verileri tablolar, satırlar ve sütunlar şeklinde düzenler. Bu tablolar, ilişkisel veritabanları için yaygın bir yapıdır.","Veri tabanları, çeşitli yazılım uygulamalarında kullanılır, özellikle işletmelerde, web sitelerinde, finansal kurumlarda ve diğer birçok endüstride. Veri tabanları, büyük miktarda veriyi etkili bir şekilde depolayabilir ve bu verilere hızlı ve güvenilir bir şekilde erişim sağlar. Bu, veri tabanlarını veri analizi, raporlama, iş zekası ve iş süreçlerinin yönetimi gibi birçok farklı amaç için ideal hale getirir."],
+            "context": [""]
+        },
+        {
+            "tag": "veritabaniprogramlari",
+            "patterns": ["veri tabanı programları","veri tabanı çeşitleri","veri tabanı programları","veri tabanı çeşitleri","mysql","microsoft sql server","oracle","postgreSQL","postgre SQL"],
+            "responses": ["Veri tabanı programları, veri tabanlarını yönetmek, oluşturmak, düzenlemek ve sorgulamak için kullanılan yazılımlardır. İşte yaygın olarak kullanılan bazı veri tabanı programları: MySQL: MySQL, açık kaynaklı bir ilişkisel veritabanı yönetim sistemidir. Özellikle web uygulamaları için yaygın olarak kullanılır ve performansı, güvenilirliği ve esnekliği nedeniyle popülerdir. Microsoft SQL Server: Microsoft SQL Server, Microsoft tarafından geliştirilen bir ilişkisel veritabanı yönetim sistemidir. Windows tabanlı işletim sistemlerinde yaygın olarak kullanılır ve büyük kurumsal uygulamalar için idealdir. Oracle Database: Oracle Database, Oracle Corporation tarafından geliştirilen bir ilişkisel veritabanı yönetim sistemidir. Büyük ölçekli kurumsal uygulamalar ve veri merkezi çözümleri için yaygın olarak kullanılır. PostgreSQL: PostgreSQL, açık kaynaklı bir ilişkisel veritabanı yönetim sistemidir. MySQL'e benzer şekilde, web uygulamaları ve diğer çeşitli uygulamalar için kullanılır. MongoDB: MongoDB, belge tabanlı bir NoSQL veritabanı yönetim sistemidir. İlişkisel veritabanlarının dışında, özellikle büyük miktarda belge tabanlı veya JSON formatlı veri depolama gereksinimi olan uygulamalar için kullanılır. SQLite: SQLite, küçük boyutu ve taşınabilirliği nedeniyle yaygın olarak kullanılan bir hafif ilişkisel veritabanı yönetim sistemidir. Mobil uygulamalar ve gömülü sistemler için idealdir. Bu, sadece birkaç örnektir ve birçok farklı veri tabanı programı ve sistemleri bulunmaktadır, her biri farklı gereksinimlere ve kullanım senaryolarına yöneliktir."],
+            "context": [""]
+        },
+        {
+            "tag": "website",
+            "patterns": ["website","web site","web sayfası","web sitesi"],
+            "responses": ["Web üzerindeki sayfalar; metin, görsel ve animasyon şeklinde ziyaretçisine bilgi aktaran veya hizmet sunan sayfaların tümünü kapsayan bir doküman topluluğudur.","Web sitesi, internet üzerinde bir veya birden fazla web sayfasından oluşan ve belirli bir amaç veya içeriği sunmak için kullanılan bir internet sitesidir. Web siteleri, HTML, CSS, JavaScript ve diğer web teknolojileri kullanılarak oluşturulur ve genellikle bir alan adı altında yayınlanır."],
+            "context": [""]
+        },
+        {
+            "tag": "wifi",
+            "patterns": ["wifi","wi fi","wi-fi","wifi nedir","Wireless Fidelity"],
+            "responses": ["Wireles Fidelity kelimelerinin kısaltması olup kablosuz bağlılık veya kablosuz bağlantı anlamına gelir. Wi-Fi ürünlerin kablosuz bağlantı sağlayabildiğini gösteren bir uyumluluk göstergesidir ve IEEE 802.11a, IEEE 802.11b, IEEE 802.11g ve IEEE 802.11n standartlarına göre belirlenir.","Wi-Fi, kablosuz yerel ağ (WLAN) teknolojisini ifade eder. Wi-Fi, bilgisayarlar, akıllı telefonlar, tabletler ve diğer cihazların kablosuz olarak internete bağlanmasını sağlayan bir iletişim protokolüdür."],
+            "context": [""]
+        },
+        {
+            "tag": "wireless",
+            "patterns": ["wireless","wire less","kablosuz"],
+            "responses": ["Türkçe anlamını açıklamak gerekirse; Radyo ya da Telsiz Dalgası olarak çevrilebilir. Kablo kullanmaksızın iletişim, transfer anlamına gelmektedir. Daha çok internete kablo kullanmadan bağlanmak, bir cep telefonun diğer bir cep telefonuna dosya alışverişi yapmak için kullanılmaktadır.","Kablosuz (Wireless), elektronik cihazların kablolar kullanmadan birbirleriyle iletişim kurmasını sağlayan bir iletişim teknolojisidir. Kablosuz iletişim, radyo dalgaları, mikrodalga veya kızılötesi ışık gibi kablolara ihtiyaç duymayan iletim ortamlarını kullanır."],
+            "context": [""]
+        },
+        {
+            "tag": "www",
+            "patterns": ["www","World Wide Web"],
+            "responses": ["WWW yani dünyadaki bilgisayarların birbiriyle iletişim kurabildiği, görüntü, ses ve veri paylaşımının yapılabildiği tüm dünyaya yayılmış büyük bir ağdır. Her bir internet sitesinin kendine ait www. ile başlayan bir adresi vardır.","World Wide Web (Kısaca Web), internet üzerindeki milyonlarca belgeye erişim sağlayan bir bilgi alanıdır. İnsanların dokümanları, resimleri, videoları ve diğer medya türlerini paylaşmasını, aramasını ve erişmesini sağlayan bir sistemdir. Web, HTML (Hypertext Markup Language) gibi standart dillerle yazılmış belgeleri kullanır ve bu belgeler birbirlerine hypertext linkleri aracılığıyla bağlanır. Bu sayede, bir kullanıcı bir belgeyi görüntülerken ilgili linklere tıklayarak diğer belgelere geçebilir."],
+            "context": [""]
+        },
+        {
+            "tag": "Youtuber",
+            "patterns": ["Youtuber","Youtuber nedir","Youtuber kime denir"],
+            "responses": ["Youtuber’ı basitçe video paylaşım ağı Youtube’u etkin olarak kullanan, video yükleyen, kanal çalıştıran insanlara verilen isimdir.","Youtuber, YouTube platformunda kendi içeriklerini oluşturan ve paylaşan kişilere verilen genel bir addır. YouTube, kullanıcıların videolarını yükleyebilecekleri, izleyebilecekleri ve paylaşabilecekleri bir video barındırma ve yayınlama platformudur. Youtuber'lar, genellikle belirli bir niş veya konu üzerine odaklanarak çeşitli videolar üretirler. Bu videolar eğlendirici, eğitici, bilgilendirici veya bir kombinasyonu olabilir."],
+            "context": [""]
+        },
+        {
+            "tag": "byte",
+            "patterns": ["byte","byte nedir","bayt"],
+            "responses": ["Bayt (byte), elektronik ve bilgisayar bilimlerinde genellikle 8 bitlik dizilim boyunca 1 veya 0 değerlerini bünyesine alan ve kaydedilen bilgilerin türünden bağımsız bir bellek ölçüm birimi. Bir bayt, Latin alfabesini baz alan 8-bitlik bir kodlamada herhangi bir harfi temsil eder.","Bilgisayar bilimlerinde ve bilgi teknolojilerinde veri depolamanın ve iletiminin temel birimidir. Byte, genellikle 8 bit içerir ve bir karakteri (harf, rakam, özel karakter vb.) temsil eder."],
+            "context": [""]
+        },
+        {
+            "tag": "2k",
+            "patterns": ["2K","full hd","fullhd"],
+            "responses": ["HD görüntüden daha kaliteli ve yüksek çözünürlüklü görüntü veya yüksek netlik anlamlarına gelmektedir. 1920×1080 piksel çözünürlüğü ifade eder.",
+            "Full HD, yüksek çözünürlüklü bir video veya görüntü formatını ifade eder. Genellikle 1920x1080 piksel çözünürlükteki videoları ve görüntüleri tanımlamak için kullanılır. Bu, geniş ekran televizyonlar, monitörler ve diğer görüntüleme cihazlarında sıklıkla kullanılan bir çözünürlük standardıdır."],
+            "context": [""]
+        },
+        {
+            "tag": "gigabyte",
+            "patterns": ["gigabyte","gigabayt","gb","giga bayt","giga byte"],
+            "responses": ["Gigabyte bilgisayarlarda kullanılan, 1024 megabayt (1024*1024*1024 bayt) anlamına gelen bir ölçü birimidir."],
+            "context": [""]
+        },
+        {
+            "tag": "megabyte",
+            "patterns": ["megabyte","megabayt","mb","mega bayt","mega byte"],
+            "responses": ["Megabayt bilgisayarlarda kullanılan, 1024 kilobayt (1024*1024 bayt) anlamına gelen bir ölçü birimidir."],
+            "context": [""]
+        },
+        {
+            "tag": "terabyte",
+            "patterns": ["terabyte","terabayt","tb","tera bayt","tera byte"],
+            "responses": ["Terabyte bilgisayarlarda kullanılan, 1024 gigabyte (1024*1024*1024*1024 bayt) anlamına gelen bir ölçü birimidir."],
+            "context": [""]
+        },
+        {
+            "tag": "kilobyte",
+            "patterns": ["kilobyte","kilobayt","kb","kilo bayt","kilo byte"],
+            "responses": ["Kilobayt bilgisayarlarda kullanılan, 1024 bayt anlamına gelen bir ölçü birimidir."],
+            "context": [""]
+        },
+        {
+            "tag": "hd",
+            "patterns": ["hd","hd nedir","hd görüntü","hd yayın","high definition"],
+            "responses": ["HD harfleri İngilizce ‘de High Definition kelimelerinin kısaltılmış halidir. Türkçe kelime karşılığı Yüksek Tanımlı yani daha kaliteli ve yüksek çözünürlüklü görüntü veya yüksek netlik anlamlarına gelmektedir. 1280×720 piksel çözünürlüğü ifade eder.","HD genellikle yüksek tanım anlamına gelir ve özellikle video veya görüntü kalitesini ifade etmek için kullanılır. HD terimi, yüksek çözünürlüklü video veya görüntü anlamına gelir. Geleneksel olarak, HD terimi 720p veya 1080p çözünürlüğü ifade etmek için kullanılır"],
+            "context": [""]
+        },
+        {
+            "tag": "ultrahd",
+            "patterns": ["ultra hd","ultrahd","4k","4k video","ultra hd video","ultrahd video","uhd"],
+            "responses": ["Full HD görüntüden daha kaliteli ve yüksek çözünürlüklü görüntü veya yüksek netlik anlamlarına gelmektedir. 3840×2160 piksel çözünürlüğü ifade eder.","Ultra HD veya UHD terimi, daha yüksek çözünürlükteki görüntüler için kullanılır. Genellikle 4K (3840 x 2160 piksel) veya 8K (7680 x 4320 piksel) çözünürlükteki görüntüler için kullanılır. Ultra HD terimi, görüntülerin standart HD'den (yüksek tanımlı) çok daha yüksek bir çözünürlüğe sahip olduğunu belirtir. Bu, daha net ve daha detaylı görüntüler elde etmek için kullanılır. Ultra HD televizyonlar, monitörler ve diğer görüntüleme cihazları giderek daha yaygın hale gelmektedir."],
+            "context": [""]
+        },
+        {
+            "tag": "akissemasi",
+            "patterns": ["akış şeması","akış diyagramı"],
+            "responses": ["İş akış şemaları kurulan algoritmalar üzerinde çalışmayı kolaylaştıran yapılardır. Aynı zamanda algoritmanın başka geliştiriciler tarafından kolaylıkla anlaşılmasını da sağlarlar. Kurulan bir algoritmanın iş akış şemasına aktarılması oldukça kolay bir iştir. İş akış şeması ne kadar ayrıntılıysa kurulan algoritma üzerindeki hataların giderilmesi ve geliştirilmesi de o derece kolaydır.","Bir akış şeması veya akış diyagramı, süreçlerin veya sistemlerin işleyişini gösteren grafik bir temsilidir. İşlemleri, kararları, veri akışını ve diğer ilişkili unsurları görselleştirmek için kullanılır. Bir iş veya süreç boyunca adımları, kararları ve ilişkili bileşenleri anlamak ve iletmek için yaygın olarak kullanılır."],
+            "context": [""]
+        },
+        {
+            "tag": "algoritma",
+            "patterns": ["algoritma","algoritma nedir"],
+            "responses": ["Belli bir problemi çözmek veya belirli bir amaca ulaşmak için tasarlanan yol anlamına gelir, matematikte ve bilgisayar biliminde bir işi yapmak için tanımlanan, bir başlangıç durumundan başladığında, açıkça belirlenmiş bir son durumunda sonlanan, sonlu işlemler kümesine denir.","Bir algoritma, belirli bir problemi çözmek veya belirli bir görevi gerçekleştirmek için tanımlanmış mantıksal adımların bir koleksiyonudur. Temel olarak, bir algoritma, başlangıçtan sona kadar izlenen belirli bir sırayı takip eden talimatları içerir.","Algoritmalar, bilgisayar bilimleri ve matematik gibi alanlarda yaygın olarak kullanılır. Bilgisayar biliminde, algoritmalar genellikle bir programlama dili kullanılarak uygulanır ve bir bilgisayarın bir problemi çözmesi veya belirli bir işlevi gerçekleştirmesi için kullanılır.","Algoritmalar, veri işleme, arama, sıralama, optimizasyon, grafikler, yapay zeka ve daha pek çok alanda kullanılabilir. İyi bir algoritma, belirli bir problemi en etkili ve verimli şekilde çözmek için tasarlanmıştır. Algoritmaların analizi ve tasarımı, bilgisayar bilimlerinde ve matematikte önemli bir araştırma ve uygulama alanıdır."],
+            "context": [""]
+        },
+        {
+            "tag": "android",
+            "patterns": ["android","android nedir"],
+            "responses": ["Google tarafından yapılan bir işletim sistemidir. Genel olarak çeşitli akıllı telefon ve tabletlerde kurulu olarak gelir ve kullanıcılara Google’ın kendi hizmetleri olan Search, Youtube, Maps, Gmail ve daha fazlası programı kullanabilmemizi sağlar.","Android, Linux tabanlı bir işletim sistemidir ve açık kaynaklıdır. Bu, geliştiricilere Android üzerinde uygulamalar oluşturma ve işletim sisteminin kendisini özelleştirme konusunda geniş bir esneklik sağlar. Android uygulamaları, genellikle Java veya Kotlin gibi programlama dilleri kullanılarak geliştirilir."],
+            "context": [""]
+        },
+        {
+            "tag": "yedekleme",
+            "patterns": ["yedekleme","yedek alma","backup","back up"],
+            "responses": ["Yedekleme genel anlamıyla bilgisayar sisteminizi işlevsel kılan temel birimlerin, üzerinde çalışan yazılımların ve depolanan verilerin, arıza, hata ve hasar durumlarında çalışmaların kesintiye uğramaması için veya geri dönülemez biçimde kaybolmasını engellemek amacıyla birden fazla kopya halinde bulundurulmasını sağlayan dosyalar bütününe verilen addır.","Yedekleme, bilgi veya verilerin kaybolmasını veya zarar görmesini önlemek için kopyalarının alınması işlemidir. Yedekleme, bilgisayar dosyalarından, mobil cihaz içeriğine, sunucu veritabanlarına kadar her türlü dijital veriyi korumak için kullanılabilir."],
+            "context": [""]
+        },
+        {
+            "tag": "boot",
+            "patterns": ["boot","boot nedir","boot ne işe yarar","önyükleme", "ön yükleme","booting","bootstrapping"],
+            "responses": ["Boot’u Türkçeye çevirirsek karşılığı “ön yükleme” dir. Yani işletim sisteminin hangi dizinde olduğunu belirten uygulamadır ve BIOS’un bir parçasıdır.","Boot, bilgisayar veya başka bir cihazın çalıştırılması veya yeniden başlatılması anlamına gelir. Bilgisayarın işletim sistemini başlatma süreci genellikle booting veya bootstrapping olarak adlandırılır."],
+            "context": [""]
+        },
+        {
+            "tag": "driver",
+            "patterns": ["driver","driver nedir","sürücü"],
+            "responses": ["Sürücü (Çoğu durumda Driver diye geçer), bilgisayarınızın donanım aygıtlarıyla iletişim kurmasını sağlayan yazılımdır. Sürücüler olmadan, bilgisayarınıza bağlı aygıtlar (örneğin, fare veya harici sabit sürücü) düzgün çalışmaz.","Bir sürücü (driver), bilgisayar veya bilgisayarla bağlantılı bir cihazın, işletim sistemiyle iletişim kurmasını sağlayan bir yazılım parçasıdır. Her donanım parçası veya cihaz, işletim sistemiyle iletişim kurmak için belirli bir sürücüye ihtiyaç duyar.","Sürücüler, donanım üreticileri tarafından geliştirilir ve genellikle işletim sistemi tarafından tanınarak yüklenir. Örneğin, bir yazıcı sürücüsü, yazıcınızın markası ve modeline bağlı olarak bilgisayarınıza yüklenir ve yazıcıyı kullanmanıza olanak tanır. Benzer şekilde, bir ekran kartı sürücüsü, ekran kartınızın doğru şekilde çalışmasını sağlar."],
+            "context": [""]
+        },
+        {
+            "tag": "emoji",
+            "patterns": ["emoji","emoji nedir","moji","smile","görsel karakter","gülen yüz"],
+            "responses": ["Emoji kelimesindeki E görsel, Moji ise karakter anlamı taşıyor. Sanalda kişinin ifade yansıtması gibi algılayabilirsiniz.","Emoji, duyguları, nesneleri, durumları veya fikirleri ifade etmek için kullanılan küçük resim veya sembollerdir. Japonca kökenli bir kelime olan emoji, resim yazı veya duygu işareti anlamına gelir. Emoji'ler genellikle metin tabanlı iletişimde duygusal ifadeleri ve anlamı iletmek için kullanılır."],
+            "context": [""]
+        },
+        {
+            "tag": "linux",
+            "patterns": ["linux","linux nedir","linux işletim sistemi"],
+            "responses": ["Unix’e fikirsel ve teknik anlamda atıfta bulunarak geliştirilmiş açık kaynak kodlu, özgür ve ücretsiz (destek hariç) bir işletim sistemi çekirdeğidir. Çekirdeğin kaynak kodları GNU Genel Kamu Lisansı çerçevesinde özgürce dağıtılabilir, değiştirilebilir ve kullanılabilir.","Linux, açık kaynak kodlu bir işletim sistemidir. İlk olarak 1991 yılında Linus Torvalds tarafından geliştirilmeye başlanmıştır. Linux, UNIX benzeri bir yapıya sahiptir ve çoğunlukla sunucu sistemlerinde, süper bilgisayarlarında ve gömülü cihazlarda kullanılır. Linux, ücretsiz olarak dağıtılan bir yazılımdır ve geniş bir topluluk tarafından desteklenir. Linux, güvenilirlik, güvenlik, özgürlük ve esneklik gibi avantajlarıyla bilinir. Ayrıca, farklı dağıtımlar aracılığıyla çeşitli kullanıcı ihtiyaçlarına yönelik özelleştirilmiş versiyonları bulunmaktadır."],
+            "context": [""]
+        },{
+            "tag": "unix",
+            "patterns": ["unix","unix nedir","unix işletim sistemi"],
+            "responses": ["UNIX, çok kullanıcılı, çok görevli bir işletim sistemidir. İlk olarak 1960'larda ve 1970'lerin başında AT&T Bell Laboratories tarafından geliştirilmiştir. UNIX, birçok modern işletim sisteminin temelini oluşturan bir dizi kavramı ve teknolojiyi tanımlayan bir sistemdir. Bu kavramlar arasında çok kullanıcılı erişim, çoklu görev, ağ desteği, modüler tasarım, komut satırı arabirimi ve çoklu işlem desteği bulunur."],
+            "context": [""]
+        },{
+            "tag": "LinusTorvalds",
+            "patterns": ["Linus Torvalds","Linus Torvalds kimdir","linus","linuxu kim geliştirdi","linux geliştiricisi"],
+            "responses": ["Linus Torvalds, Finlandiyalı bir bilgisayar programcısıdır ve en çok Linux işletim sisteminin yaratıcısı olarak tanınır. 1991 yılında, Helsinki Üniversitesi'nde öğrenciyken, kişisel bir projek olarak Linux çekirdeğini geliştirmeye başladı. Linux'un başlangıçta küçük bir işletim sistemi olarak başlayan bu çekirdek, zamanla büyük bir geliştirme topluluğu tarafından desteklenen ve popülerleşen bir işletim sistemi haline geldi."],
+            "context": [""]
+        },
+        {
+            "tag": "ios",
+            "patterns": ["ios","ios nedir","ios işletim sistemi","ios nasıl yüklenir","ios'u kim geliştirdi"],
+            "responses": ["Mac OS X’den türetilmiştir. iOS içinde 4 katman bulundurmaktadır: Core OS tabakası, Core Servisleri tabakası, Medya tabakası ve Cocoa Touch tabakası. Yazılım cihazın içinde 2500 MB’lık bir alan kaplamaktadır. iOS işletim sistemi yapısı nedeniyle Apple App Store ve iTunes dışında hiçbir yerden uygulama yüklenemez.","iOS, Apple Inc. tarafından geliştirilen ve sadece Apple'ın ürettiği cihazlarda çalışan bir mobil işletim sistemidir. iOS, iPhone, iPad, iPod Touch ve Apple TV gibi cihazlarda kullanılır. Bu işletim sistemi, öncelikle kişisel ve işlevsel kullanım için tasarlanmıştır ve bir dizi entegre uygulama ve özellik sunar."],
+            "context": [""]
+        },
+        {
+            "tag": "hack",
+            "patterns": ["hack","hacker","hack nedir","hacker nedir","hacker kime denir","hacker ne iş yapar","hack nasıl yapılır"],
+            "responses": ["Hacker ya da bilgisayar korsanı, şahsî bilgisayarlara veya çeşitli kurum ve kuruluşlara ait bilgisayarlara ve ağlara izinsiz olarak giriş yapan kişidir. Bu izinsiz giriş işlemine hack denir.","Hack terimi, genellikle bilgisayar sistemlerine izinsiz erişim sağlama veya sistemlerin güvenlik önlemlerini aşma eylemini ifade eder. Ancak, hack terimi daha geniş bir anlamda kullanılabilir ve yaratıcı, etkili veya beklenmedik bir şekilde bir şeyi başarma eylemini de ifade edebilir. Hacker terimi, genellikle bilgisayar sistemlerine yetkisiz olarak erişim sağlayan veya sistemlerin güvenlik önlemlerini aşmaya çalışan kişileri tanımlar. Ancak, hackerlar farklı amaçlarla faaliyet gösterebilir ve siber güvenlik topluluğunda farklı kategorilere ayrılabilirler."],
+            "context": [""]
+        },
+        {
+            "tag": "lisansliyazilim",
+            "patterns": ["lisanslı yazılım","lisanslı yazılım nedir","lisans"],
+            "responses": ["Kullanım hakları satın alınmış veya bu hususta sözleşme imzalanmış bir kişi ya da bir grup tarafından kullanılabilen yazılıma denir.","Lisanslı yazılım, belirli bir lisans altında sunulan ve kullanıcıların yazılımı belirli koşullar altında kullanmasına izin veren yazılımlardır. Bir yazılımın lisansı, kullanıcıların hak ve sorumluluklarını belirler ve genellikle yazılımın dağıtılması, kullanılması, kopyalanması ve değiştirilmesi gibi konuları kapsar. Lisanslı yazılımlar genellikle ücretli veya ücretsiz olarak sunulabilirler."],
+            "context": [""]
+        },
+        {
+            "tag": "MachintoshOS",
+            "patterns": ["Machintosh OS","mac os","mac işletim sistemi","Machintosh işletim sistemi"],
+            "responses": ["Apple Inc. tarafından Macintosh bilgisayarları için tasarlanmış bir işletim sistemidir. Mac OS X aslen BSD ve Mach mikro çekirdeği üzerine kurulu, açık kaynak bir işletim sistemi olan Darwin’e dayanır.","Macintosh OS, Apple Inc. tarafından geliştirilen ve macOS olarak da bilinen bir işletim sistemidir. Macintosh bilgisayarları için özel olarak tasarlanmıştır ve Apple'ın bilgisayar ürün yelpazesinde çalışır. macOS, BSD Unix tabanlı bir işletim sistemidir ve özgün olarak Macintosh bilgisayarlarına özgüdür."],
+            "context": [""]
+        },
+        {
+            "tag": "pardus",
+            "patterns": ["pardus","pardus nedir","yerli işletim sistemi","milli işletim sistemi","pardus os","pardus işletim sistemi","tubitak tarafından geliştirilen işletim sistemi","tubitak işletim sistemi","anadolu parsı"],
+            "responses": ["Türkiye’de TÜBİTAK tarafından geliştirilen bir Linux dağıtımı olan işletim sistemidir. Pardus adı, Anadolu Parsının bilimsel adı olan Panthera pardus tulliana’dan gelmektedir.","Pardus, Türkiye'de geliştirilen ve kamu kurumlarının bilgi teknolojileri altyapılarında kullanılan bir Linux dağıtımıdır. Türkiye Bilimsel ve Teknolojik Araştırma Kurumu (TÜBİTAK) tarafından başlatılan bir proje olan Pardus, açık kaynak kodlu bir işletim sistemi olarak kamu kurumlarına yönelik olarak geliştirilmiştir."],
+            "context": [""]
+        },
+        {
+            "tag": "reset",
+            "patterns": ["reset","reset nedir","reset ne işe yarar","reset atma","reset nasıl atılır"],
+            "responses": ["Bilgisayarı yeniden başlatmaya reset denir.","Reset terimi, farklı bağlamlarda farklı anlamlar taşıyabilir, ancak genellikle bir cihazın veya bir sistemin başlangıç durumuna dönmesini ifade eder."],
+            "context": [""]
+        },
+        {
+            "tag": "root",
+            "patterns": ["root","kök dizin","root nedir","root ne işe yarar","kök dizin nedir"],
+            "responses": ["Root yetkileri olmayan bir kullanıcı hesabı, cihaz üzerinde belirlenen sistemsel birçok şeyi değiştiremez. Android telefon ve tablet üreticileri root yetkilerini kullanıcılara kapatarak cihaza tam kontrol sağlamamızı engelliyorlar. Genel deyim olarak root yapma veya root atma işlemi aslında telefona veya tablete root yetkileri sağlamak anlamındadır.","Root, bilgisayar sistemlerinde, özellikle UNIX benzeri işletim sistemlerinde, en üst düzey erişim yetkilerine sahip olan kullanıcı hesabını ifade eder. Root, sistemin tüm kaynaklarına erişim sağlayabilir ve tüm işlemleri gerçekleştirebilir. Bu, dosya ve dizinleri okuma, yazma ve silme, sistem yapılandırması değiştirme, yeni kullanıcılar oluşturma gibi yetkilere sahip olmayı içerir."],
+            "context": [""]
+        },
+        {
+            "tag": "setup",
+            "patterns": ["setup","install","kurulum","program kurma"],
+            "responses": ["Bilgisayara herhangi bir programı kurma işlemidir.","Setup terimi, çeşitli bağlamlarda farklı anlamlara gelebilir. Genel olarak, setup, bir sistemi, programı veya cihazı kullanıma hazır hale getirmek için yapılan kurulum veya ayarlama işlemidir. "],
+            "context": [""]
+        },
+        {
+            "tag": "unistall",
+            "patterns": ["unistall","kaldırma","program kaldırma"],
+            "responses": ["Bilgisayara kurulu bir programı kaldırma işlemidir.","Uninstall, bir bilgisayar programının veya yazılımın kaldırılması işlemidir. Bir yazılımı bilgisayarınızdan kaldırmak istediğinizde, genellikle bu yazılımın Uninstall veya Kaldır seçeneğini kullanırsınız. Bu işlem, yazılım dosyalarının ve bileşenlerinin bilgisayarınızdan temizlenmesini ve yazılımın artık çalıştırılmamasını sağlar."],
+            "context": [""]
+        },
+        {
+            "tag": "Windows",
+            "patterns": ["Windows","Windows nedir","win işletim sistemi","Windows işletim sistemi","microsoft windows","microsoft işletim sistemi","microsft os","windows os"],
+            "responses": ["Microsoft Windows (pencere), kullanıcıya grafik arabirimler ve görsel iletilerle yaklaşarak, yazılımları çalıştırmak, komut vermek gibi klavyeden yazma zorunluluğunu ortadan kaldıran, Microsoft şirketinin geliştirdiği dünyada en çok kullanılan bir işletim sistemi ailesidir.","Windows, Microsoft tarafından geliştirilen ve kullanıcıların bilgisayarlarını kullanmalarını sağlayan bir işletim sistemidir. Windows işletim sistemi, dünya genelinde milyonlarca kişi tarafından kullanılmaktadır. Kullanıcı dostu arayüzü, geniş uygulama desteği ve çeşitli donanım cihazlarıyla uyumluluğuyla bilinir. Farklı sürümleri arasında Windows 11, Windows 10, Windows 8, Windows 7, Windows Vista ve Windows XP gibi popüler sürümler bulunmaktadır."],
+            "context": [""]
+        },
+        {
+            "tag": "arttirilmisgerceklik ",
+            "patterns": ["Arttırılmış Gerçeklik","ar","Artırılmış gerçeklik","Augmented Reality"],
+            "responses": ["Artırılmış gerçeklik (AR) ses, video, grafik veya GPS verileri gibi bilgisayar tarafından üretilip duyusal girdi ile artırılıp canlandırılan elemanların fiziksel, gerçek dünya ortamıyla birleştirilmesiyle oluşturulan yeni bir algı ortamının canlı doğrudan ya da dolaylı bir görünümüdür.","Artırılmış gerçeklik (İngilizce: Augmented reality; AR), gerçek dünyadaki çevrenin ve içindekilerin, bilgisayar tarafından üretilen; ses, görüntü, grafik ve GPS verileriyle zenginleştirilerek meydana getirilen canlı veya dolaylı fiziksel görünümüdür. Bu kavram kısaca gerçekliğin bilgisayar tarafından değiştirilmesi ve artırılmasıdır. Teknoloji kişinin gerçekliğini zenginleştirme işlevini görür. Buna karşın sanal gerçeklikte ise gerçek dünya yerine tasarlanıp canlandırılmış bir dünya vardır."],
+            "context": [""]
+        },
+        {
+            "tag": "sanalgerceklik ",
+            "patterns": ["sanal Gerçeklik","vr","Virtual Reality"],
+            "responses": ["Teknik olarak sanal gerçeklik terimi bireylerin orda olma hissini yaşadığı bilgisayar kaynaklı 3 boyutlu ortamlar için kullanılıyor. Kullanıcılar, çeşitli çevre birimleri (kasklı ekran vb.) aracılığıyla sanal ortamlara dahil oluyor. O ortama girdiği andan itibaren kullanıcının gerçeklik ile bağlantısı kopuyor ve tamamen sanal gerçekliğin yaratıldığı ortamda olma hissini yaşıyor. Kullanıcıların bu deneyimi “gerçekten” yaşayabilmesi için, sanal gerçeklik tasarımlarının kusursuz olması gerekir; aksi takdirde yaratılan zayıf “gerçeklik hissiyatı” kullanıcının bu deneyimi tam olarak yaşayamamasına sebep olur.","Sanal Gerçeklik (VR), gerçek dünyanın yerine bilgisayar tarafından oluşturulan bir sanal ortamda kullanıcıları yer alıyor hissi veren bir teknolojidir. VR teknolojisi, genellikle bir VR başlığı veya gözlüğü, bir kontrol cihazı ve genellikle bir bilgisayar veya akıllı telefon gibi bir bilgisayar cihazı kullanılarak deneyimlenir."],
+            "context": [""]
+        },
+        {
+            "tag": "inovasyon ",
+            "patterns": ["İnovasyon","İnovasyon nedir","İnovasyon tanımı"],
+            "responses": ["Toplumsal, kültürel ve idari ortamda yeni yöntemlerin kullanılmaya başlanması anlamındadır. Webster, inovasyonu yeni ve farklı bir sonuç olarak tanımlar. Türkçe’de yenilik, yenileme gibi sözcüklerle karşılanmaya çalışılsa da anlamı tek bir sözcükle ifade edilemeyecek kadar geniştir.","İnovasyon, yeni ve değer yaratan fikirlerin, ürünlerin, hizmetlerin veya süreçlerin yaratılması, geliştirilmesi ve uygulanması sürecidir. İnovasyon, rekabetçi bir avantaj elde etmek, müşteri ihtiyaçlarını karşılamak, verimliliği artırmak veya toplumun genel refahını iyileştirmek amacıyla gerçekleştirilebilir."],
+            "context": [""]
+        },
+        {
+            "tag": "iotnesnelerin",
+            "patterns": ["iot","IoT","nesnelerin interneti","Internet of Things"],
+            "responses": ["Internet of Things kavramı altında geliştirilen ürünler genelikle mobil cihazlar ve tabletlerle birlikte çalışıyor. Her nesnenin mobil üzerinden erişilebilen bir uygulaması oluyor ve böylece bu uygulama sayesinde nesneler bildirimleri uygulamalara aktarabiliyor. Mesela Google tarafından satın alınan akıllı ürün Nest, evde olmadığınız durumlarda evin sıcaklığını uygulama üzerinden kontrol edebilmenizi sağlıyor. Uygulamayı, eve yerleştirilen Nest ile entegre ederek bunu gerçekleştirebiliyorsunuz. Nesnelerin interneti ile ilgili örnekler; Nest, Hapifork, Micoach Akıllı Top, Smart Things, Babolat, Edyn, Dropcam, Ingenious…","IoT (Internet of Things), Türkçe olarak Nesnelerin İnterneti anlamına gelir. IoT, internete bağlı olan ve birbirleriyle iletişim kurabilen fiziksel cihazlar ağının genel adıdır. Bu cihazlar, sensörler, yazıcılar, ev aletleri, araçlar, akıllı telefonlar, giyilebilir teknolojiler gibi çeşitli nesneler olabilir."],
+            "context": [""]
+        },
+        {
+            "tag": "word",
+            "patterns": ["word","microsoft word","kelime işlemci"],
+            "responses": ["Microsoft Word, Microsoft Corporation tarafından geliştirilen ve dünya genelinde en yaygın kullanılan kelime işlemci yazılımlarından biridir. Microsoft Office paketinin bir parçası olarak sunulan Word, metin belgeleri oluşturmak, düzenlemek, biçimlendirmek ve yazdırmak için kullanılır.","Word, kullanıcıların metinleri yazmasına, tablolar oluşturmasına, resimler ve grafikler eklemesine, belgeleri biçimlendirmesine ve düzenlemesine olanak tanır. Stil ve tema seçenekleri, belgelerin profesyonel görünmesini sağlar. Ayrıca, belgeleri PDF formatında kaydetme, e-posta ile paylaşma ve çevrimiçi olarak bulut depolama hizmetleriyle senkronize etme gibi çeşitli özelliklere de sahiptir."],
+            "context": [""]
+        },
+        {
+            "tag": "excel",
+            "patterns": ["excel","microsoft excel","hesap yazılımı","tablo yazılımı","tablo programı"],
+            "responses": ["Microsoft Excel, Microsoft Corporation tarafından geliştirilen ve yaygın olarak kullanılan bir elektronik tablo programıdır. Microsoft Office paketinin bir parçası olarak sunulan Excel, verilerin analiz edilmesi, hesaplanması, organize edilmesi ve görselleştirilmesi için kullanılır.","Excel, kullanıcıların sayıları, metinleri ve diğer veri türlerini hücrelerde girmesine ve düzenlemesine olanak tanır. Bu hücreler bir tablo biçiminde düzenlenebilir ve kullanıcılar arasında matematiksel işlemler yapabilir, formüller ve fonksiyonlar kullanabilirler. Excel aynı zamanda grafikler, tablolar ve pivot tabloları gibi verileri görselleştirmek için çeşitli araçlar sağlar."],
+            "context": [""]
+        },{
+            "tag": "powerpoint",
+            "patterns": ["power point","microsoft power point","sunu programı","sunu yazılımı","slayt"],
+            "responses": ["Microsoft PowerPoint, Microsoft Corporation tarafından geliştirilen ve sunum hazırlamak için kullanılan bir yazılımdır. Microsoft Office paketinin bir parçası olarak sunulan PowerPoint, kullanıcıların profesyonel ve etkileyici sunumlar oluşturmasını sağlar.","PowerPoint, kullanıcıların metin, resim, grafik, şekil ve medya gibi çeşitli öğeleri içeren slaytlar oluşturmasına olanak tanır. Bu slaytlar, sunumun farklı bölümlerini temsil eder ve kullanıcılar arasında geçiş yaparak sunumun akışını kontrol eder. PowerPoint ayrıca animasyonlar, geçiş efektleri ve ses efektleri gibi özellikler sağlar, böylece sunumlar daha etkileyici hale gelir."],
+            "context": [""]
+        },
+        {
+            "tag": "publisher",
+            "patterns": ["publisher","microsoft publisher","afiş hazırlama programı","broşür hazırlama programı"],
+            "responses": ["Microsoft Publisher, Microsoft Corporation tarafından geliştirilen bir masaüstü yayıncılık yazılımıdır. Microsoft Office paketinin bir parçası olarak sunulan Publisher, kullanıcıların profesyonel kalitede yayınlar oluşturmasına olanak tanır.","Publisher, broşürler, el ilanları, dergiler, kitaplar, kartlar, afişler, etiketler ve diğer benzeri belgeler gibi çeşitli yayınları oluşturmak için kullanılabilir. Kullanıcılar, metin, resim, şekil, grafik ve diğer öğeleri içeren belgeleri oluşturabilir ve düzenleyebilirler. Publisher, kullanıcıların bu belgeleri kolayca biçimlendirmesine, düzenlemesine ve kişiselleştirmesine olanak tanır."],
+            "context": [""]
+        },
+        {
+            "tag": "access",
+            "patterns": ["access","microsft access"],
+            "responses": ["Microsoft Access, Microsoft Corporation tarafından geliştirilen bir ilişkisel veritabanı yönetim sistemidir (RDBMS). Microsoft Office paketinin bir parçası olarak sunulan Access, kullanıcıların veritabanları oluşturmasına, yönetmesine ve veri tabanlı uygulamalar geliştirmesine olanak tanır.","Access, kullanıcıların veritabanı tablolarını oluşturmasına, ilişkilendirmesine ve düzenlemesine olanak tanır. Bu tablolar, veri koleksiyonunu temsil eder ve kullanıcılar arasında ilişkiler kurarak verileri organize eder. Access, kullanıcıların sorgular oluşturmasına, formlar ve raporlar tasarlamasına ve veri tabanı uygulamaları oluşturmasına olanak tanır."],
+            "context": [""]
+        }
     ]
 }
