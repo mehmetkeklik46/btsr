@@ -3,7 +3,7 @@
         {
             "tag": "selamlar",
             "patterns": ["merhaba", "günaydın","naber", "iyi günler", "hey", "iyi akşamlar", "iyi geceler"],
-            "responses": ["Merhaba, size nasıl yardımcı olabilirim"],
+            "responses": ["Merhaba, size nasıl yardımcı olabilirim."],
             "context": [""]
         },
         {
@@ -889,7 +889,7 @@
         },
         {
             "tag": "flashbellek",
-            "patterns": ["flash bellek","flaş bellek"],
+            "patterns": ["flash bellek","flaş bellek", "usb bellek"],
             "responses": ["Günümüzde yaygın olarak kullanılan flash bellekler aslında ROM bellek çeşididir. Bunun için ayrıca bir devre kartına ihtiyaç duymadan bilgisayar ile programlanabilir ROM’dur. Bundan dolayı bazı kaynaklarda flash bellek EEPROM olarak da adlandırılır.","Flaş Bellek, kaynak gücü kesildiğinde bile sakladığı veriyi tutabilen ve elektronik olarak içeriği silinip, yeniden programlanabilen bellek türüdür."],
             "context": [""]
         },
@@ -1369,7 +1369,7 @@
         },
         {
             "tag": "obtüratör",
-            "patterns": ["obtüratör","RFID","RFID"],
+            "patterns": ["obtüratör"],
             "responses": ["Fotoğraf makinelerinde bulunan obtüratör adlı donanım aracılığıyla makineye objektiften giren ışığın süresi ayarlanır. Tıpkı bir göz kapağı gibi açılıp kapanan bir perde sisteminden oluşmaktadır. Perde hızı yüksekse hareket dondurulur, düşükse hareket bulanık çıkar."],
             "context": [""]
         },
@@ -1687,7 +1687,7 @@
         },
         {
             "tag": "orgutopoloji",
-            "patterns": ["Örgü Topolojisi","Mesh Topology","RFID","RFID"],
+            "patterns": ["Örgü Topolojisi","Mesh Topology"],
             "responses": ["Örgü topolojisinde tüm cihazlar uçtan uca birbiriyle bağlıdır. Maliyet yönünden çok kullanışlı olmayan sistem çok kablo kullanıldığı için tercih edilmez"],
             "context": [""]
         },
@@ -1915,7 +1915,7 @@
         },
         {
             "tag": "kabinet",
-            "patterns": ["kabinet","ağ kabinini","RFID"],
+            "patterns": ["kabinet","ağ kabinini"],
             "responses": ["Ağ kabinleri veya kabinetler, yapısal kablolamada tüm cihazlardan gelen kabloların toplandığı, kabloların ve ağ cihazlarının organize bir şekilde yerleştirilmesini ve dış etmenlere karşı korunmasını sağlayan metal gövdeli kutulardır. Kabinet sistemleri temel olarak duvar tipi ve dikili tip olmak üzere iki modelde üretilir."],
             "context": [""]
         },
@@ -1939,7 +1939,7 @@
         },
         {
             "tag": "uygulamaayari",
-            "patterns": ["uygulama ayarı","uygulama ayarları","RFID"],
+            "patterns": ["uygulama ayarı","uygulama ayarları"],
             "responses": ["Uygulama ayarları belirli konulardaki problemlerin çözümüne yönelik, işletim sistemine uygun olarak yazılmış programlardır. Temel olarak akla gelen ilk ayarlar; kullanıcı hesapları, görünüm ve kişiselleştirme, saat, bölge ve dil ile güvenlik ayarlarıdır."],
             "context": [""]
         },
@@ -2244,7 +2244,7 @@
         },
         {
             "tag": "nfc",
-            "patterns": ["nfc","nfc nedir","iso","yakın alan iletişimi","Near Field Communication"],
+            "patterns": ["nfc","nfc nedir","yakın alan iletişimi","Near Field Communication"],
             "responses": ["Yakın Alan İletişimi; müşteri elektroniği, mobil cihazlar ve bilgisayarlar ile etkileşim için tasarlanmış bir kısa menzilli, kablosuz, kişisel iletişim alanı teknolojisidir. Yakın Alan İletişimi manyetik alan indüksiyonu kullanarak çalışır ve etiket ile okuyucu işlevine sahiptir.","NFC (Near Field Communication), kısa mesafe kablosuz iletişim teknolojisidir. NFC, birbirine çok yakın iki cihaz arasında (genellikle 4 santimetreden az mesafede) veri paylaşımını ve iletişimini sağlar. Bu teknoloji, akıllı telefonlar, tabletler, akıllı saatler ve diğer elektronik cihazlar arasında dosya transferi, ödeme yapma, etiket okuma, akıllı cihazları eşleştirme ve diğer etkileşimli uygulamalar için kullanılır."],
             "context": [""]
         },
@@ -2292,7 +2292,7 @@
         },
         {
             "tag": "www",
-            "patterns": ["www","World Wide Web"],
+            "patterns": ["www","World Wide Web","web"],
             "responses": ["WWW yani dünyadaki bilgisayarların birbiriyle iletişim kurabildiği, görüntü, ses ve veri paylaşımının yapılabildiği tüm dünyaya yayılmış büyük bir ağdır. Her bir internet sitesinin kendine ait www. ile başlayan bir adresi vardır.","World Wide Web (Kısaca Web), internet üzerindeki milyonlarca belgeye erişim sağlayan bir bilgi alanıdır. İnsanların dokümanları, resimleri, videoları ve diğer medya türlerini paylaşmasını, aramasını ve erişmesini sağlayan bir sistemdir. Web, HTML (Hypertext Markup Language) gibi standart dillerle yazılmış belgeleri kullanır ve bu belgeler birbirlerine hypertext linkleri aracılığıyla bağlanır. Bu sayede, bir kullanıcı bir belgeyi görüntülerken ilgili linklere tıklayarak diğer belgelere geçebilir."],
             "context": [""]
         },
